@@ -11,7 +11,10 @@ gsap.registerPlugin(ScrollTrigger);
 const MarqueeContent = () => (
   <>
     {[1, 2, 3, 4].map((i) => (
-      <div key={i} className="flex items-center gap-[2vw] pr-[4vw] whitespace-nowrap shrink-0">
+      <div
+        key={i}
+        className="flex items-center gap-[2vw] pr-[4vw] whitespace-nowrap shrink-0"
+      >
         <span className="font-light tracking-tight">Welcome to the</span>
         <span className="font-bold">College Of Creative Intelligence</span>
       </div>
@@ -26,13 +29,24 @@ const IdeaItems = () => (
       { src: "/idea-2.png", label: "Guerilla" },
       { src: "/idea-3.png", label: "Experiential Campaign" },
       { src: "/idea-4.png", label: "Hand Lettering" },
-      { src: "/idea-5.png", label: "Print Advertisement" }
+      { src: "/idea-5.png", label: "Print Advertisement" },
     ].map((item, idx) => (
-      <div key={idx} className="flex flex-col items-center gap-6 px-4 md:px-10 shrink-0">
+      <div
+        key={idx}
+        className="flex flex-col items-center gap-6 px-4 md:px-10 shrink-0"
+      >
         <div className="w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl bg-black">
-          <Image src={item.src} width={320} height={320} alt={item.label} className="w-full h-full object-cover" />
+          <Image
+            src={item.src}
+            width={320}
+            height={320}
+            alt={item.label}
+            className="w-full h-full object-cover"
+          />
         </div>
-        <div className="text-[#ec008c] text-[16px] md:text-[20px] font-black uppercase tracking-wider">{item.label}</div>
+        <div className="text-[#ec008c] text-[16px] md:text-[20px] font-black uppercase tracking-wider">
+          {item.label}
+        </div>
       </div>
     ))}
   </>
@@ -41,8 +55,17 @@ const IdeaItems = () => (
 const PartnerItems = () => (
   <>
     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((i) => (
-      <div key={i} className="flex items-center justify-center px-6 md:px-10 shrink-0">
-        <Image src={`/logo-${i}.png`} width={300} height={120} alt={`Partner ${i}`} className="h-14 md:h-[90px] w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer" />
+      <div
+        key={i}
+        className="flex items-center justify-center px-6 md:px-10 shrink-0"
+      >
+        <Image
+          src={`/logo-${i}.png`}
+          width={300}
+          height={120}
+          alt={`Partner ${i}`}
+          className="h-14 md:h-[90px] w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
+        />
       </div>
     ))}
   </>
@@ -56,7 +79,7 @@ export default function Home() {
     { value: "14+", label: "Years Creative\nLegacy" },
     { value: "200+", label: "International\nAwards" },
     { value: "100%", label: "Placement,\nEvery Single Year" },
-    { value: "57", label: "Global Agency\nPartnerships" }
+    { value: "57", label: "Global Agency\nPartnerships" },
   ];
   const [currentStatIndex, setCurrentStatIndex] = useState(0);
 
@@ -68,15 +91,15 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    gsap.fromTo(".stat-text-animated",
+    gsap.fromTo(
+      ".stat-text-animated",
       { opacity: 0, scale: 0.9 },
-      { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.5)" }
+      { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.5)" },
     );
   }, [currentStatIndex]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-
       // Ideas slider animation
       gsap.to(".ideas-track", {
         xPercent: -50,
@@ -97,27 +120,31 @@ export default function Home() {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
       // Hero Image Breathe
-      gsap.fromTo(".hero-image",
+      gsap.fromTo(
+        ".hero-image",
         { scale: 1.05, transformOrigin: "center center" },
-        { scale: 1.0, duration: 4, ease: "power2.out" }
+        { scale: 1.0, duration: 4, ease: "power2.out" },
       );
 
       // Navbar Slide Down
-      tl.fromTo(".main-header",
+      tl.fromTo(
+        ".main-header",
         { y: -100, opacity: 0 },
         { y: 0, opacity: 1, duration: 1.2, clearProps: "transform" },
-        "-=3.5"
+        "-=3.5",
       );
 
       // Pink Circle Dramatic Reveal
-      tl.fromTo(".hero-pink-circle",
+      tl.fromTo(
+        ".hero-pink-circle",
         { scale: 0, opacity: 0 },
         { scale: 1, opacity: 1, duration: 1.5, ease: "back.out(1.2)" },
-        "-=1"
+        "-=1",
       );
 
       // 2. Empowering Creative Minds
-      gsap.fromTo(".reveal-word",
+      gsap.fromTo(
+        ".reveal-word",
         { yPercent: 120 },
         {
           yPercent: 0,
@@ -127,36 +154,49 @@ export default function Home() {
           scrollTrigger: {
             trigger: ".empowering-section",
             start: "top 75%",
-          }
-        }
+          },
+        },
       );
 
-      gsap.fromTo(".empowering-image",
+      gsap.fromTo(
+        ".empowering-image",
         { opacity: 0, scale: 0.95, y: 50 },
         {
-          opacity: 1, scale: 1, y: 0, duration: 1.2, ease: "power3.out",
-          scrollTrigger: { trigger: ".empowering-section", start: "top 60%" }
-        }
+          opacity: 1,
+          scale: 1,
+          y: 0,
+          duration: 1.2,
+          ease: "power3.out",
+          scrollTrigger: { trigger: ".empowering-section", start: "top 60%" },
+        },
       );
 
-      gsap.fromTo(".empowering-inner-image",
+      gsap.fromTo(
+        ".empowering-inner-image",
         { scale: 1.6, transformOrigin: "center center" },
         {
-          scale: 1.5, duration: 4, ease: "power2.out",
-          scrollTrigger: { trigger: ".empowering-section", start: "top 60%" }
-        }
+          scale: 1.5,
+          duration: 4,
+          ease: "power2.out",
+          scrollTrigger: { trigger: ".empowering-section", start: "top 60%" },
+        },
       );
 
-      gsap.fromTo([".empowering-stat-bg", ".empowering-stat-text"],
+      gsap.fromTo(
+        [".empowering-stat-bg", ".empowering-stat-text"],
         { scale: 0.8, opacity: 0 },
         {
-          scale: 1, opacity: 1, duration: 1, ease: "back.out(1.5)",
-          scrollTrigger: { trigger: ".empowering-section", start: "top 80%" }
-        }
+          scale: 1,
+          opacity: 1,
+          duration: 1,
+          ease: "back.out(1.5)",
+          scrollTrigger: { trigger: ".empowering-section", start: "top 80%" },
+        },
       );
 
       // 3. Visionaries Line Reveal
-      gsap.fromTo(".reveal-line",
+      gsap.fromTo(
+        ".reveal-line",
         { yPercent: 110 },
         {
           yPercent: 0,
@@ -166,53 +206,74 @@ export default function Home() {
           scrollTrigger: {
             trigger: ".visionaries-section",
             start: "top 70%",
-          }
-        }
+          },
+        },
       );
 
       // 4. Our Programs
-      gsap.fromTo(".programs-image",
+      gsap.fromTo(
+        ".programs-image",
         { y: 50, opacity: 0 },
         {
-          y: 0, opacity: 1, duration: 1.5, ease: "power3.out",
-          scrollTrigger: { trigger: ".programs-section", start: "top 70%" }
-        }
+          y: 0,
+          opacity: 1,
+          duration: 1.5,
+          ease: "power3.out",
+          scrollTrigger: { trigger: ".programs-section", start: "top 70%" },
+        },
       );
 
-      gsap.fromTo(".programs-panel",
+      gsap.fromTo(
+        ".programs-panel",
         { x: 100, opacity: 0 },
         {
-          x: 0, opacity: 1, duration: 1.2, ease: "power3.out",
-          scrollTrigger: { trigger: ".programs-panel", start: "top 80%" }
-        }
+          x: 0,
+          opacity: 1,
+          duration: 1.2,
+          ease: "power3.out",
+          scrollTrigger: { trigger: ".programs-panel", start: "top 80%" },
+        },
       );
 
-      gsap.fromTo(".programs-list-item",
+      gsap.fromTo(
+        ".programs-list-item",
         { opacity: 0, x: -20 },
         {
-          opacity: 1, x: 0, stagger: 0.1, duration: 0.8,
-          scrollTrigger: { trigger: ".programs-panel", start: "top 60%" }
-        }
+          opacity: 1,
+          x: 0,
+          stagger: 0.1,
+          duration: 0.8,
+          scrollTrigger: { trigger: ".programs-panel", start: "top 60%" },
+        },
       );
 
       // 5. Partners / Logos
-      gsap.fromTo(".partners-track",
+      gsap.fromTo(
+        ".partners-track",
         { xPercent: -50 },
         {
           xPercent: 0,
           repeat: -1,
           ease: "none",
           duration: 80,
-        }
+        },
       );
 
       // 6. Footer Circles
-      gsap.fromTo(".footer-circle",
+      gsap.fromTo(
+        ".footer-circle",
         { y: 60, opacity: 0 },
         {
-          y: 0, opacity: 1, stagger: 0.2, duration: 1.2, ease: "power3.out",
-          scrollTrigger: { trigger: ".footer-circles-section", start: "top 80%" }
-        }
+          y: 0,
+          opacity: 1,
+          stagger: 0.2,
+          duration: 1.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".footer-circles-section",
+            start: "top 80%",
+          },
+        },
       );
 
       gsap.to(".footer-quote", {
@@ -223,7 +284,7 @@ export default function Home() {
           start: "top bottom",
           end: "bottom top",
           scrub: 1,
-        }
+        },
       });
     }, containerRef);
     return () => ctx.revert();
@@ -235,7 +296,6 @@ export default function Home() {
       className="min-h-screen bg-white flex flex-col items-center overflow-x-hidden font-sans w-full"
     >
       <main className="w-full relative min-h-screen flex flex-col shrink-0">
-
         {/* Hero Section with Header */}
         <section className="relative w-full h-screen flex flex-col overflow-hidden bg-[#d1d1d1]">
           {/* Background Image - Absolute Centering */}
@@ -250,7 +310,7 @@ export default function Home() {
             />
           </div>
 
-    <Header />
+          <Header />
 
           {/* Hero Content Container - Centered in the remaining space */}
           <div className="flex-1 flex flex-col items-center justify-center w-full">
@@ -265,9 +325,7 @@ export default function Home() {
             </div>
 
             {/* Main Title - White Text (Foreground layer, clipped to pink circle) */}
-            <div
-              className="absolute z-30 inset-0 pointer-events-none flex items-center [clip-path:circle(40vmin_at_50%_52%)] md:[clip-path:circle(30vmin_at_50%_52%)]"
-            >
+            <div className="absolute z-30 inset-0 pointer-events-none flex items-center [clip-path:circle(40vmin_at_50%_52%)] md:[clip-path:circle(30vmin_at_50%_52%)]">
               <div className="absolute w-full flex items-center top-[52%] -translate-y-[54%] mt-0">
                 <div className="marquee-track flex text-[16vw] md:text-[6vw] min-[1300px]:text-[7.5vw] leading-[0.8] text-white w-max">
                   <MarqueeContent />
@@ -278,7 +336,14 @@ export default function Home() {
 
           {/* Hero Bottom Right Logo */}
           <div className="absolute bottom-6 right-6 md:bottom-12 md:right-12 z-40 pointer-events-none">
-            <Image src="/hero-bottom-right-logo.png" width={200} height={200} alt="Hero Badge" className="w-12 h-12 md:w-20 md:h-20 object-contain" priority />
+            <Image
+              src="/hero-bottom-right-logo.png"
+              width={200}
+              height={200}
+              alt="Hero Badge"
+              className="w-12 h-12 md:w-20 md:h-20 object-contain"
+              priority
+            />
           </div>
         </section>
 
@@ -287,14 +352,19 @@ export default function Home() {
           {/* Centered Title */}
           <div className="w-full max-w-[1400px] px-4 md:px-8">
             <h2 className="font-[family-name:var(--font-obviously-narrow-medium)] text-[#ec008c] font-black text-[40px] md:text-[80px] mb-8 md:mb-16 tracking-normal text-center leading-[1.2] flex flex-wrap justify-center gap-x-2 md:gap-x-4">
-              <span className="overflow-hidden block pb-2 px-1"><span className="reveal-word inline-block">Empowering</span></span>
-              <span className="overflow-hidden block pb-2 px-1"><span className="reveal-word inline-block">Creative</span></span>
-              <span className="overflow-hidden block pb-2 px-1"><span className="reveal-word inline-block">Minds</span></span>
+              <span className="overflow-hidden block pb-2 px-1">
+                <span className="reveal-word inline-block">Empowering</span>
+              </span>
+              <span className="overflow-hidden block pb-2 px-1">
+                <span className="reveal-word inline-block">Creative</span>
+              </span>
+              <span className="overflow-hidden block pb-2 px-1">
+                <span className="reveal-word inline-block">Minds</span>
+              </span>
             </h2>
           </div>
 
           <div className="relative w-full max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-center md:justify-between gap-0 md:gap-0">
-
             {/* Info Block Wrapper */}
             <div className="relative w-[85%] md:w-[45%] lg:w-[40%] aspect-square z-10 shrink-0 grid order-2 md:order-1 -mt-[30%] md:mt-0 md:-mr-[5%] lg:-mr-[8%]">
               {/* Info Block Background (Animated) */}
@@ -303,20 +373,32 @@ export default function Home() {
               {/* Info Block Text Foreground Layer (Animated) */}
               <div className="empowering-stat-text col-start-1 row-start-1 flex flex-col items-center justify-center text-center py-10 px-6 md:p-8 text-white z-20">
                 <div className="absolute top-[8%] md:top-[16%] flex flex-col items-center leading-[1.05] tracking-tight">
-                  <div className="font-bold text-[clamp(12px,2vw,24px)]">MIAMI</div>
-                  <div className="font-bold text-[clamp(12px,2vw,24px)]">AD</div>
-                  <div className="font-bold text-[clamp(12px,2vw,24px)]">SCHOOL</div>
-                  <div className="text-[clamp(7px,1.2vw,14px)] font-bold tracking-widest mt-1">MUM | BLR</div>
+                  <div className="font-bold text-[clamp(12px,2vw,24px)]">
+                    MIAMI
+                  </div>
+                  <div className="font-bold text-[clamp(12px,2vw,24px)]">
+                    AD
+                  </div>
+                  <div className="font-bold text-[clamp(12px,2vw,24px)]">
+                    SCHOOL
+                  </div>
+                  <div className="text-[clamp(7px,1.2vw,14px)] font-bold tracking-widest mt-1">
+                    MUM | BLR
+                  </div>
                 </div>
                 <div className="stat-text-animated flex flex-col items-center justify-center w-full h-full pt-[10%] md:pt-[22%]">
                   <div className="font-[family-name:var(--font-obviously-narrow-medium)] text-[120px] md:text-[130px] lg:text-[clamp(120px,11vw,180px)] font-black tracking-normal leading-[0.8] mb-[12%] md:mb-[6%] whitespace-nowrap flex items-center justify-center">
-                    {statsData[currentStatIndex].value.includes('+') ? (
+                    {statsData[currentStatIndex].value.includes("+") ? (
                       <>
-                        {statsData[currentStatIndex].value.replace('+', '')}
-                        <span className="text-[0.6em] align-middle inline-block font-bold tracking-normal ml-[2%]">+</span>
+                        {statsData[currentStatIndex].value.replace("+", "")}
+                        <span className="text-[0.6em] align-middle inline-block font-bold tracking-normal ml-[2%]">
+                          +
+                        </span>
                       </>
-                    ) : statsData[currentStatIndex].value.includes('%') ? (
-                      <span className="text-[0.8em] tracking-tight">{statsData[currentStatIndex].value}</span>
+                    ) : statsData[currentStatIndex].value.includes("%") ? (
+                      <span className="text-[0.8em] tracking-tight">
+                        {statsData[currentStatIndex].value}
+                      </span>
                     ) : (
                       statsData[currentStatIndex].value
                     )}
@@ -345,13 +427,28 @@ export default function Home() {
         <section className="visionaries-section px-4 md:px-8 mt-2 mb-8 md:mt-4 md:mb-12 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center md:justify-center gap-6 md:gap-16 text-left">
           <div className="flex flex-col items-start gap-4 md:contents">
             <h2 className="font-[family-name:var(--font-obviously-narrow-medium)] text-[#ec008c] font-semibold text-[clamp(36px,6vw,84px)] leading-[1.0] tracking-wide shrink-0 pb-4">
-              Crafting <br className="hidden md:block" /> Tomorrow's <br /> Visionaries
+              Crafting <br className="hidden md:block" /> Tomorrow's <br />{" "}
+              Visionaries
             </h2>
             <div className="text-[clamp(26px,4.5vw,60px)] font-light leading-[1.0] tracking-wide text-black/80 flex flex-col whitespace-nowrap">
-              <div className="overflow-hidden pb-4 -mb-4"><div className="reveal-line">We cultivate fearless creative</div></div>
-              <div className="overflow-hidden pb-4 -mb-4"><div className="reveal-line">talent that transforms the way</div></div>
-              <div className="overflow-hidden pb-4 -mb-4"><div className="reveal-line">the world engages with brands,</div></div>
-              <div className="overflow-hidden pb-4 -mb-4"><div className="reveal-line">stories, and ideas.</div></div>
+              <div className="overflow-hidden pb-4 -mb-4">
+                <div className="reveal-line">
+                  We cultivate fearless creative
+                </div>
+              </div>
+              <div className="overflow-hidden pb-4 -mb-4">
+                <div className="reveal-line">
+                  talent that transforms the way
+                </div>
+              </div>
+              <div className="overflow-hidden pb-4 -mb-4">
+                <div className="reveal-line">
+                  the world engages with brands,
+                </div>
+              </div>
+              <div className="overflow-hidden pb-4 -mb-4">
+                <div className="reveal-line">stories, and ideas.</div>
+              </div>
             </div>
           </div>
         </section>
@@ -377,22 +474,36 @@ export default function Home() {
 
               {/* Text Foreground Layer */}
               <div className="relative md:absolute md:inset-0 z-10 flex flex-col justify-center items-start pl-[24%] pr-[6%] md:pl-[18%] md:pr-[10%] py-6 md:py-0 text-white h-full">
-                <h3 className="font-[family-name:var(--font-obviously-narrow-medium)] text-[26px] md:text-[48px] font-black mb-2 md:mb-[3%] tracking-normal uppercase leading-[1.0] text-left w-full">OUR PROGRAMS</h3>
+                <h3 className="font-[family-name:var(--font-obviously-narrow-medium)] text-[26px] md:text-[48px] font-black mb-2 md:mb-[3%] tracking-normal uppercase leading-[1.0] text-left w-full">
+                  OUR PROGRAMS
+                </h3>
                 <p className="text-[12px] md:text-[18px] font-normal leading-[1.3] md:leading-[1.4] mb-3 md:mb-[4%] text-white/95 text-left pr-[5%]">
-                  We cultivate creators through hands-on experiences,
-                  offering real-world creative learning pathways with
-                  global internships and industry-mentorship, leading to
-                  a strong, employability-enhancing portfolio.
+                  We cultivate creators through hands-on experiences, offering
+                  real-world creative learning pathways with global internships
+                  and industry-mentorship, leading to a strong,
+                  employability-enhancing portfolio.
                 </p>
 
                 <div className="text-[10px] md:text-[16px] font-medium uppercase mb-2 md:mb-[2%] tracking-wide text-left w-full">
                   UNDERGRADUATE & POSTGRADUATE PROGRAMS:
                 </div>
                 <ul className="text-[12px] md:text-[18px] font-normal space-y-1 md:space-y-[3%] leading-tight mb-4 md:mb-[6%] mx-0 w-max">
-                  <li className="programs-list-item flex items-center gap-2 md:gap-3"><div className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 bg-white rounded-full shrink-0"></div> Creative Thinking</li>
-                  <li className="programs-list-item flex items-center gap-2 md:gap-3"><div className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 bg-white rounded-full shrink-0"></div> Advertising</li>
-                  <li className="programs-list-item flex items-center gap-2 md:gap-3"><div className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 bg-white rounded-full shrink-0"></div> Communication Design</li>
-                  <li className="programs-list-item flex items-center gap-2 md:gap-3"><div className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 bg-white rounded-full shrink-0"></div> Media and More</li>
+                  <li className="programs-list-item flex items-center gap-2 md:gap-3">
+                    <div className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 bg-white rounded-full shrink-0"></div>{" "}
+                    Creative Thinking
+                  </li>
+                  <li className="programs-list-item flex items-center gap-2 md:gap-3">
+                    <div className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 bg-white rounded-full shrink-0"></div>{" "}
+                    Advertising
+                  </li>
+                  <li className="programs-list-item flex items-center gap-2 md:gap-3">
+                    <div className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 bg-white rounded-full shrink-0"></div>{" "}
+                    Communication Design
+                  </li>
+                  <li className="programs-list-item flex items-center gap-2 md:gap-3">
+                    <div className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 bg-white rounded-full shrink-0"></div>{" "}
+                    Media and More
+                  </li>
                 </ul>
                 <div className="text-[12px] md:text-[15px] font-bold cursor-pointer hover:opacity-80 transition-opacity underline underline-offset-[4px] md:underline-offset-[6px] decoration-2 text-left w-full">
                   Explore our programs
@@ -419,7 +530,8 @@ export default function Home() {
         {/* Partners */}
         <section className="partners-section mt-0 mb-20 md:my-20 w-full overflow-hidden text-center">
           <h2 className="font-[family-name:var(--font-obviously-narrow-medium)] text-[#ec008c] font-black text-[32px] md:text-[52px] lg:text-[74px] mb-12 md:mb-16 capitalize tracking-wider text-center px-6 md:px-12 lg:px-16 leading-[1.0] md:leading-normal">
-            Our Best Are <br className="block md:hidden" /> Working With The Best
+            Our Best Are <br className="block md:hidden" /> Working With The
+            Best
           </h2>
 
           <div className="w-full relative py-8">
@@ -435,18 +547,29 @@ export default function Home() {
         {/* Footer Circles */}
         <section className="footer-circles-section py-12 md:py-20 w-full flex justify-center overflow-hidden">
           <div className="flex flex-wrap justify-center items-center gap-4 md:gap-12 relative w-full max-w-[1600px] mx-auto px-4 lg:px-8">
-
             {/* Left Circle */}
             <div className="footer-circle w-full max-w-[260px] md:max-w-[400px] aspect-square rounded-full bg-[#ec008c] flex flex-col items-center justify-center text-center text-white p-6 md:p-10 hover:scale-105 transition-transform duration-500 cursor-pointer z-10">
               <div className="text-[32px] md:text-[60px] font-black leading-[0.9] tracking-tighter">
-                In The<br />Heart Of<br />Mumbai
+                In The
+                <br />
+                Heart Of
+                <br />
+                Mumbai
               </div>
-              <div className="text-[10px] md:text-sm mt-3 md:mt-4 tracking-wide font-bold">(Upper BKC)</div>
+              <div className="text-[10px] md:text-sm mt-3 md:mt-4 tracking-wide font-bold">
+                (Upper BKC)
+              </div>
             </div>
 
             {/* Middle Circle */}
             <div className="footer-circle w-full max-w-[260px] md:max-w-[400px] aspect-square rounded-full overflow-hidden relative z-20">
-              <Image src="/mumbai.png" width={450} height={450} alt="Mumbai City View" className="w-full h-full object-cover grayscale" />
+              <Image
+                src="/mumbai.png"
+                width={450}
+                height={450}
+                alt="Mumbai City View"
+                className="w-full h-full object-cover grayscale"
+              />
             </div>
 
             {/* Right Circle */}
@@ -455,43 +578,51 @@ export default function Home() {
                 <span className="footer-quote absolute -top-4 md:-top-6 -left-1 md:-left-2 text-[24px] md:text-[40px] leading-none opacity-50 origin-center inline-block">
                   <span className="inline-block rotate-170">❝</span>
                 </span>
-                Just like the bustling streets of Mumbai, NoMAD is a melting pot of diverse ideas and cultures, constantly reminding me that here, art and design are not just subjects, but powerful agents of transformation.
-                <span className="inline-block ml-1 text-[16px] md:text-[28px] leading-none translate-y-2 opacity-50">❞</span>
+                Just like the bustling streets of Mumbai, NoMAD is a melting pot
+                of diverse ideas and cultures, constantly reminding me that
+                here, art and design are not just subjects, but powerful agents
+                of transformation.
+                <span className="inline-block ml-1 text-[16px] md:text-[28px] leading-none translate-y-2 opacity-50">
+                  ❞
+                </span>
               </div>
               <div className="text-[10px] md:text-[14px] font-bold mt-4 md:mt-6 leading-tight text-center">
-                - Arun, Student,<br />Communication Design
+                - Arun, Student,
+                <br />
+                Communication Design
               </div>
             </div>
-
           </div>
         </section>
 
         {/* Black Footer */}
         <footer className="bg-black text-white px-8 md:px-16 py-16 md:py-20 flex flex-col mt-auto w-full">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-7 gap-10 md:gap-8 lg:gap-12 w-full max-w-[1600px] mx-auto text-[11px] md:text-[13px] tracking-wide leading-relaxed">
-
             {/* Col 1 */}
             <div className="lg:col-span-2 flex flex-col gap-6 text-white/80 pr-0 lg:pr-8">
               <div>
-                <span className="font-bold text-white">Campus:</span> Kohinoor City, Kirol Road, Off LBS Marg,<br />
+                <span className="font-bold text-white">Campus:</span> Kohinoor
+                City, Kirol Road, Off LBS Marg,
+                <br />
                 Upper BKC, Mumbai – 400070, Maharashtra
               </div>
               <div>
-                <span className="font-bold text-white">Admissions Office:</span> Rose Cottage Complex,<br />
-                Dr SS Rao Marg, Next to Amit Industrial Estate,<br />
+                <span className="font-bold text-white">Admissions Office:</span>{" "}
+                Rose Cottage Complex,
+                <br />
+                Dr SS Rao Marg, Next to Amit Industrial Estate,
+                <br />
                 Parel East, Mumbai - 400012, Maharashtra
               </div>
-              <div>
-                Email: hello@nomadcollege.in
-              </div>
-              <div>
-                www.nomadcollege.in
-              </div>
+              <div>Email: hello@nomadcollege.in</div>
+              <div>www.nomadcollege.in</div>
             </div>
 
             {/* Col 2 */}
             <div className="flex flex-col gap-6">
-              <div className="font-bold uppercase text-white mb-2 tracking-wider">CONTACT</div>
+              <div className="font-bold uppercase text-white mb-2 tracking-wider">
+                CONTACT
+              </div>
               <div className="text-white/80 leading-snug">
                 <div className="text-white mb-1">Mumbai</div>
                 +91 98195 43130 /<br />
@@ -506,50 +637,94 @@ export default function Home() {
 
             {/* Col 3 */}
             <div className="flex flex-col gap-2 text-white/80">
-              <div className="font-bold uppercase text-white mb-4 tracking-wider">STUDY</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Undergraduate Program</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Postgraduate Program</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Curriculum</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Global Exchange</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Internships</div>
+              <div className="font-bold uppercase text-white mb-4 tracking-wider">
+                STUDY
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Undergraduate Program
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Postgraduate Program
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Curriculum
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Global Exchange
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Internships
+              </div>
             </div>
 
             {/* Col 4 */}
             <div className="flex flex-col gap-2 text-white/80">
-              <div className="font-bold uppercase text-white mb-4 tracking-wider">WHY NOMAD</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Creative Intelligence</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Real Client Work</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Industry Mentors</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Global Exposure</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Portfolio First</div>
+              <div className="font-bold uppercase text-white mb-4 tracking-wider">
+                WHY NOMAD
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Creative Intelligence
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Real Client Work
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Industry Mentors
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Global Exposure
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Portfolio First
+              </div>
             </div>
 
             {/* Col 5 */}
             <div className="flex flex-col gap-2 text-white/80">
-              <div className="font-bold uppercase text-white mb-4 tracking-wider">EXPLORE</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Student Work</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Alumni</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Faculty</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Campus Life</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Admissions</div>
+              <div className="font-bold uppercase text-white mb-4 tracking-wider">
+                EXPLORE
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Student Work
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Alumni
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Faculty
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Campus Life
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Admissions
+              </div>
             </div>
 
             {/* Col 6 */}
             <div className="flex flex-col gap-2 text-white/80">
-              <div className="font-bold uppercase text-white mb-4 tracking-wider">QUICK LINKS</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Apply Now</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Download Brochure</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Visit Campus</div>
-              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">Contact Us</div>
+              <div className="font-bold uppercase text-white mb-4 tracking-wider">
+                QUICK LINKS
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Apply Now
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Download Brochure
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Visit Campus
+              </div>
+              <div className="cursor-pointer hover:text-[#ec008c] transition-colors">
+                Contact Us
+              </div>
             </div>
-
           </div>
 
           <div className="w-full text-center mt-20 pt-10 text-[20px] md:text-[28px] lg:text-[34px] font-medium tracking-tight">
             OPEN EDUCATION PVT. LTD.
           </div>
         </footer>
-
       </main>
     </div>
   );
