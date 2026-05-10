@@ -243,10 +243,8 @@ export default function ProgramsPage() {
   return (
     <div ref={container} className="bg-[#efefef] text-black overflow-x-hidden">
       {/* HERO */}
-
+      <Header />
       <section className="relative min-h-screen overflow-hidden">
-        <Header />
-
         {/* GRID */}
         <div
           className="absolute inset-0 opacity-[0.03]"
