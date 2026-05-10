@@ -239,14 +239,6 @@ export default function NewsEventsPage() {
 
                   <h3 className="mt-2 text-3xl font-black">48+</h3>
                 </div>
-
-                <div className="absolute bottom-[25%] -left-6 md:-left-10 bg-black text-white rounded-[30px] p-6">
-                  <p className="text-xs uppercase tracking-[3px] text-white/40">
-                    Global Reach
-                  </p>
-
-                  <h3 className="mt-2 text-2xl font-black">25 Countries</h3>
-                </div>
               </div>
             </div>
           </div>
