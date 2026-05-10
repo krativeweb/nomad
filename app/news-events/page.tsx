@@ -126,6 +126,14 @@ export default function NewsEventsPage() {
         });
       });
 
+      gsap.to(".parallax-image", {
+        y: -20,
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+
       /*
     CLEANUP
     */
@@ -227,7 +235,7 @@ export default function NewsEventsPage() {
                   width={900}
                   height={1200}
                   priority
-                  className="parallax-image w-full h-[420px] sm:h-[520px] md:h-[680px] lg:h-[780px] object-cover grayscale"
+                  className="parallax-image will-change-transform w-full h-[420px] sm:h-[520px] md:h-[680px] lg:h-[780px] object-cover grayscale"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
