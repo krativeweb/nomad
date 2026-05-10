@@ -245,7 +245,7 @@ export default function ProgramsPage() {
       {/* HERO */}
       <Header />
       <section className="relative min-h-screen overflow-hidden">
-        {/* GRID */}
+        {/* GRID s*/}
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
