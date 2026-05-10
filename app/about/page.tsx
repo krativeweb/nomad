@@ -39,18 +39,27 @@ export default function ProgramsPage() {
       },
     );
 
-    gsap.from(".stats-card", {
-      y: 80,
-      opacity: 0,
-      stagger: 0.15,
-      duration: 1,
-
-      scrollTrigger: {
-        trigger: ".stats-card",
-        start: "top 85%",
+    gsap.fromTo(
+      ".stats-card",
+      {
+        y: 80,
+        opacity: 0,
       },
-    });
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.15,
+        duration: 1,
+        ease: "power4.out",
+        clearProps: "all",
 
+        scrollTrigger: {
+          trigger: ".stats-card",
+          start: "top 85%",
+          once: true,
+        },
+      },
+    );
     gsap.to(".hero-image", {
       y: -20,
       duration: 3,
@@ -292,7 +301,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* CAMPUS EXPERIENCE */}
-      <section className="py-32 bg-[#f4f1f1]">
+      <section className="py-24 bg-[#f4f1f1]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-10 md:gap-20 items-center">
             <div>
