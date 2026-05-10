@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Header from "@/components/header";
 import SplitType from "split-type";
-
+import Footer from "@/components/footer";
 import {
   ArrowRight,
   ChevronDown,
@@ -607,35 +607,53 @@ export default function ProgramsPage() {
       </section>
 
       {/* CTA */}
-      <section className="relative py-32 md:py-40 overflow-hidden bg-black text-white">
-        <div className="absolute top-0 left-0 w-full h-full opacity-20">
-          <div className="absolute top-20 left-20 w-72 h-72 rounded-full bg-[#ec008c] blur-3xl"></div>
+      {/* CTA */}
+      <section className="relative py-32 md:py-40 overflow-hidden bg-[#f4f1f1]">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
 
-          <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-[#ec008c] blur-3xl"></div>
-        </div>
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <div className="rounded-[50px] bg-black text-white p-10 md:p-20 overflow-hidden relative shadow-[0_30px_100px_rgba(0,0,0,0.2)]">
+            {/* INNER GLOW */}
+            <div className="absolute top-0 left-0 w-full h-full opacity-20">
+              <div className="absolute top-10 left-10 w-72 h-72 rounded-full bg-[#ec008c] blur-3xl"></div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-[16vw] md:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.05em]">
-            Start
-          </h2>
+              <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-[#ec008c] blur-3xl"></div>
+            </div>
 
-          <h2 className="text-[16vw] md:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.05em] text-[#ec008c]">
-            Your Future
-          </h2>
+            <div className="relative z-10 text-center">
+              <h2 className="text-[16vw] md:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.05em]">
+                Start
+              </h2>
 
-          <p className="mt-10 text-xl text-white/60 leading-relaxed max-w-3xl mx-auto">
-            Join a global creative ecosystem where education meets innovation,
-            collaboration, and industry experience.
-          </p>
+              <h2 className="text-[16vw] md:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.05em] text-[#ec008c]">
+                Your Future
+              </h2>
 
-          <div className="mt-14 flex flex-wrap justify-center gap-5">
-            <button className="px-10 py-5 rounded-full bg-[#ec008c] text-white text-lg font-bold uppercase tracking-[2px] hover:scale-105 transition-all duration-300">
-              Apply Now
-            </button>
+              <p className="mt-10 text-lg md:text-xl text-white/60 leading-relaxed max-w-3xl mx-auto">
+                Join a global creative ecosystem where education meets
+                innovation, collaboration, and industry experience.
+              </p>
 
-            <button className="px-10 py-5 rounded-full border border-white/10 bg-[#f7f7f7]/80 backdrop-blur-xl/10 backdrop-blur-md text-white text-lg font-bold uppercase tracking-[2px] hover:bg-[#f7f7f7]/80 backdrop-blur-xl hover:text-black transition-all duration-300">
-              Download Brochure
-            </button>
+              <div className="mt-14 flex flex-wrap justify-center gap-5">
+                <button className="px-10 py-5 rounded-full bg-[#ec008c] text-white text-lg font-bold uppercase tracking-[2px] hover:scale-105 hover:shadow-[0_0_40px_rgba(236,0,140,0.5)] transition-all duration-300">
+                  Apply Now
+                </button>
+
+                <button className="px-10 py-5 rounded-full border border-white/10 bg-white/10 backdrop-blur-xl text-white text-lg font-bold uppercase tracking-[2px] hover:bg-white hover:text-black transition-all duration-300">
+                  Download Brochure
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -646,6 +664,8 @@ export default function ProgramsPage() {
           <ArrowRight className="group-hover:translate-x-1 transition-all duration-300" />
         </button>
       </div>
+
+      <Footer />
     </div>
   );
 }
