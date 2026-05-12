@@ -427,59 +427,51 @@ export default function AlumniPage() {
         Alumni Stories
       </p>
 
-      <h2 className="text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-        Video Testimonials
-      </h2>
-    </div>
-
-    <div className="grid lg:grid-cols-3 gap-8">
-      {[1, 2, 3].map((item) => (
-        <div
-          key={item}
-          className="fade-card group relative overflow-hidden rounded-[40px] bg-black"
-        >
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster={`/video-thumb-${item}.jpg`}
-            className="w-full h-[320px] sm:h-[380px] md:h-[420px] object-cover group-hover:scale-105 transition-all duration-1000"
-          >
-            <source
-              src={`/videos/alumni-${item}.mp4`}
-              type="video/mp4"
-            />
-
-            Your browser does not support the video tag.
-          </video>
-
-          {/* OVERLAY */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
-
-          {/* PLAY BUTTON */}
-          <div className="absolute inset-0 flex items-center justify-center z-10">
-            <div className="w-20 h-20 rounded-full bg-[#ec008c]/90 flex items-center justify-center backdrop-blur-md group-hover:scale-110 transition-all duration-500">
-              <Play size={30} fill="white" className="ml-1" />
-            </div>
+            <h2 className="text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
+              Video Testimonials
+            </h2>
           </div>
 
-          {/* TEXT */}
-          <div className="absolute bottom-8 left-8 z-10">
-            <h3 className="text-2xl md:text-3xl font-black uppercase max-w-[300px] leading-tight text-white">
-              From Student To Industry Leader
-            </h3>
+          <div className="grid lg:grid-cols-3 gap-8">
+            {[1, 2, 3].map((item) => (
+              <div
+                key={item}
+                className="fade-card group relative overflow-hidden rounded-[40px] bg-black"
+              >
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  poster={`/video-thumb-${item}.jpg`}
+                  className="w-full h-[320px] sm:h-[380px] md:h-[420px] object-cover group-hover:scale-105 transition-all duration-1000"
+                >
+                  <source src={`/videos/alumni-${item}.mp4`} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
 
-            <p className="mt-3 text-sm uppercase tracking-[3px] text-white/70 font-semibold">
-              Alumni Success Story
-            </p>
+                {/* OVERLAY */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+
+                {/* PLAY BUTTON */}
+                <div className="absolute inset-0 flex items-center justify-center z-10">
+                  <div className="w-20 h-20 rounded-full bg-[#ec008c]/90 flex items-center justify-center backdrop-blur-md group-hover:scale-110 transition-all duration-500">
+                    <Play size={30} fill="white" className="ml-1" />
+                  </div>
+                </div>
+
+                {/* TEXT */}
+                <div className="absolute bottom-8 left-8 z-10">
+                  <h3 className="text-2xl md:text-3xl font-black uppercase max-w-[300px] leading-tight text-white">
+                    From Student To Industry Leader
+                  </h3>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* TOP RECRUITERS */}
       <section className="py-24 md:py-32">
