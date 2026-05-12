@@ -431,7 +431,6 @@ export default function AlumniPage() {
               Video Testimonials
             </h2>
           </div>
-
           <div className="grid lg:grid-cols-3 gap-8">
             {[1, 2, 3].map((item) => (
               <div
@@ -441,7 +440,16 @@ export default function AlumniPage() {
                 <video
                   id={`video-${item}`}
                   preload="metadata"
+                  muted
+                  loop
                   playsInline
+                  poster={`/video-thumb-${item}.jpg`}
+                  onMouseEnter={(e) => e.currentTarget.play()}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.pause();
+                    e.currentTarget.currentTime = 0;
+                  }}
+                  onTouchStart={(e) => e.currentTarget.play()}
                   className="w-full h-[320px] sm:h-[380px] md:h-[420px] object-cover transition-all duration-1000 group-hover:scale-105"
                 >
                   <source src={`/videos/alumni-${item}.mp4`} type="video/mp4" />
@@ -450,29 +458,9 @@ export default function AlumniPage() {
                 {/* OVERLAY */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
 
-                {/* PLAY BUTTON */}
-                <button
-                  onClick={() => {
-                    const video = document.getElementById(
-                      `video-${item}`
-                    ) as HTMLVideoElement;
-
-                    if (video.paused) {
-                      video.play();
-                    } else {
-                      video.pause();
-                    }
-                  }}
-                  className="absolute inset-0 flex items-center justify-center z-10"
-                >
-                  <div className="w-20 h-20 rounded-full backdrop-blur-xl bg-white/10 border border-white/20 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
-                    <Play size={28} fill="white" />
-                  </div>
-                </button>
-
                 {/* TEXT */}
                 <div className="absolute bottom-8 left-8 z-10">
-                  <h3 className="text-2xl md:text-3xl font-black uppercase max-w-[300px] leading-tight">
+                  <h3 className="text-2xl md:text-3xl font-black uppercase max-w-[300px] leading-tight text-white">
                     From Student To Industry Leader
                   </h3>
                 </div>
