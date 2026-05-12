@@ -19,7 +19,7 @@ import {
   Play,
   Award,
   MapPin,
-  Linkedin,
+  LinkedinIcon,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
