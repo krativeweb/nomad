@@ -19,7 +19,7 @@ import {
   Play,
   Award,
   MapPin,
-  LinkedinIcon,
+  ExternalLink,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -372,7 +372,7 @@ export default function AlumniPage() {
                       href="#"
                       className="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center hover:bg-[#ec008c] hover:text-white transition-all duration-500"
                     >
-                      <Linkedin size={18} />
+                      <ExternalLink size={18} />
                     </a>
                   </div>
 
