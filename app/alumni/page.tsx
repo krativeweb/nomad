@@ -466,6 +466,10 @@ export default function AlumniPage() {
                   <h3 className="text-2xl md:text-3xl font-black uppercase max-w-[300px] leading-tight text-white">
                     From Student To Industry Leader
                   </h3>
+
+                  <p className="mt-3 text-sm uppercase tracking-[3px] text-white/70 font-semibold">
+                    Alumni Success Story
+                  </p>
                 </div>
               </div>
             ))}
