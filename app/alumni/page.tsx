@@ -438,15 +438,17 @@ export default function AlumniPage() {
                 key={item}
                 className="fade-card group relative overflow-hidden rounded-[40px]"
               >
-                <Image
-                  src={`/video-thumb-${item}.jpg`}
-                  alt="Video"
-                  width={700}
-                  height={500}
-                  className="w-full h-[420px] object-cover group-hover:scale-105 transition-all duration-1000"
-                />
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-[320px] sm:h-[380px] md:h-[420px] object-cover group-hover:scale-105 transition-all duration-1000"
+                >
+                  <source src={`/videos/alumni-${item}.mp4`} type="video/mp4" />
+                </video>
 
-                <div className="absolute inset-0 bg-black/40"></div>
+               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
 
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-20 h-20 rounded-full bg-[#ec008c] flex items-center justify-center group-hover:scale-110 transition-all duration-500">
