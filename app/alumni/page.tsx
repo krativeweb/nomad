@@ -439,7 +439,7 @@ export default function AlumniPage() {
               >
                 <video
                   id={`video-${item}`}
-                  preload="metadata"
+               preload="auto"
                   muted
                   loop
                   playsInline
