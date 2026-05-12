@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
@@ -100,7 +100,7 @@ export default function FacultyPage() {
     };
   }, []);
 
-  const facultyMembers = [
+  const allFacultyMembers = [
     {
       name: "Sophia Carter",
       role: "Creative Director",
@@ -138,6 +138,9 @@ export default function FacultyPage() {
       expertise: "Social Media & Campaigns",
     },
   ];
+
+  const [visibleCount, setVisibleCount] = useState(4);
+  const visibleFaculty = allFacultyMembers.slice(0, visibleCount);
 
   return (
     <div className="bg-[#efefef] text-black overflow-x-hidden">
@@ -281,8 +284,8 @@ export default function FacultyPage() {
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {facultyMembers.map((faculty, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 md:gap-8">
+            {visibleFaculty.map((faculty, index) => (
               <div
                 key={index}
                 className="faculty-card group rounded-[30px] md:rounded-[40px] overflow-hidden bg-[#f5f5f5] border border-black/5 hover:-translate-y-2 transition-all duration-500"
@@ -331,6 +334,17 @@ export default function FacultyPage() {
               </div>
             ))}
           </div>
+          {visibleCount < allFacultyMembers.length && (
+            <div className="flex justify-center mt-14">
+              <button
+                onClick={() => setVisibleCount((prev) => prev + 3)}
+                className="group h-[58px] px-10 rounded-full bg-black text-white uppercase tracking-[3px] text-sm font-bold hover:bg-[#ec008c] transition-all duration-500 flex items-center gap-3"
+              >
+                Load More
+                <ArrowRight className="group-hover:translate-x-1 transition-all duration-300" />
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
