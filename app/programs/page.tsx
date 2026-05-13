@@ -262,60 +262,79 @@ export default function ProgramsPage() {
         <div className="max-w-7xl mx-auto px-6 pt-40 md:pt-48 relative z-10">
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-20 items-center">
             {/* LEFT */}
-            <div className="relative z-10 max-w-[760px]">
-              {/* TOP LABEL */}
+            {/* LEFT */}
+            {/* LEFT */}
+            <div className="relative z-10 max-w-[620px]">
+              {/* LABEL */}
+              <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-4 py-2 rounded-full mb-8">
+                <Sparkles size={15} className="text-[#ec008c]" />
 
-              <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-4 md:px-5 py-2 md:py-3 rounded-full mb-8 md:mb-10">
-                <Sparkles
-                  size={16}
-                  className="text-[#ec008c] md:w-[18px] md:h-[18px]"
-                />
-
-                <span className="uppercase tracking-[3px] md:tracking-[4px] text-[10px] md:text-xs font-bold whitespace-nowrap">
-                  Future Creative Education
+                <span className="uppercase tracking-[0.3em] text-[10px] font-black whitespace-nowrap">
+                  Creative-First Learning
                 </span>
               </div>
 
-              {/* HEADINGS */}
+              {/* HEADING */}
+              <div className="space-y-1">
+                <h1 className="hero-reveal split-text text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
+                  We Make
+                </h1>
 
-              <div className="space-y-1 md:space-y-2">
-                <div className="overflow-hidden pb-4 md:pb-6">
-                  <h1 className="hero-reveal split-text text-[20vw] sm:text-[16vw] md:text-[9vw] lg:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.05em]">
-                    Our
-                  </h1>
-                </div>
+                <h1 className="hero-reveal split-text text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em] text-[#ec008c]">
+                  Students
+                </h1>
 
-                <div className="overflow-hidden pb-4 md:pb-6">
-                  <h1 className="hero-reveal split-text text-[20vw] sm:text-[16vw] md:text-[9vw] lg:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.05em] text-[#ec008c]">
-                    Programs
-                  </h1>
-                </div>
-
-                <div className="overflow-hidden pb-4 md:pb-6">
-                  <h1 className="hero-reveal split-text text-[20vw] sm:text-[16vw] md:text-[9vw] lg:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.05em]">
-                    Create
-                  </h1>
-                </div>
+                <h1 className="hero-reveal split-text text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
+                  World Ready
+                </h1>
               </div>
 
               {/* DESCRIPTION */}
-
-              <p className="hero-reveal mt-6 md:mt-10 max-w-[650px] text-base sm:text-lg md:text-xl text-black/70 leading-relaxed md:leading-[1.8]">
-                Industry-driven programs crafted for designers, strategists,
-                innovators, creators, and future creative leaders.
+              <p className="hero-reveal mt-8 text-base sm:text-lg md:text-xl leading-[1.9] text-black/65 max-w-[560px]">
+                Hands-on creative education built around real client projects,
+                collaboration, mentorship, and industry experience.
               </p>
 
-              {/* BUTTONS */}
+              {/* STEPS */}
+              <div className="hero-reveal mt-12 space-y-5">
+                {[
+                  "Work On Real Client Projects",
+                  "Collaborate In Teams",
+                  "Receive Mentorship From Industry Creatives",
+                  "No Heavy Theory Or Outdated Syllabus",
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="group flex items-center gap-5 rounded-[24px] border border-black/10 bg-white px-5 py-5 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30"
+                  >
+                    {/* NUMBER */}
+                    <div className="flex h-11 w-11 min-w-[44px] items-center justify-center rounded-full bg-[#ec008c] text-sm font-black text-white">
+                      0{i + 1}
+                    </div>
 
-              <div className="hero-reveal mt-8 md:mt-12 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-                <button className="group h-[58px] px-8 md:px-10 rounded-full bg-black text-white text-sm md:text-base font-bold uppercase tracking-[2px] flex items-center justify-center gap-3 hover:bg-[#ec008c] transition-all duration-500">
-                  Explore Programs
-                  <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-all duration-300" />
-                </button>
+                    {/* TEXT */}
+                    <p className="text-sm sm:text-base md:text-lg font-black uppercase leading-[1.4] tracking-[-0.03em]">
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
 
-                <button className="h-[58px] px-8 md:px-10 rounded-full border border-black/10 bg-[#f5f5f5] text-black text-sm md:text-base font-semibold hover:bg-black hover:text-white transition-all duration-500">
-                  Download Brochure
-                </button>
+              {/* LOCATIONS */}
+              <div className="hero-reveal mt-12 mb-20">
+                <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                  Locations
+                </p>
+
+                <div className="mt-4 flex flex-wrap items-center gap-3">
+                  <span className="rounded-full bg-black px-5 py-2 text-xs font-black uppercase tracking-[0.25em] text-white">
+                    Mumbai
+                  </span>
+
+                  <span className="rounded-full border border-black/10 bg-white px-5 py-2 text-xs font-black uppercase tracking-[0.25em] text-black">
+                    Bangalore
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -350,27 +369,322 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="stats-section py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-6">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="stats-card rounded-[35px] bg-[#f7f7f7]/80 backdrop-blur-xl p-8 md:p-10 shadow-xl border border-black/5"
-            >
-              <stat.icon size={48} className="text-[#ec008c]" />
+     
+     {/* UNDERGRADUATE PROGRAM SECTION */}
+<section className="relative overflow-hidden bg-[#f7f7f7] pt-10 md:pt-16 pb-24 md:pb-32 -mt-10">
+  {/* GRID */}
+  <div
+    className="absolute inset-0 opacity-[0.03]"
+    style={{
+      backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+      backgroundSize: "70px 70px",
+    }}
+  />
 
-              <h2 className="mt-6 text-5xl md:text-7xl font-black">
-                {stat.value}
-              </h2>
+  {/* BG TEXT */}
+  <div className="pointer-events-none absolute top-[8%] right-[-5%] text-[18vw] font-black uppercase leading-none tracking-[-0.07em] text-black/[0.03]">
+    Program
+  </div>
 
-              <p className="mt-3 uppercase tracking-[3px] text-black/50 text-sm">
-                {stat.label}
-              </p>
-            </div>
-          ))}
+  <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    {/* TOP */}
+    <div className="max-w-6xl">
+      <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+        Undergraduate Program
+      </p>
+
+      {/* HEADING */}
+      <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+        <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
+          Bachelors Program
+        </h2>
+
+        <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em] text-[#ec008c]">
+          In Advertising
+        </h2>
+
+        <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
+          & Communication Design
+        </h2>
+      </div>
+
+      {/* DESCRIPTION */}
+      <div className="mt-12 max-w-5xl space-y-6">
+        <p className="text-2xl md:text-4xl font-semibold leading-[1.4] tracking-[-0.03em] text-[#ec008c]">
+          Designed for future visionaries.
+        </p>
+
+        <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+          Master the intersection of strategy, creativity, and technology.
+          Explore consumer psychology, typography, branding, storytelling,
+          digital design, and emerging creative tools.
+        </p>
+
+        <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+          Combining traditional design principles with modern digital workflows,
+          this program transforms creative potential into a professional voice.
+        </p>
+      </div>
+    </div>
+
+    {/* WHY THIS PROGRAM */}
+<div className="mt-24 rounded-[40px] border border-black/10 bg-white p-8 md:p-12">
+  {/* TOP HEADING */}
+  <div className="max-w-5xl">
+    <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+      Why This Program
+    </p>
+
+    <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+      <h3 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
+        Creative Careers
+      </h3>
+
+      <h3 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em] text-[#ec008c]">
+        Need More
+      </h3>
+    </div>
+  </div>
+
+  {/* CONTENT */}
+  <div className="mt-16 grid gap-5 md:grid-cols-2">
+    {[
+      "Designers need branding and audience understanding.",
+      "Communicators must navigate multiple digital platforms.",
+      "Creative professionals must embrace new tools and technologies.",
+      "Students need real-world creative adaptability.",
+      "This program mirrors the industry students will join.",
+    ].map((item, i) => (
+      <div
+        key={i}
+        className="group flex items-start gap-5 rounded-[28px] border border-black/10 bg-[#fafafa] p-6 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30 hover:bg-white"
+      >
+        {/* NUMBER */}
+        <div className="flex h-12 w-12 min-w-[48px] items-center justify-center rounded-full bg-[#ec008c] text-sm font-black text-white">
+          0{i + 1}
         </div>
-      </section>
+
+        {/* TEXT */}
+        <p className="text-base md:text-lg font-semibold leading-[1.8] text-black/75">
+          {item}
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
+
+    {/* CURRICULUM */}
+{/* CURRICULUM */}
+<div className="mt-24">
+  {/* TITLE */}
+  <div className="max-w-5xl">
+    <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+      Curriculum Structure
+    </p>
+
+    <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+      <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
+        4 Years.
+      </h2>
+
+      <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em] text-[#ec008c]">
+        8 Semesters.
+      </h2>
+
+      <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
+        One Journey.
+      </h2>
+    </div>
+  </div>
+
+  {/* TIMELINE */}
+ {/* TIMELINE */}
+{/* ALL SEMESTERS */}
+<div className="mt-20 space-y-10">
+  {[
+    {
+      year: "01",
+      semester: "Semester 1",
+      title: "Foundation",
+      subjects: [
+        "Graphic Design - Part 1",
+        "Type Journey",
+        "Introduction to Photography",
+        "Digital Imaging - Photoshop",
+        "Ideas First",
+        "Design Influence",
+        "Visual Expression",
+        "Introduction to Social Media",
+        "Vector Imaging",
+        "Creative Communication",
+      ],
+    },
+
+    {
+      year: "01",
+      semester: "Semester 2",
+      title: "Foundation",
+      subjects: [
+        "Graphic Design - Part 2",
+        "Voice of Type",
+        "Experiments in Digital Photography",
+        "Editorial Design - InDesign",
+        "Ideas Presentation",
+        "Style & Expression",
+        "Introduction to Art Direction",
+        "Digital Imaging - Illustrator",
+        "Colour Lab",
+        "Introduction to Creative Writing",
+      ],
+    },
+
+    {
+      year: "02",
+      semester: "Semester 3",
+      title: "Applied Learning",
+      subjects: [
+        "Introduction to Brand & Branding",
+        "UX Design",
+        "Video Storytelling",
+        "Motion Graphics",
+        "Thinking Strategically",
+        "Human Science",
+        "Types of Advertising",
+        "Design Thinking",
+        "Workshop - 1",
+        "Story Writing",
+      ],
+    },
+
+    {
+      year: "02",
+      semester: "Semester 4",
+      title: "Applied Learning",
+      subjects: [
+        "Branded Content",
+        "Pop Culture Engineering",
+        "Introduction to Interaction Design",
+        "Story Boarding",
+        "Brand Strategy / Management",
+        "Packaging",
+        "Workshop - 2",
+        "Script Writing",
+        "Mini Project - AD / CW",
+      ],
+    },
+
+    {
+      year: "03",
+      semester: "Semester 5",
+      title: "Concept, Communication & Advertising",
+      subjects: [
+        "A Brand Called YOU",
+        "Digital Campaign - 1",
+        "Witty Thinking",
+        "Interactive Concepting",
+        "Everything is Media",
+        "Wordsmithing",
+        "Entrepreneurship",
+        "Major Project - AD / CW",
+      ],
+    },
+
+    {
+      year: "03",
+      semester: "Semester 6",
+      title: "Concept, Communication & Advertising",
+      subjects: [
+        "Social Media",
+        "Digital Campaign - 1",
+        "Image & Idea",
+        "Digital Design",
+        "Portfolio Development",
+      ],
+    },
+
+    {
+      year: "04",
+      semester: "Semester 7",
+      title: "National / International Internships",
+      subjects: [
+        "100% Guaranteed Internship",
+        "Internship In India Or Abroad",
+        "4 Internships Across 3 Months Each",
+      ],
+    },
+
+    {
+      year: "04",
+      semester: "Semester 8",
+      title: "National / International Internships",
+      subjects: [
+        "100% Guaranteed Internship",
+        "Internship In India Or Abroad",
+        "4 Internships Across 3 Months Each",
+      ],
+    },
+  ].map((item, i) => (
+    <div
+      key={i}
+      className="group overflow-hidden rounded-[40px] border border-black/10 bg-white transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.06)]"
+    >
+      <div className="grid lg:grid-cols-[240px_1fr]">
+        {/* LEFT */}
+        <div className="border-b border-black/10 bg-black p-8 text-white lg:border-b-0 lg:border-r">
+          {/* YEAR */}
+          <div>
+            <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Year
+            </p>
+
+            <h3 className="mt-3 text-[18vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-none tracking-[-0.07em]">
+              {item.year}
+            </h3>
+          </div>
+
+          {/* SEMESTER */}
+          <div className="mt-12 border-l-2 border-[#ec008c]/20 pl-5">
+            <p className="text-sm uppercase tracking-[0.35em] text-white/50 leading-[1.8]">
+              {item.semester}
+            </p>
+          </div>
+        </div>
+
+        {/* RIGHT */}
+        <div className="p-8 md:p-10">
+          {/* TITLE */}
+          <div className="flex flex-col gap-5 border-b border-black/10 pb-7 lg:flex-row lg:items-end lg:justify-between">
+            <h3 className="text-3xl md:text-5xl font-black uppercase leading-[0.95] tracking-[-0.05em]">
+              {item.title}
+            </h3>
+
+            <span className="text-sm uppercase tracking-[0.35em] text-[#ec008c] font-black">
+              Curriculum Focus
+            </span>
+          </div>
+
+          {/* SUBJECTS */}
+          <div className="mt-8 flex flex-wrap gap-3">
+            {item.subjects.map((subject, idx) => (
+              <div
+                key={idx}
+                className="rounded-full border border-black/10 bg-[#f5f5f5] px-5 py-3 text-sm md:text-base font-semibold tracking-[-0.02em] transition-all duration-300 hover:border-[#ec008c]/30 hover:bg-[#ec008c] hover:text-white"
+              >
+                {subject}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+</div>
+  </div>
+</section>
 
       {/* SECTION TITLE */}
       <section className="pt-10 pb-24">
