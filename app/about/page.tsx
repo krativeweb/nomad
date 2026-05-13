@@ -1232,14 +1232,13 @@ font-black uppercase leading-[0.95] tracking-[-0.045em]"
               <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
                 Still Unsure?
               </p>
+<h2 className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2 text-[11vw] sm:text-[8vw] md:text-[5vw] lg:text-[4vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
+  <span>Creative Careers</span>
 
-              <h2 className="mt-6 text-[11vw] sm:text-[8vw] md:text-[5vw] lg:text-[4vw] font-black uppercase leading-[0.92] tracking-[-0.045em]">
-                Creative Careers
-                <br />
-                Don’t Come With
-                <br />A Fixed Roadmap.
-              </h2>
+  <span className="text-[#ec008c]">Don’t Come With</span>
 
+  <span>A Fixed Roadmap.</span>
+</h2>
               <p className="mt-8 max-w-3xl text-base md:text-xl leading-[1.9] text-white/70">
                 But if you’re serious about building something of your own, this
                 is where you start.
