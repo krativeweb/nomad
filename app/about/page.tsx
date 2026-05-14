@@ -77,7 +77,7 @@ titles.forEach((title) => {
     types: "chars",
   });
 
-  if (!text.chars.length) return;
+  if (!text.chars || text.chars.length === 0) return;
 
   gsap.from(text.chars, {
         y: 120,
