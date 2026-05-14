@@ -369,558 +369,8 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-     
-     {/* UNDERGRADUATE PROGRAM SECTION */}
-<section className="relative overflow-hidden bg-[#f7f7f7] pt-10 md:pt-16 pb-24 md:pb-32 -mt-10">
-  {/* GRID */}
-  <div
-    className="absolute inset-0 opacity-[0.03]"
-    style={{
-      backgroundImage: `
-        linear-gradient(to right, black 1px, transparent 1px),
-        linear-gradient(to bottom, black 1px, transparent 1px)
-      `,
-      backgroundSize: "70px 70px",
-    }}
-  />
-
-  {/* BG TEXT */}
-  <div className="pointer-events-none absolute top-[8%] right-[-5%] text-[18vw] font-black uppercase leading-none tracking-[-0.07em] text-black/[0.03]">
-    Program
-  </div>
-
-  <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    {/* TOP */}
-    <div className="max-w-6xl">
-      <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
-        Undergraduate Program
-      </p>
-
-      {/* HEADING */}
-      <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
-        <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
-          Bachelors Program
-        </h2>
-
-        <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em] text-[#ec008c]">
-          In Advertising
-        </h2>
-
-        <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
-          & Communication Design
-        </h2>
-      </div>
-
-      {/* DESCRIPTION */}
-      <div className="mt-12 max-w-5xl space-y-6">
-        <p className="text-2xl md:text-4xl font-semibold leading-[1.4] tracking-[-0.03em] text-[#ec008c]">
-          Designed for future visionaries.
-        </p>
-
-        <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
-          Master the intersection of strategy, creativity, and technology.
-          Explore consumer psychology, typography, branding, storytelling,
-          digital design, and emerging creative tools.
-        </p>
-
-        <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
-          Combining traditional design principles with modern digital workflows,
-          this program transforms creative potential into a professional voice.
-        </p>
-      </div>
-    </div>
-
-    {/* WHY THIS PROGRAM */}
-<div className="mt-24 rounded-[40px] border border-black/10 bg-white p-8 md:p-12">
-  {/* TOP HEADING */}
-  <div className="max-w-5xl">
-    <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
-      Why This Program
-    </p>
-
-    <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
-      <h3 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
-        Creative Careers
-      </h3>
-
-      <h3 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em] text-[#ec008c]">
-        Need More
-      </h3>
-    </div>
-  </div>
-
-  {/* CONTENT */}
-  <div className="mt-16 grid gap-5 md:grid-cols-2">
-    {[
-      "Designers need branding and audience understanding.",
-      "Communicators must navigate multiple digital platforms.",
-      "Creative professionals must embrace new tools and technologies.",
-      "Students need real-world creative adaptability.",
-      "This program mirrors the industry students will join.",
-    ].map((item, i) => (
-      <div
-        key={i}
-        className="group flex items-start gap-5 rounded-[28px] border border-black/10 bg-[#fafafa] p-6 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30 hover:bg-white"
-      >
-        {/* NUMBER */}
-        <div className="flex h-12 w-12 min-w-[48px] items-center justify-center rounded-full bg-[#ec008c] text-sm font-black text-white">
-          0{i + 1}
-        </div>
-
-        {/* TEXT */}
-        <p className="text-base md:text-lg font-semibold leading-[1.8] text-black/75">
-          {item}
-        </p>
-      </div>
-    ))}
-  </div>
-</div>
-
-    {/* CURRICULUM */}
-{/* CURRICULUM */}
-<div className="mt-24">
-  {/* TITLE */}
-  <div className="max-w-5xl">
-    <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
-      Curriculum Structure
-    </p>
-
-    <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
-      <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
-        4 Years.
-      </h2>
-
-      <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em] text-[#ec008c]">
-        8 Semesters.
-      </h2>
-
-      <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
-        One Journey.
-      </h2>
-    </div>
-  </div>
-
-  {/* TIMELINE */}
- {/* TIMELINE */}
-{/* ALL SEMESTERS */}
-<div className="mt-20 space-y-10">
-  {[
-    {
-      year: "01",
-      semester: "Semester 1",
-      title: "Foundation",
-      subjects: [
-        "Graphic Design - Part 1",
-        "Type Journey",
-        "Introduction to Photography",
-        "Digital Imaging - Photoshop",
-        "Ideas First",
-        "Design Influence",
-        "Visual Expression",
-        "Introduction to Social Media",
-        "Vector Imaging",
-        "Creative Communication",
-      ],
-    },
-
-    {
-      year: "01",
-      semester: "Semester 2",
-      title: "Foundation",
-      subjects: [
-        "Graphic Design - Part 2",
-        "Voice of Type",
-        "Experiments in Digital Photography",
-        "Editorial Design - InDesign",
-        "Ideas Presentation",
-        "Style & Expression",
-        "Introduction to Art Direction",
-        "Digital Imaging - Illustrator",
-        "Colour Lab",
-        "Introduction to Creative Writing",
-      ],
-    },
-
-    {
-      year: "02",
-      semester: "Semester 3",
-      title: "Applied Learning",
-      subjects: [
-        "Introduction to Brand & Branding",
-        "UX Design",
-        "Video Storytelling",
-        "Motion Graphics",
-        "Thinking Strategically",
-        "Human Science",
-        "Types of Advertising",
-        "Design Thinking",
-        "Workshop - 1",
-        "Story Writing",
-      ],
-    },
-
-    {
-      year: "02",
-      semester: "Semester 4",
-      title: "Applied Learning",
-      subjects: [
-        "Branded Content",
-        "Pop Culture Engineering",
-        "Introduction to Interaction Design",
-        "Story Boarding",
-        "Brand Strategy / Management",
-        "Packaging",
-        "Workshop - 2",
-        "Script Writing",
-        "Mini Project - AD / CW",
-      ],
-    },
-
-    {
-      year: "03",
-      semester: "Semester 5",
-      title: "Concept, Communication & Advertising",
-      subjects: [
-        "A Brand Called YOU",
-        "Digital Campaign - 1",
-        "Witty Thinking",
-        "Interactive Concepting",
-        "Everything is Media",
-        "Wordsmithing",
-        "Entrepreneurship",
-        "Major Project - AD / CW",
-      ],
-    },
-
-    {
-      year: "03",
-      semester: "Semester 6",
-      title: "Concept, Communication & Advertising",
-      subjects: [
-        "Social Media",
-        "Digital Campaign - 1",
-        "Image & Idea",
-        "Digital Design",
-        "Portfolio Development",
-      ],
-    },
-
-    {
-      year: "04",
-      semester: "Semester 7",
-      title: "National / International Internships",
-      subjects: [
-        "100% Guaranteed Internship",
-        "Internship In India Or Abroad",
-        "4 Internships Across 3 Months Each",
-      ],
-    },
-
-    {
-      year: "04",
-      semester: "Semester 8",
-      title: "National / International Internships",
-      subjects: [
-        "100% Guaranteed Internship",
-        "Internship In India Or Abroad",
-        "4 Internships Across 3 Months Each",
-      ],
-    },
-  ].map((item, i) => (
-    <div
-      key={i}
-      className="group overflow-hidden rounded-[40px] border border-black/10 bg-white transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.06)]"
-    >
-      <div className="grid lg:grid-cols-[240px_1fr]">
-        {/* LEFT */}
-        <div className="border-b border-black/10 bg-black p-8 text-white lg:border-b-0 lg:border-r">
-          {/* YEAR */}
-          <div>
-            <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
-              Year
-            </p>
-
-            <h3 className="mt-3 text-[18vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-none tracking-[-0.07em]">
-              {item.year}
-            </h3>
-          </div>
-
-          {/* SEMESTER */}
-          <div className="mt-12 border-l-2 border-[#ec008c]/20 pl-5">
-            <p className="text-sm uppercase tracking-[0.35em] text-white/50 leading-[1.8]">
-              {item.semester}
-            </p>
-          </div>
-        </div>
-
-        {/* RIGHT */}
-        <div className="p-8 md:p-10">
-          {/* TITLE */}
-          <div className="flex flex-col gap-5 border-b border-black/10 pb-7 lg:flex-row lg:items-end lg:justify-between">
-            <h3 className="text-3xl md:text-5xl font-black uppercase leading-[0.95] tracking-[-0.05em]">
-              {item.title}
-            </h3>
-
-            <span className="text-sm uppercase tracking-[0.35em] text-[#ec008c] font-black">
-              Curriculum Focus
-            </span>
-          </div>
-
-          {/* SUBJECTS */}
-          <div className="mt-8 flex flex-wrap gap-3">
-            {item.subjects.map((subject, idx) => (
-              <div
-                key={idx}
-                className="rounded-full border border-black/10 bg-[#f5f5f5] px-5 py-3 text-sm md:text-base font-semibold tracking-[-0.02em] transition-all duration-300 hover:border-[#ec008c]/30 hover:bg-[#ec008c] hover:text-white"
-              >
-                {subject}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
-</div>
-  </div>
-</section>
-
-      {/* SECTION TITLE */}
-      <section className="pt-10 pb-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="section-title text-[18vw] md:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.05em]">
-            Choose
-          </h2>
-
-          <h2 className="section-title text-[18vw] md:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.05em] text-[#ec008c]">
-            Your Path
-          </h2>
-        </div>
-      </section>
-
-      {/* PROGRAM GRID */}
-      <section className="program-grid pb-32">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
-          {programs.map((program, index) => (
-            <div
-              key={index}
-              className="program-card bg-[#f7f7f7]/80 backdrop-blur-xl rounded-[40px] overflow-hidden shadow-xl border border-black/5"
-            >
-              {/* IMAGE */}
-              <div className="relative h-[420px] overflow-hidden">
-                <Image
-                  src={program.image}
-                  alt={program.title}
-                  fill
-                  className="object-cover grayscale hover:scale-105 transition-all duration-700"
-                />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-
-                <div className="absolute bottom-8 left-8">
-                  <div className="inline-flex items-center gap-2 border border-white/20 bg-[#f7f7f7]/80 backdrop-blur-xl/10 backdrop-blur-md rounded-full px-4 py-2 text-white uppercase tracking-[3px] text-xs">
-                    Creative Program
-                  </div>
-                </div>
-              </div>
-
-              {/* CONTENT */}
-              <div className="p-8 md:p-10">
-                <h3 className="text-3xl md:text-4xl font-black uppercase leading-[0.9]">
-                  {program.title}
-                </h3>
-
-                <p className="mt-6 text-black/60 text-lg leading-relaxed">
-                  {program.desc}
-                </p>
-
-                {/* META */}
-                <div className="mt-8 flex flex-wrap gap-5">
-                  <div className="flex items-center gap-2 text-black/60">
-                    <Clock size={18} className="text-[#ec008c]" />
-
-                    <span className="font-medium">{program.duration}</span>
-                  </div>
-
-                  <div className="flex items-center gap-2 text-black/60">
-                    <BookOpen size={18} className="text-[#ec008c]" />
-
-                    <span className="font-medium">{program.intake}</span>
-                  </div>
-                </div>
-
-                {/* TOGGLE */}
-                <button
-                  onClick={() =>
-                    setExpandedCard(expandedCard === index ? null : index)
-                  }
-                  className="mt-8 flex items-center gap-2 text-[#ec008c] uppercase tracking-[2px] font-bold"
-                >
-                  View Highlights
-                  <ChevronDown
-                    size={18}
-                    className={`transition-all duration-300 ${
-                      expandedCard === index ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-
-                {/* HIGHLIGHTS */}
-                {expandedCard === index && (
-                  <div className="mt-6 flex flex-wrap gap-3">
-                    {program.highlights.map((item, idx) => (
-                      <span
-                        key={idx}
-                        className="px-4 py-2 rounded-full bg-[#ec008c]/10 text-[#ec008c] text-sm font-bold"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                )}
-
-                {/* BUTTON */}
-                <button className="group mt-10 w-full py-4 rounded-full bg-black text-white text-sm uppercase tracking-[3px] font-bold hover:bg-[#ec008c] transition-all duration-300 flex items-center justify-center gap-3">
-                  Apply Now
-                  <ArrowRight className="group-hover:translate-x-1 transition-all duration-300" />
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* CAREER OUTCOMES */}
-      <section className="py-32 bg-[#f7f7f7]/80 backdrop-blur-xl overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-20">
-            <h2 className="text-[15vw] md:text-[6vw] font-black uppercase leading-[0.85] tracking-[-0.05em]">
-              Career
-            </h2>
-
-            <h2 className="text-[15vw] md:text-[6vw] font-black uppercase leading-[0.85] tracking-[-0.05em] text-[#ec008c]">
-              Outcomes
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="rounded-[40px] bg-black text-white p-10">
-              <h3 className="text-7xl font-black">95%</h3>
-              <p className="mt-4 uppercase tracking-[3px] text-white/60">
-                Placement Support
-              </p>
-            </div>
-
-            <div className="rounded-[40px] bg-[#ec008c] text-white p-10">
-              <h3 className="text-7xl font-black">250+</h3>
-              <p className="mt-4 uppercase tracking-[3px] text-white/80">
-                Hiring Partners
-              </p>
-            </div>
-
-            <div className="rounded-[40px] bg-black text-white p-10">
-              <h3 className="text-7xl font-black">12L</h3>
-              <p className="mt-4 uppercase tracking-[3px] text-white/60">
-                Highest Package
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-20 overflow-hidden">
-            <div className="flex gap-8 whitespace-nowrap animate-marquee">
-              {companies.map((company, index) => (
-                <div
-                  key={index}
-                  className="px-8 py-4 rounded-full border border-black/10 bg-[#f5f5f5] text-2xl font-black uppercase"
-                >
-                  {company}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* CAREER OPPORTUNITIES */}
-      <section className="py-32 bg-[#f4f1f1]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
-            <div>
-              <Image
-                src="/creative-side.jpg"
-                alt="Career"
-                width={900}
-                height={1000}
-                className="rounded-[40px] shadow-2xl object-cover h-[700px]"
-              />
-            </div>
-
-            <div>
-              <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-6">
-                Career Opportunities
-              </p>
-
-              <h2 className="text-[14vw] md:text-[5vw] font-black uppercase leading-[0.85] tracking-[-0.05em]">
-                Design Your Future
-              </h2>
-
-              <div className="mt-10 grid sm:grid-cols-2 gap-5">
-                {careers.map((career, index) => (
-                  <div
-                    key={index}
-                    className="rounded-[30px] bg-[#f7f7f7]/80 backdrop-blur-xl p-6 shadow-lg border border-black/5"
-                  >
-                    <p className="text-lg font-bold uppercase tracking-[2px]">
-                      {career}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-32 bg-black text-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="text-center mb-20">
-            <h2 className="text-[15vw] md:text-[6vw] font-black uppercase leading-[0.9] tracking-[-0.05em]">
-              Admission
-            </h2>
-
-            <h2 className="text-[15vw] md:text-[6vw] font-black uppercase leading-[0.9] tracking-[-0.05em] text-[#ec008c]">
-              Process
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-5 gap-6">
-            {[
-              "Apply Online",
-              "Portfolio Review",
-              "Creative Interview",
-              "Confirmation",
-              "Join Campus",
-            ].map((step, index) => (
-              <div
-                key={index}
-                className="rounded-[35px] border border-white/10 bg-[#f7f7f7]/80 backdrop-blur-xl/5 backdrop-blur-xl p-8"
-              >
-                <div className="text-6xl font-black text-[#ec008c]">
-                  0{index + 1}
-                </div>
-
-                <p className="mt-6 text-xl font-bold uppercase leading-snug">
-                  {step}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      {/* CTA */}
-      <section className="relative py-32 md:py-40 overflow-hidden bg-[#f4f1f1]">
+      {/* UNDERGRADUATE PROGRAM SECTION */}
+      <section className="relative overflow-hidden bg-[#f7f7f7] pt-10 md:pt-16 pb-24 md:pb-32 -mt-10">
         {/* GRID */}
         <div
           className="absolute inset-0 opacity-[0.03]"
@@ -933,50 +383,800 @@ export default function ProgramsPage() {
           }}
         />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <div className="rounded-[50px] bg-black text-white p-10 md:p-20 overflow-hidden relative shadow-[0_30px_100px_rgba(0,0,0,0.2)]">
-            {/* INNER GLOW */}
-            <div className="absolute top-0 left-0 w-full h-full opacity-20">
-              <div className="absolute top-10 left-10 w-72 h-72 rounded-full bg-[#ec008c] blur-3xl"></div>
+        {/* BG TEXT */}
+        <div className="pointer-events-none absolute top-[8%] right-[-5%] text-[18vw] font-black uppercase leading-none tracking-[-0.07em] text-black/[0.03]">
+          Program
+        </div>
 
-              <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-[#ec008c] blur-3xl"></div>
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* TOP */}
+          <div className="max-w-6xl">
+            <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Undergraduate Program
+            </p>
+
+            {/* HEADING */}
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
+                Bachelors Program
+              </h2>
+
+              <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em] text-[#ec008c]">
+                In Advertising
+              </h2>
+
+              <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
+                & Communication Design
+              </h2>
             </div>
 
-            <div className="relative z-10 text-center">
-              <h2 className="text-[16vw] md:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.05em]">
-                Start
-              </h2>
-
-              <h2 className="text-[16vw] md:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.05em] text-[#ec008c]">
-                Your Future
-              </h2>
-
-              <p className="mt-10 text-lg md:text-xl text-white/60 leading-relaxed max-w-3xl mx-auto">
-                Join a global creative ecosystem where education meets
-                innovation, collaboration, and industry experience.
+            {/* DESCRIPTION */}
+            <div className="mt-12 max-w-5xl space-y-6">
+              <p className="text-2xl md:text-4xl font-semibold leading-[1.4] tracking-[-0.03em] text-[#ec008c]">
+                Designed for future visionaries.
               </p>
 
-              <div className="mt-14 flex flex-wrap justify-center gap-5">
-                <button className="px-10 py-5 rounded-full bg-[#ec008c] text-white text-lg font-bold uppercase tracking-[2px] hover:scale-105 hover:shadow-[0_0_40px_rgba(236,0,140,0.5)] transition-all duration-300">
-                  Apply Now
-                </button>
+              <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+                Master the intersection of strategy, creativity, and technology.
+                Explore consumer psychology, typography, branding, storytelling,
+                digital design, and emerging creative tools.
+              </p>
 
-                <button className="px-10 py-5 rounded-full border border-white/10 bg-white/10 backdrop-blur-xl text-white text-lg font-bold uppercase tracking-[2px] hover:bg-white hover:text-black transition-all duration-300">
-                  Download Brochure
-                </button>
+              <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+                Combining traditional design principles with modern digital
+                workflows, this program transforms creative potential into a
+                professional voice.
+              </p>
+            </div>
+          </div>
+
+          {/* WHY THIS PROGRAM */}
+          <div className="mt-24 rounded-[40px] border border-black/10 bg-white p-8 md:p-12">
+            {/* TOP HEADING */}
+            <div className="max-w-5xl">
+              <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                Why This Program
+              </p>
+
+              <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+                <h3 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
+                  Creative Careers
+                </h3>
+
+                <h3 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em] text-[#ec008c]">
+                  Need More
+                </h3>
+              </div>
+            </div>
+
+            {/* CONTENT */}
+            <div className="mt-16 grid gap-5 md:grid-cols-2">
+              {[
+                "Designers need branding and audience understanding.",
+                "Communicators must navigate multiple digital platforms.",
+                "Creative professionals must embrace new tools and technologies.",
+                "Students need real-world creative adaptability.",
+                "This program mirrors the industry students will join.",
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="group flex items-start gap-5 rounded-[28px] border border-black/10 bg-[#fafafa] p-6 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30 hover:bg-white"
+                >
+                  {/* NUMBER */}
+                  <div className="flex h-12 w-12 min-w-[48px] items-center justify-center rounded-full bg-[#ec008c] text-sm font-black text-white">
+                    0{i + 1}
+                  </div>
+
+                  {/* TEXT */}
+                  <p className="text-base md:text-lg font-semibold leading-[1.8] text-black/75">
+                    {item}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CURRICULUM */}
+          {/* CURRICULUM */}
+          <div className="mt-24">
+            {/* TITLE */}
+            <div className="max-w-5xl">
+              <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                Curriculum Structure
+              </p>
+
+              <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+                <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
+                  4 Years.
+                </h2>
+
+                <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em] text-[#ec008c]">
+                  8 Semesters.
+                </h2>
+
+                <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
+                  One Journey.
+                </h2>
+              </div>
+            </div>
+
+            {/* TIMELINE */}
+            {/* TIMELINE */}
+            {/* ALL SEMESTERS */}
+            <div className="mt-20 space-y-10">
+              {[
+                {
+                  year: "01",
+                  semester: "Semester 1",
+                  title: "Foundation",
+                  subjects: [
+                    "Graphic Design - Part 1",
+                    "Type Journey",
+                    "Introduction to Photography",
+                    "Digital Imaging - Photoshop",
+                    "Ideas First",
+                    "Design Influence",
+                    "Visual Expression",
+                    "Introduction to Social Media",
+                    "Vector Imaging",
+                    "Creative Communication",
+                  ],
+                },
+
+                {
+                  year: "01",
+                  semester: "Semester 2",
+                  title: "Foundation",
+                  subjects: [
+                    "Graphic Design - Part 2",
+                    "Voice of Type",
+                    "Experiments in Digital Photography",
+                    "Editorial Design - InDesign",
+                    "Ideas Presentation",
+                    "Style & Expression",
+                    "Introduction to Art Direction",
+                    "Digital Imaging - Illustrator",
+                    "Colour Lab",
+                    "Introduction to Creative Writing",
+                  ],
+                },
+
+                {
+                  year: "02",
+                  semester: "Semester 3",
+                  title: "Applied Learning",
+                  subjects: [
+                    "Introduction to Brand & Branding",
+                    "UX Design",
+                    "Video Storytelling",
+                    "Motion Graphics",
+                    "Thinking Strategically",
+                    "Human Science",
+                    "Types of Advertising",
+                    "Design Thinking",
+                    "Workshop - 1",
+                    "Story Writing",
+                  ],
+                },
+
+                {
+                  year: "02",
+                  semester: "Semester 4",
+                  title: "Applied Learning",
+                  subjects: [
+                    "Branded Content",
+                    "Pop Culture Engineering",
+                    "Introduction to Interaction Design",
+                    "Story Boarding",
+                    "Brand Strategy / Management",
+                    "Packaging",
+                    "Workshop - 2",
+                    "Script Writing",
+                    "Mini Project - AD / CW",
+                  ],
+                },
+
+                {
+                  year: "03",
+                  semester: "Semester 5",
+                  title: "Concept, Communication & Advertising",
+                  subjects: [
+                    "A Brand Called YOU",
+                    "Digital Campaign - 1",
+                    "Witty Thinking",
+                    "Interactive Concepting",
+                    "Everything is Media",
+                    "Wordsmithing",
+                    "Entrepreneurship",
+                    "Major Project - AD / CW",
+                  ],
+                },
+
+                {
+                  year: "03",
+                  semester: "Semester 6",
+                  title: "Concept, Communication & Advertising",
+                  subjects: [
+                    "Social Media",
+                    "Digital Campaign - 1",
+                    "Image & Idea",
+                    "Digital Design",
+                    "Portfolio Development",
+                  ],
+                },
+
+                {
+                  year: "04",
+                  semester: "Semester 7",
+                  title: "National / International Internships",
+                  subjects: [
+                    "100% Guaranteed Internship",
+                    "Internship In India Or Abroad",
+                    "4 Internships Across 3 Months Each",
+                  ],
+                },
+
+                {
+                  year: "04",
+                  semester: "Semester 8",
+                  title: "National / International Internships",
+                  subjects: [
+                    "100% Guaranteed Internship",
+                    "Internship In India Or Abroad",
+                    "4 Internships Across 3 Months Each",
+                  ],
+                },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="group overflow-hidden rounded-[40px] border border-black/10 bg-white transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.06)]"
+                >
+                  <div className="grid lg:grid-cols-[240px_1fr]">
+                    {/* LEFT */}
+                    <div className="border-b border-black/10 bg-black p-8 text-white lg:border-b-0 lg:border-r">
+                      {/* YEAR */}
+                      <div>
+                        <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                          Year
+                        </p>
+
+                        <h3 className="mt-3 text-[18vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-none tracking-[-0.07em]">
+                          {item.year}
+                        </h3>
+                      </div>
+
+                      {/* SEMESTER */}
+                      <div className="mt-12 border-l-2 border-[#ec008c]/20 pl-5">
+                        <p className="text-sm uppercase tracking-[0.35em] text-white/50 leading-[1.8]">
+                          {item.semester}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* RIGHT */}
+                    <div className="p-8 md:p-10">
+                      {/* TITLE */}
+                      <div className="flex flex-col gap-5 border-b border-black/10 pb-7 lg:flex-row lg:items-end lg:justify-between">
+                        <h3 className="text-3xl md:text-5xl font-black uppercase leading-[0.95] tracking-[-0.05em]">
+                          {item.title}
+                        </h3>
+
+                        <span className="text-sm uppercase tracking-[0.35em] text-[#ec008c] font-black">
+                          Curriculum Focus
+                        </span>
+                      </div>
+
+                      {/* SUBJECTS */}
+                      <div className="mt-8 flex flex-wrap gap-3">
+                        {item.subjects.map((subject, idx) => (
+                          <div
+                            key={idx}
+                            className="rounded-full border border-black/10 bg-[#f5f5f5] px-5 py-3 text-sm md:text-base font-semibold tracking-[-0.02em] transition-all duration-300 hover:border-[#ec008c]/30 hover:bg-[#ec008c] hover:text-white"
+                          >
+                            {subject}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* POSTGRADUATE PROGRAM SECTION */}
+      <section className="relative overflow-hidden bg-[#f3f3f3] py-16 sm:py-20 md:py-28 lg:py-36">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* TOP CONTENT */}
+          <div className="max-w-6xl">
+            <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Postgraduate Program
+            </p>
+
+            {/* HEADING */}
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em]">
+                Your Portfolio
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-[#ec008c]">
+                Is Your Degree
+              </h2>
+            </div>
+          </div>
+
+          {/* MAIN CARD */}
+          <div className="mt-14 md:mt-20 overflow-hidden rounded-[28px] md:rounded-[42px] border border-black/10 bg-white shadow-[0_25px_80px_rgba(0,0,0,0.06)]">
+            <div className="grid lg:grid-cols-2">
+              {/* LEFT SIDE */}
+              <div className="min-w-0 border-b border-black/10 lg:border-b-0 lg:border-r">
+                {/* IMAGE */}
+                <div className="group relative overflow-hidden">
+                  <Image
+                    src="/pg-classroom.jpg"
+                    alt="2 Year PG"
+                    width={1200}
+                    height={700}
+                    className="h-[220px] sm:h-[260px] md:h-[320px] lg:h-[360px] w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                  />
+
+                  {/* OVERLAY */}
+                  <div className="absolute inset-0 bg-[#ec008c]/55 mix-blend-multiply" />
+
+                  {/* TITLE */}
+                  <div className="absolute inset-0 flex items-start p-4 sm:p-6 md:p-10">
+                    <h2 className="text-[20vw] sm:text-[12vw] md:text-[8vw] lg:text-[6vw] font-black uppercase leading-[0.8] tracking-[-0.07em] text-white">
+                      2 Year PG
+                    </h2>
+                  </div>
+                </div>
+
+                {/* CONTENT */}
+                <div className="p-5 sm:p-7 md:p-10">
+                  {/* TITLE */}
+                  <div>
+                    <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                      Post Graduate Program
+                    </p>
+
+                    <h3 className="mt-4 text-2xl sm:text-3xl md:text-5xl font-black uppercase leading-[0.95] tracking-[-0.05em]">
+                      Diploma In
+                      <br />
+                      Advertising & Media
+                    </h3>
+                  </div>
+
+                  {/* INFO */}
+                  <div className="mt-8 flex flex-col sm:flex-row items-start gap-5 md:gap-6">
+                    {/* LOGO */}
+                    <div className="w-[92px] rounded-[12px] bg-[#ec008c] p-4 text-white">
+                      <p className="text-sm font-black uppercase leading-[1.05]">
+                        Miami
+                        <br />
+                        Ad
+                        <br />
+                        School
+                      </p>
+                    </div>
+
+                    {/* TEXT */}
+                    <div className="min-w-0 space-y-5">
+                      <p className="text-sm sm:text-base md:text-lg leading-[1.9] text-black/75">
+                        This is not a traditional postgraduate course. It’s a
+                        portfolio-driven program for the next generation of
+                        creative professionals.
+                      </p>
+
+                      <p className="text-sm sm:text-base md:text-lg leading-[1.9] text-black/75">
+                        Students train through live briefs, real projects,
+                        global standards, and AI-integrated creative workflows.
+                      </p>
+
+                      <p className="text-sm sm:text-base md:text-lg leading-[1.9] text-black/75">
+                        Graduate with a portfolio that’s interview-ready,
+                        globally relevant, and uniquely yours.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* RIGHT SIDE */}
+              <div className="min-w-0 relative bg-[#fafafa] p-5 sm:p-7 md:p-10">
+                {/* TITLE */}
+                <div className="text-center">
+                  <p className="text-[11px] font-black uppercase tracking-[0.35em] text-black">
+                    Learning Curriculum
+                  </p>
+
+                  <h3 className="mt-5 text-[13vw] sm:text-[8vw] md:text-[5vw] lg:text-[3.5vw] font-black uppercase leading-[0.9] tracking-[-0.05em] text-[#ec008c]">
+                    Quarter 01 -
+                    <br />
+                    Quarter 04
+                  </h3>
+                </div>
+
+                {/* QUARTERS */}
+                <div className="mt-10 md:mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {[
+                    {
+                      no: "01",
+                      title: "Design & Art Direction",
+                    },
+                    {
+                      no: "02",
+                      title: "Writing For Brands",
+                    },
+                    {
+                      no: "03",
+                      title: "Strategy & Insight",
+                    },
+                    {
+                      no: "04",
+                      title: "Digital Marketing & Platform Thinking",
+                    },
+                  ].map((item, i) => (
+                    <div
+                      key={i}
+                      className="group rounded-[22px] md:rounded-[26px] border border-black/10 bg-white p-4 md:p-5 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30"
+                    >
+                      <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
+                        {/* NUMBER */}
+                        <span className="text-3xl sm:text-4xl md:text-5xl font-black leading-none tracking-[-0.05em] text-[#ec008c]">
+                          {item.no}
+                        </span>
+
+                        {/* TEXT */}
+                        <p className="pt-1 text-base sm:text-lg md:text-xl font-black uppercase leading-[1.2] tracking-[-0.03em]">
+                          {item.title}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* IMAGE */}
+                <div className="group relative mt-10 md:mt-14 overflow-hidden rounded-[24px] md:rounded-[30px]">
+                  <Image
+                    src="/pg-students.jpg"
+                    alt="Students"
+                    width={900}
+                    height={500}
+                    className="h-[180px] sm:h-[220px] md:h-[240px] w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                  />
+
+                  <div className="absolute inset-0 bg-[#ec008c]/20 mix-blend-multiply" />
+
+                  {/* DECORATION */}
+                  <div className="absolute -left-4 bottom-4 h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-full border-[8px] md:border-[10px] border-dotted border-[#ec008c]" />
+                </div>
+
+                {/* BOTTOM STRIP */}
+                <div className="mt-8 md:mt-10 rounded-[22px] md:rounded-[24px] bg-[#ec008c] px-5 sm:px-6 md:px-8 py-6 md:py-7 text-white">
+                  <p className="text-[11px] font-black uppercase tracking-[0.35em] text-white/70">
+                    Quarter 05 - Quarter 08
+                  </p>
+
+                  <h3 className="mt-3 text-xl sm:text-2xl md:text-4xl font-black uppercase leading-[1.15] tracking-[-0.04em]">
+                    Global Exchange &
+                    <br />
+                    International Internships
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* POST GRADUATE PROGRAM */}
+      <section className="relative overflow-hidden bg-[#f3f3f3] py-16 sm:py-20 md:py-28 lg:py-36">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* TOP */}
+          <div className="max-w-6xl">
+            <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Post Graduate Program
+            </p>
+
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em]">
+                Diploma In
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-[#ec008c]">
+                Advertising
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em]">
+                & Media
+              </h2>
+            </div>
+
+            <p className="mt-10 max-w-5xl text-2xl font-semibold leading-[1.4] tracking-[-0.03em] text-[#ec008c] md:text-4xl">
+              Launch your career in the dynamic world of media.
+            </p>
+
+            <div className="mt-8 max-w-5xl space-y-6">
+              <p className="text-base leading-[1.9] text-black/70 sm:text-lg md:text-xl">
+                The 1 Year Diploma in Advertising Media is a career-focused
+                program designed to transform your communication passion into a
+                strategic profession.
+              </p>
+
+              <p className="text-base leading-[1.9] text-black/70 sm:text-lg md:text-xl">
+                Learn media planning, digital buying, data analytics, campaign
+                strategy, social media systems, and programmatic advertising
+                through practical projects and real-world simulations.
+              </p>
+
+              <p className="text-base leading-[1.9] text-black/70 sm:text-lg md:text-xl">
+                With instruction from industry veterans, the diploma prepares
+                students for high-demand roles across the global media and
+                advertising landscape.
+              </p>
+            </div>
+          </div>
+
+          {/* MAIN CONTENT */}
+          <div className="mt-20 grid items-stretch gap-8 xl:grid-cols-[0.92fr_1.08fr]">
+            {/* LEFT SIDE */}
+            <div className="flex h-full flex-col rounded-[30px] border border-black/10 bg-white p-5 md:rounded-[40px] sm:p-7 md:p-8">
+              {/* LABEL */}
+              <div className="flex items-center justify-between gap-5 border-b border-black/10 pb-6">
+                <div>
+                  <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                    Why This Program
+                  </p>
+
+                  <h3 className="mt-4 text-2xl font-black uppercase leading-[0.95] tracking-[-0.05em] sm:text-3xl md:text-5xl">
+                    Career
+                    <br />
+                    Focused
+                  </h3>
+                </div>
+
+                <div className="hidden h-16 w-16 items-center justify-center rounded-full bg-[#ec008c] text-xl font-black text-white md:flex">
+                  PG
+                </div>
+              </div>
+
+              {/* FEATURES */}
+              <div className="mt-7 space-y-3">
+                {[
+                  "Collaborate with industry leaders on AI-driven design and digital strategies.",
+                  'Engage in "Live Briefs" and simulations to create and optimize campaigns.',
+                  "Learn from seasoned creative directors and media strategists.",
+                  "Gain skills in the latest technology and data analytics.",
+                  "Graduate with a professional portfolio showcasing problem-solving skills.",
+                  "Access internships and job placements through strong industry connections.",
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="group flex items-start gap-4 rounded-[20px] border border-black/10 bg-[#fafafa] px-4 py-4 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30 hover:bg-white"
+                  >
+                    {/* NUMBER */}
+                    <div className="flex h-10 w-10 min-w-[40px] items-center justify-center rounded-full bg-[#ec008c] text-xs font-black text-white">
+                      0{i + 1}
+                    </div>
+
+                    {/* TEXT */}
+                    <p className="text-sm font-semibold leading-[1.7] text-black/75 sm:text-[15px] md:text-base">
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* RIGHT SIDE */}
+            <div className="flex h-full flex-col overflow-hidden rounded-[30px] border border-black/10 bg-black text-white md:rounded-[40px]">
+              {/* TOP */}
+              <div className="border-b border-white/10 p-5 sm:p-7 md:p-10">
+                <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                  Learning Curriculum
+                </p>
+
+                <div className="mt-5 flex flex-wrap items-end gap-x-4 gap-y-2">
+                  <h3 className="text-[13vw] font-black uppercase leading-[0.9] tracking-[-0.05em] sm:text-[8vw] md:text-[5vw] lg:text-[3.5vw]">
+                    Semester
+                  </h3>
+
+                  <h3 className="text-[13vw] font-black uppercase leading-[0.9] tracking-[-0.05em] text-[#ec008c] sm:text-[8vw] md:text-[5vw] lg:text-[3.5vw]">
+                    01
+                  </h3>
+                </div>
+              </div>
+
+              {/* SEMESTER 01 */}
+              <div className="grid gap-4 px-5 pt-8 pb-8 sm:grid-cols-2 sm:px-7 md:px-8">
+                {[
+                  "Advertising Concepts & Principles",
+                  "Integrated Marketing Communication",
+                  "Fundamentals of New Media Design",
+                  "Media Planning & Buying",
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="group rounded-[22px] border border-white/10 bg-white/5 p-5 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30 hover:bg-white hover:text-black"
+                  >
+                    <div className="flex items-start gap-4">
+                      {/* NUMBER */}
+                      <span className="text-3xl font-black leading-none tracking-[-0.05em] text-[#ec008c] sm:text-4xl md:text-5xl">
+                        0{i + 1}
+                      </span>
+
+                      {/* TITLE */}
+                      <p className="pt-1 text-base font-black uppercase leading-[1.2] tracking-[-0.03em] sm:text-lg md:text-xl">
+                        {item}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* DIVIDER */}
+              <div className="px-5 sm:px-7 md:px-8 pt-2 pb-7">
+                <div className="h-px w-full bg-white/20 shadow-[0_0_20px_rgba(255,255,255,0.08)]" />
+              </div>
+
+              {/* SEMESTER 02 */}
+              <div className="bg-black px-5 pt-8 pb-6 sm:px-7 sm:pb-7 md:px-8 md:pb-8">
+                {/* TITLE */}
+                <div className="flex flex-wrap items-end gap-x-4 gap-y-2">
+                  <h3 className="text-[13vw] font-black uppercase leading-[0.9] tracking-[-0.05em] text-white sm:text-[8vw] md:text-[5vw] lg:text-[3.5vw]">
+                    Semester
+                  </h3>
+
+                  <h3 className="text-[13vw] font-black uppercase leading-[0.9] tracking-[-0.05em] text-[#ec008c] sm:text-[8vw] md:text-[5vw] lg:text-[3.5vw]">
+                    02
+                  </h3>
+                </div>
+
+                {/* COURSES */}
+                <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                  {[
+                    "Market Research",
+                    "Advertising Agencies",
+                    "Public Relations",
+                    "Consumer Behavior",
+                  ].map((item, i) => (
+                    <div
+                      key={i}
+                      className="group rounded-[22px] border border-white/10 bg-white/5 p-5 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30 hover:bg-white hover:text-black"
+                    >
+                      <div className="flex items-start gap-4">
+                        {/* NUMBER */}
+                        <span className="text-3xl font-black leading-none tracking-[-0.05em] text-[#ec008c] sm:text-4xl md:text-5xl">
+                          0{i + 1}
+                        </span>
+
+                        {/* TEXT */}
+                        <p className="pt-1 text-base font-black uppercase leading-[1.2] tracking-[-0.03em] text-white transition-colors duration-300 group-hover:text-black sm:text-lg md:text-xl">
+                          {item}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div className="fixed bottom-6 right-6 z-50">
-        <button className="group px-8 py-5 rounded-full bg-[#ec008c] text-white shadow-2xl uppercase tracking-[3px] font-black flex items-center gap-3 hover:scale-105 transition-all duration-300">
-          Apply Now
-          <ArrowRight className="group-hover:translate-x-1 transition-all duration-300" />
-        </button>
-      </div>
+      {/* CAREER ROLES SECTION */}
+      <section className="relative overflow-hidden bg-[#f6f2f4] py-16 sm:py-20 md:py-28 lg:py-36">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
 
+        {/* BG TEXT */}
+        <div className="pointer-events-none absolute top-[10%] right-[-5%] text-[20vw] font-black uppercase leading-none tracking-[-0.08em] text-black/[0.03]">
+          CREATE
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* TOP CONTENT */}
+          <div className="max-w-5xl">
+            <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Career Opportunities
+            </p>
+
+            {/* HEADING */}
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-black">
+                Dream It.
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-[#ec008c]">
+                Be It.
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-black">
+                Excel It.
+              </h2>
+            </div>
+
+            {/* DESCRIPTION */}
+            <div className="mt-10 max-w-4xl space-y-6">
+              <p className="text-lg sm:text-xl md:text-2xl font-semibold leading-[1.6] text-black">
+                NoMAD’s programs prepare students for a range of
+                creativity-driven careers across advertising, branding, design,
+                strategy, and digital media.
+              </p>
+
+              <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+                Learn how to channel your creative energy into a professional
+                voice that resonates across industries, brands, and global
+                audiences.
+              </p>
+            </div>
+          </div>
+
+          {/* CAREER GRID */}
+          <div className="mt-16 md:mt-20 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              "Advertising Executive",
+              "Brand Strategist",
+              "Graphic Designer",
+              "Art Director",
+              "Creative Director",
+              "Content Creator",
+              "Communications Specialist",
+              "Media Planner",
+              "Digital Marketeer",
+            ].map((role, i) => (
+              <div
+                key={i}
+                className="group relative overflow-hidden rounded-[30px] border border-black/10 bg-white px-6 py-8 transition-all duration-500 hover:-translate-y-2 hover:border-[#ec008c]/30 hover:bg-[#ec008c]"
+              >
+                {/* HOVER BG */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#ec008c]/0 via-[#ec008c]/0 to-[#ec008c]/10 opacity-0 transition-all duration-500 group-hover:opacity-100" />
+
+                {/* CONTENT */}
+                <div className="relative z-10 flex min-h-[120px] items-center justify-center text-center">
+                  <h3 className="text-2xl md:text-3xl font-black leading-[1.2] tracking-[-0.04em] text-black transition-all duration-500 group-hover:text-white">
+                    {role}
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <Footer />
     </div>
   );
