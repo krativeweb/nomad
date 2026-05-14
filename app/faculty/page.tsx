@@ -142,6 +142,169 @@ export default function FacultyPage() {
   const [visibleCount, setVisibleCount] = useState(4);
   const visibleFaculty = allFacultyMembers.slice(0, visibleCount);
 
+  const facultyMembers = [
+  {
+    name: "Partha Sinha",
+    role: "Former President, The Times of India Group",
+    image: "/faculty/f1.jpg",
+  },
+  {
+    name: "S Somanaswar",
+    role: "Chief Strategy Officer, Space Mule & More Group",
+    image: "/faculty/f2.jpg",
+  },
+  {
+    name: "Suraja Kishore",
+    role: "Former CEO, BBDO India",
+    image: "/faculty/f3.jpg",
+  },
+  {
+    name: "Venkatagiri Rao",
+    role: "CEO, Salt Brand Solutions",
+    image: "/faculty/f4.jpg",
+  },
+  {
+    name: "Vikram Gaikwad",
+    role: "Co-Founder & CEO, Hatched",
+    image: "/faculty/f5.jpg",
+  },
+  {
+    name: "Harshad Rajadhyaksha",
+    role: "COO, Ogilvy India",
+    image: "/faculty/f6.jpg",
+  },
+  {
+    name: "Kainaz Karmakar",
+    role: "CCO, Ogilvy India",
+    image: "/faculty/f7.jpg",
+  },
+  {
+    name: "Burzin Mehta",
+    role: "MD, Indigo Consulting",
+    image: "/faculty/f8.jpg",
+  },
+  {
+    name: "Sakshi Choudhary",
+    role: "Creative Director, Ogilvy Chicago",
+    image: "/faculty/f9.jpg",
+  },
+  {
+    name: "Aparsh Sinha",
+    role: "Managing Partner & Strategy Lead",
+    image: "/faculty/f10.jpg",
+  },
+  {
+    name: "Sachin Puri",
+    role: "Founder, That’s Pet Ltd",
+    image: "/faculty/f11.jpg",
+  },
+  {
+    name: "Saurabh Karandikar",
+    role: "UX Analyst & Designer",
+    image: "/faculty/f12.jpg",
+  },
+  {
+    name: "Ishan Mehta",
+    role: "Senior Creative Director, L&K Saatchi & Saatchi",
+    image: "/faculty/f13.jpg",
+  },
+  {
+    name: "Neville Shah",
+    role: "Executive Creative Director, Ogilvy Mumbai",
+    image: "/faculty/f14.jpg",
+  },
+  {
+    name: "Deep Chabria",
+    role: "Creative Lead, NOTTI",
+    image: "/faculty/f15.jpg",
+  },
+  {
+    name: "Navdeep Scott",
+    role: "Former Group Creative Director, Famous Innovations",
+    image: "/faculty/f16.jpg",
+  },
+  {
+    name: "Sarang Kulkarni",
+    role: "Type Designer & Co-Founder, Ek Type",
+    image: "/faculty/f17.jpg",
+  },
+  {
+    name: "Jimeet Panaskar",
+    role: "Owner, Jimeet Panaskar Photography",
+    image: "/faculty/f18.jpg",
+  },
+  {
+    name: "Keiki Tewary",
+    role: "Creative Consultant, Voice Director",
+    image: "/faculty/f19.jpg",
+  },
+  {
+    name: "Bhumika Shah",
+    role: "Unit Creative Director, MullenLowe Lintas Group",
+    image: "/faculty/f20.jpg",
+  },
+  {
+    name: "Goral Ajmera",
+    role: "Founder & Creative Director, Brave",
+    image: "/faculty/f21.jpg",
+  },
+  {
+    name: "Rajdeep Das",
+    role: "CCO & CEO, Leo Burnett India",
+    image: "/faculty/f22.jpg",
+  },
+  {
+    name: "Rebecca Daniel",
+    role: "Dancer & Decorator",
+    image: "/faculty/f23.jpg",
+  },
+  {
+    name: "Rohan Mathew",
+    role: "Creative Partner, BBDO India",
+    image: "/faculty/f24.jpg",
+  },
+  {
+    name: "Roy Menezes",
+    role: "Partner & CCO, Centrick",
+    image: "/faculty/f25.jpg",
+  },
+  {
+    name: "Ryan Mendonca",
+    role: "Creative Consultant, MTV",
+    image: "/faculty/f26.jpg",
+  },
+  {
+    name: "Vikram Pandey",
+    role: "VCD, Leo Burnett",
+    image: "/faculty/f27.jpg",
+  },
+  {
+    name: "Neil Chitnis",
+    role: "Copywriter/Supervising Producer, MTV",
+    image: "/faculty/f28.jpg",
+  },
+  {
+    name: "Anvi Mody",
+    role: "Global Asst. Brand Manager, AOL",
+    image: "/faculty/f29.jpg",
+  },
+  {
+    name: "Chirag Gander",
+    role: "Co-Founder, The Minimalist",
+    image: "/faculty/f30.jpg",
+  },
+  {
+    name: "Sameera Khan",
+    role: "Co-Founder, 3point5",
+    image: "/faculty/f31.jpg",
+  },
+  {
+    name: "Avni Chinoy",
+    role: "CCO, Managing Partner, Gravity Integrated",
+    image: "/faculty/f32.jpg",
+  },
+];
+
   return (
     <div className="bg-[#efefef] text-black overflow-x-hidden">
       <Header />
@@ -168,59 +331,66 @@ export default function FacultyPage() {
     
     <div className="grid lg:grid-cols-[1fr_1fr] gap-14 lg:gap-20 items-start">
       
-      {/* LEFT */}
-      <div className="relative z-10 w-full max-w-[680px]">
-        
-        {/* LABEL */}
-        <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-4 sm:px-5 py-3 rounded-full mb-6 sm:mb-8">
-          
-          <GraduationCap
-            size={16}
-            className="text-[#ec008c] shrink-0"
-          />
+     {/* LEFT */}
+<div className="relative z-10 w-full max-w-[720px]">
+  
+  {/* LABEL */}
+  <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-4 sm:px-5 py-3 rounded-full mb-6 sm:mb-8">
+    
+    <GraduationCap
+      size={16}
+      className="text-[#ec008c] shrink-0"
+    />
 
-          <span className="uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[9px] sm:text-[10px] font-black whitespace-nowrap">
-            Meet Our Faculty
-          </span>
-        </div>
+    <span className="uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[9px] sm:text-[10px] font-black whitespace-nowrap">
+      Meet Our Faculty
+    </span>
+  </div>
 
-        {/* HEADING */}
-        <div className="space-y-1">
-          
-          <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
-            Creative
-          </h1>
+  {/* HEADING */}
+  <div className="space-y-1">
+    
+    <h1 className="hero-reveal split-text text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.5vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
+      Empowering
+    </h1>
 
-          <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase text-[#ec008c] leading-[0.84] tracking-[-0.055em]">
-            Industry
-          </h1>
+    <h1 className="hero-reveal split-text text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.5vw] font-black uppercase leading-[0.84] tracking-[-0.055em] text-[#ec008c]">
+      Creative Talent
+    </h1>
 
-          <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
-            Leaders
-          </h1>
-        </div>
+    <h1 className="hero-reveal split-text text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.5vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
+      With The Best
+    </h1>
+  </div>
 
-        {/* DESCRIPTION */}
-        <p className="hero-reveal mt-6 sm:mt-8 max-w-[620px] text-[15px] sm:text-lg md:text-xl leading-[1.9] text-black/70">
-          Learn from award-winning professionals, visionary creators, and
-          experienced strategists shaping the future of the creative
-          industry.
-        </p>
+  {/* DESCRIPTION */}
+  <div className="hero-reveal mt-6 sm:mt-8 max-w-[650px] space-y-6">
+    
+    <p className="text-lg sm:text-xl md:text-2xl font-semibold leading-[1.7] text-black">
+      Learn directly from the industry’s leading creative minds.
+    </p>
 
-        {/* BUTTONS */}
-        <div className="hero-reveal mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4">
-          
-          <button className="group h-[56px] sm:h-[58px] px-6 sm:px-8 rounded-full bg-black text-white uppercase tracking-[0.22em] sm:tracking-[3px] text-[11px] sm:text-sm font-bold hover:bg-[#ec008c] transition-all duration-500 flex items-center justify-center gap-3">
-            Explore Faculty
+    <p className="text-[15px] sm:text-lg md:text-xl leading-[1.9] text-black/70">
+      At NoMAD, our esteemed faculty comprises renowned industry
+      experts who guide students in forging their own creative
+      pathways through real-world experiences.
+    </p>
 
-            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-all duration-300" />
-          </button>
+    <p className="text-[15px] sm:text-lg md:text-xl leading-[1.9] text-black/70">
+      From advertising and branding to design, storytelling, and
+      strategy — students gain insights from professionals actively
+      shaping the global creative landscape.
+    </p>
 
-          <button className="h-[56px] sm:h-[58px] px-6 sm:px-8 rounded-full border border-black/10 bg-[#f5f5f5] text-black uppercase tracking-[0.22em] sm:tracking-[3px] text-[11px] sm:text-sm font-bold hover:bg-black hover:text-white transition-all duration-500">
-            Download Brochure
-          </button>
-        </div>
-      </div>
+    <p className="text-[15px] sm:text-lg md:text-xl leading-[1.9] text-black/70">
+      These experts help students build a unique creative voice,
+      empowering them to grow with confidence, originality, and
+      industry-ready thinking.
+    </p>
+  </div>
+
+ 
+</div>
 
       {/* RIGHT IMAGE */}
       <div className="relative flex justify-center lg:justify-end">
@@ -263,126 +433,553 @@ export default function FacultyPage() {
   </div>
 </section>
 
-      {/* STATS */}
-      <section className="py-20 md:py-24 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            {[
-              ["120+", "Industry Experts"],
-              ["25+", "Countries"],
-              ["15+", "Years Experience"],
-              ["300+", "Workshops"],
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="rounded-[24px] md:rounded-[40px] bg-white/5 border border-white/10 p-6 md:p-10"
-              >
-                <h3 className="text-4xl sm:text-5xl md:text-6xl font-black">
-                  {item[0]}
-                </h3>
+   {/* FACULTY INTRO SECTION */}
+<section className="relative overflow-hidden bg-[#111111] py-14 sm:py-16 md:py-20 lg:py-24">
+  {/* GRID */}
+  <div
+    className="absolute inset-0 opacity-[0.05]"
+    style={{
+      backgroundImage: `
+        linear-gradient(to right, white 1px, transparent 1px),
+        linear-gradient(to bottom, white 1px, transparent 1px)
+      `,
+      backgroundSize: "70px 70px",
+    }}
+  />
 
-                <p className="mt-4 uppercase tracking-[3px] text-white/50 font-bold text-xs sm:text-sm">
-                  {item[1]}
-                </p>
-              </div>
-            ))}
-          </div>
+  {/* BG TEXT */}
+  <div className="pointer-events-none absolute right-[-5%] top-[5%] select-none whitespace-nowrap text-[24vw] sm:text-[18vw] md:text-[14vw] lg:text-[10vw] font-black uppercase leading-none tracking-[-0.08em] text-white/[0.03]">
+    MENTORS
+  </div>
+
+  {/* GLOW */}
+  <div className="absolute left-[-120px] top-[20%] h-[320px] w-[320px] rounded-full bg-[#ec008c]/20 blur-[140px]" />
+
+  <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    
+    <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 xl:gap-20 lg:items-center">
+      
+      {/* LEFT CONTENT */}
+      <div>
+        
+        {/* LABEL */}
+        <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.04] px-5 py-3 backdrop-blur-xl">
+          
+          <GraduationCap
+            size={16}
+            className="text-[#ec008c]"
+          />
+
+          <p className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.35em] text-white/70">
+            Faculty & Mentorship
+          </p>
         </div>
-      </section>
 
-      {/* FACULTY GRID */}
-      <section className="py-24 md:py-32 bg-[#efefef]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 md:mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Our Mentors
-            </p>
-
-            <h2 className="split-text text-[14vw] md:text-[6vw] font-black uppercase leading-[0.85] tracking-[-0.05em]">
-              Faculty Team
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 md:gap-8">
-            {visibleFaculty.map((faculty, index) => (
-              <div
-                key={index}
-                className="faculty-card group rounded-[30px] md:rounded-[40px] overflow-hidden bg-[#f5f5f5] border border-black/5 hover:-translate-y-2 transition-all duration-500"
-              >
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={faculty.image}
-                    alt={faculty.name}
-                    width={600}
-                    height={800}
-                    className="w-full h-[360px] sm:h-[420px] md:h-[500px] object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                </div>
-
-                <div className="p-6 md:p-8">
-                  <div className="flex items-center gap-2 mb-4">
-                    <Star size={16} className="text-[#ec008c] fill-[#ec008c]" />
-
-                    <p className="uppercase tracking-[3px] text-xs font-bold text-[#ec008c]">
-                      {faculty.role}
-                    </p>
-                  </div>
-
-                  <h3 className="text-2xl md:text-3xl font-black uppercase leading-tight">
-                    {faculty.name}
-                  </h3>
-
-                  <p className="mt-4 text-black/60 leading-relaxed text-sm md:text-base">
-                    {faculty.expertise}
-                  </p>
-
-                  <div className="mt-8 flex flex-wrap items-center gap-4 text-sm font-semibold uppercase tracking-[2px]">
-                    <div className="flex items-center gap-2">
-                      <Briefcase size={16} />
-                      Industry Expert
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                      <Globe2 size={16} />
-                      Global Mentor
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          {visibleCount < allFacultyMembers.length && (
-            <div className="flex justify-center mt-14">
-              <button
-                onClick={() => setVisibleCount((prev) => prev + 3)}
-                className="group h-[58px] px-10 rounded-full bg-black text-white uppercase tracking-[3px] text-sm font-bold hover:bg-[#ec008c] transition-all duration-500 flex items-center gap-3"
-              >
-                Load More
-                <ArrowRight className="group-hover:translate-x-1 transition-all duration-300" />
-              </button>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="relative py-20 md:py-32 overflow-hidden bg-[#ec008c] text-white text-center">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-[15vw] md:text-[6vw] font-black uppercase leading-[0.82] tracking-[-0.05em]">
-            Learn From The Best
+        {/* HEADING */}
+        <div className="mt-8">
+          <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-white">
+            The People
           </h2>
 
-          <p className="mt-8 text-lg md:text-2xl text-white/80 leading-relaxed max-w-3xl mx-auto">
-            Connect with globally recognized educators and industry leaders.
+          <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-[#ec008c]">
+            Who Make
+          </h2>
+
+          <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-white">
+            NoMAD, NoMAD.
+          </h2>
+        </div>
+
+        {/* DESCRIPTION */}
+        <div className="mt-10 max-w-3xl space-y-7">
+          
+          <p className="text-lg sm:text-xl md:text-2xl font-semibold leading-[1.7] text-white">
+            Faculty at NoMAD aren’t just teachers — they’re practitioners.
           </p>
 
-          <button className="mt-10 md:mt-12 w-full sm:w-auto h-[56px] md:h-[60px] px-8 md:px-10 rounded-full bg-black text-white uppercase tracking-[3px] font-bold hover:bg-white hover:text-black transition-all duration-500">
-            Apply Now
+          <p className="text-base sm:text-lg md:text-xl leading-[1.95] text-white/70">
+            Active professionals who have worked on real briefs,
+            won real awards, and built real careers at some of
+            the world’s most respected agencies and creative companies.
+          </p>
+
+          <p className="text-base sm:text-lg md:text-xl leading-[1.95] text-white/70">
+            They don’t teach from textbooks. They teach from
+            experience. And that makes all the difference.
+          </p>
+
+          <p className="text-base sm:text-lg md:text-xl leading-[1.95] text-white/70">
+            Every faculty member brings the outside world into
+            the classroom — current trends, live industry
+            challenges, honest perspectives, and unfiltered
+            creative insight you simply can’t get from a syllabus.
+          </p>
+
+          <p className="text-base sm:text-lg md:text-xl leading-[1.95] text-white/70">
+            This is mentorship the way it should be:
+            direct, relevant, and built around who you
+            want to become.
+          </p>
+        </div>
+
+        {/* FOOTER */}
+        <div className="mt-12 flex flex-wrap items-center gap-5">
+          
+          <div className="flex items-center gap-4">
+            <div className="h-px w-16 bg-[#ec008c]" />
+
+            <p className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.35em] text-white/40">
+              Real Industry Mentorship
+            </p>
+          </div>
+
+          <button className="group h-[54px] w-full sm:w-auto rounded-full bg-[#ec008c] px-8 text-sm font-bold uppercase tracking-[2px] text-white transition-all duration-500 hover:bg-white hover:text-black">
+            Meet The Faculty
           </button>
         </div>
-      </section>
+      </div>
+
+      {/* RIGHT IMAGE */}
+      <div className="relative">
+        
+        {/* MAIN IMAGE */}
+        <div className="overflow-hidden rounded-[28px] sm:rounded-[36px] md:rounded-[40px] border border-white/10 bg-black shadow-[0_20px_80px_rgba(0,0,0,0.25)]">
+          
+          <div className="relative overflow-hidden">
+            <Image
+              src="/faculty-team.jpg"
+              alt="NoMAD Faculty"
+              width={1200}
+              height={1500}
+              className="h-[420px] sm:h-[520px] md:h-[620px] lg:h-[760px] w-full object-cover grayscale transition-all duration-700 hover:scale-105 hover:grayscale-0"
+            />
+
+            {/* OVERLAY */}
+            <div className="absolute inset-0 bg-black/45" />
+            <div className="absolute inset-0 bg-[#ec008c]/15 mix-blend-multiply" />
+
+            {/* CONTENT */}
+            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8">
+              
+              <div className="rounded-[22px] sm:rounded-[28px] border border-white/10 bg-black/20 p-5 sm:p-6 backdrop-blur-xl">
+                
+                <p className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                  Creative Leadership
+                </p>
+
+                <h3 className="mt-3 text-[11vw] sm:text-5xl md:text-6xl font-black uppercase leading-[0.9] tracking-[-0.06em] text-white">
+                  Learn
+                  <br />
+                  From
+                  <br />
+                  Practitioners.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* FLOATING IMAGE */}
+        <div className="absolute -bottom-6 -left-3 hidden lg:block overflow-hidden rounded-[24px] border border-white/10 bg-black shadow-2xl">
+          
+          <Image
+            src="/faculty-workshop.jpg"
+            alt="Faculty Workshop"
+            width={320}
+            height={220}
+            className="h-[220px] w-[300px] object-cover grayscale transition-all duration-700 hover:grayscale-0"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* FACULTY & ADMIN SECTION */}
+<section className="relative overflow-hidden bg-white py-14 sm:py-16 md:py-20 lg:py-24">
+  {/* GRID */}
+  <div
+    className="absolute inset-0 opacity-[0.03]"
+    style={{
+      backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+      backgroundSize: "70px 70px",
+    }}
+  />
+
+  {/* BG TEXT */}
+  <div className="pointer-events-none absolute right-[-5%] top-[4%] select-none whitespace-nowrap text-[24vw] sm:text-[18vw] md:text-[14vw] lg:text-[10vw] font-black uppercase leading-none tracking-[-0.08em] text-black/[0.03]">
+    PEOPLE
+  </div>
+
+  <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    
+    {/* TOP */}
+    <div className="max-w-5xl">
+      
+      <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+        Faculty & Leadership
+      </p>
+
+      <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+        <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+          Meet
+        </h2>
+
+        <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-[#ec008c]">
+          The Minds
+        </h2>
+
+        <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+          Behind The Work.
+        </h2>
+      </div>
+
+      <p className="mt-8 max-w-4xl text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+        Our faculty roster reads like a who's who of Indian creative
+        excellence — Creative Directors, Brand Strategists, UX
+        Practitioners, Entrepreneurs, and industry leaders shaping both
+        the classroom and the creative world outside it.
+      </p>
+    </div>
+
+    {/* FACULTY + ADMIN GRID */}
+    <div className="mt-16 grid gap-8 lg:grid-cols-2">
+      
+      {/* FACULTY */}
+      <div className="group overflow-hidden rounded-[30px] sm:rounded-[40px] border border-black/10 bg-black text-white">
+        
+        {/* IMAGE */}
+        <div className="relative overflow-hidden">
+          
+          <Image
+            src="/faculty-profile.jpg"
+            alt="Faculty Profiles"
+            width={1200}
+            height={900}
+            className="h-[320px] sm:h-[420px] md:h-[500px] w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+          />
+
+          <div className="absolute inset-0 bg-black/45" />
+          <div className="absolute inset-0 bg-[#ec008c]/20 mix-blend-multiply" />
+
+          {/* TITLE */}
+          <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 md:p-8">
+            
+            <div className="rounded-[24px] border border-white/10 bg-black/20 p-5 backdrop-blur-xl">
+              
+              <p className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                Faculty Profiles
+              </p>
+
+              <h3 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-[0.9] tracking-[-0.05em] text-white">
+                Creative
+                <br />
+                Excellence.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        {/* CONTENT */}
+        <div className="p-6 sm:p-8 md:p-10">
+          
+          <div className="space-y-6">
+            <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-white/70">
+              Each faculty member brings a unique specialisation,
+              a distinct creative voice, and years of experience
+              across agencies, global networks, and independent studios.
+            </p>
+
+            <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-white/70">
+              They’ve won international awards, built iconic campaigns,
+              and mentored the next generation of creative thinkers.
+            </p>
+
+            <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-white/70">
+              Individual faculty profiles — including background,
+              specialisation, agency experience, and notable work —
+              will be featured here.
+            </p>
+          </div>
+
+          {/* FOOTER */}
+          <div className="mt-10 flex items-center justify-between border-t border-white/10 pt-6">
+            
+            <p className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Industry Mentors
+            </p>
+
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#ec008c] text-sm font-black text-white">
+              01
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ADMIN */}
+      <div className="group overflow-hidden rounded-[30px] sm:rounded-[40px] border border-black/10 bg-[#f7f7f7]">
+        
+        {/* IMAGE */}
+        <div className="relative overflow-hidden">
+          
+          <Image
+            src="/admin-team.jpg"
+            alt="Admin Team"
+            width={1200}
+            height={900}
+            className="h-[320px] sm:h-[420px] md:h-[500px] w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+          />
+
+          <div className="absolute inset-0 bg-black/35" />
+
+          {/* TITLE */}
+          <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 md:p-8">
+            
+            <div className="rounded-[24px] border border-white/10 bg-white/80 p-5 backdrop-blur-xl">
+              
+              <p className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                Admin Team
+              </p>
+
+              <h3 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-[0.9] tracking-[-0.05em] text-black">
+                The People
+                <br />
+                Behind
+                <br />
+                NoMAD.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        {/* CONTENT */}
+        <div className="p-6 sm:p-8 md:p-10">
+          
+          <div className="space-y-6">
+            <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+              Behind every great creative institution is a strong
+              operational backbone supporting students at every step.
+            </p>
+
+            <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+              From admissions and academic coordination to placements,
+              student support, and campus operations — the admin team
+              keeps the NoMAD experience running seamlessly.
+            </p>
+
+            <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+              Approachable, responsive, and genuinely invested in
+              student success, they remain your support system from
+              application to graduation and beyond.
+            </p>
+          </div>
+
+          {/* FOOTER */}
+          <div className="mt-10 flex items-center justify-between border-t border-black/10 pt-6">
+            
+            <p className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Student Support System
+            </p>
+
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-black text-sm font-black text-white">
+              02
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* TESTIMONIALS */}
+    <div className="mt-20">
+      
+      {/* TITLE */}
+      <div className="max-w-4xl">
+        
+        <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+          Faculty Testimonials
+        </p>
+
+        <div className="mt-5 flex flex-wrap items-end gap-x-5 gap-y-2">
+          
+          <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+            In Their
+          </h2>
+
+          <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-[#ec008c]">
+            Own Words.
+          </h2>
+        </div>
+
+        <p className="mt-6 text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+          What does it feel like to teach at an institution that refuses
+          to be ordinary? Here’s what our faculty had to say.
+        </p>
+      </div>
+
+      {/* TESTIMONIAL CARDS */}
+      <div className="mt-12 grid gap-6 lg:grid-cols-3">
+        
+        {[
+          {
+            quote:
+              "Teaching at NoMAD means you're never just going through the motions. The students push you as much as you push them.",
+            name: "Harshad Rajadhyaksha",
+            role: "COO, Ogilvy India",
+          },
+          {
+            quote:
+              "What I love most is that the briefs here are real. The energy in the classroom feels electric and immediate.",
+            name: "Partha Sinha",
+            role: "Former President, Times Group",
+          },
+          {
+            quote:
+              "NoMAD gave me the freedom to teach through doing, failing, and trying again. It’s the most honest form of creative education.",
+            name: "Saurabh Karandikar",
+            role: "UX Analyst & Designer",
+          },
+        ].map((item, i) => (
+          <div
+            key={i}
+            className="rounded-[28px] border border-black/10 bg-white p-6 sm:p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_80px_rgba(0,0,0,0.08)]"
+          >
+            {/* NUMBER */}
+            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#ec008c] text-sm font-black text-white">
+              0{i + 1}
+            </div>
+
+            {/* QUOTE */}
+            <p className="mt-8 text-lg sm:text-xl md:text-2xl leading-[1.8] tracking-[-0.02em] text-black">
+              “{item.quote}”
+            </p>
+
+            {/* AUTHOR */}
+            <div className="mt-10 border-t border-black/10 pt-6">
+              
+              <h4 className="text-lg font-black uppercase tracking-[-0.03em] text-black">
+                {item.name}
+              </h4>
+
+              <p className="mt-2 text-[11px] font-black uppercase tracking-[0.3em] text-[#ec008c]">
+                {item.role}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+   {/* FACULTY GRID SECTION */}
+<section className="relative overflow-hidden bg-[#111111] py-14 sm:py-16 md:py-20 lg:py-24">
+  {/* GRID */}
+  <div
+    className="absolute inset-0 opacity-[0.05]"
+    style={{
+      backgroundImage: `
+        linear-gradient(to right, white 1px, transparent 1px),
+        linear-gradient(to bottom, white 1px, transparent 1px)
+      `,
+      backgroundSize: "70px 70px",
+    }}
+  />
+
+  {/* PINK GRADIENT */}
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(236,0,140,0.35),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(236,0,140,0.25),_transparent_30%)]" />
+
+  {/* DARK OVERLAY */}
+  <div className="absolute inset-0 bg-black/[0.25]" />
+
+  {/* BG TEXT */}
+  <div className="pointer-events-none absolute top-[3%] right-[-5%] select-none whitespace-nowrap text-[24vw] sm:text-[18vw] md:text-[14vw] lg:text-[10vw] font-black uppercase leading-none tracking-[-0.08em] text-white/[0.03]">
+    Faculty
+  </div>
+
+  {/* GLOW */}
+  <div className="absolute left-[-120px] top-[10%] h-[300px] w-[300px] rounded-full bg-[#ec008c]/20 blur-[120px]" />
+
+  <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    
+    {/* TOP */}
+    <div className="max-w-5xl">
+      
+      <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ffb3dd]">
+        Faculty Profiles
+      </p>
+
+      <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+        
+        <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-white">
+          Meet The
+        </h2>
+
+        <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-[#ffb3dd]">
+          Minds
+        </h2>
+
+        <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-white">
+          Behind
+        </h2>
+
+        <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-[#ffb3dd]">
+          The Work.
+        </h2>
+      </div>
+
+      <p className="mt-8 max-w-4xl text-base sm:text-lg md:text-xl leading-[1.9] text-white/75">
+        Creative Directors, Brand Strategists, UX Practitioners,
+        Entrepreneurs, and industry leaders shaping the future of
+        creativity — inside and outside the classroom.
+      </p>
+    </div>
+
+    {/* FACULTY GRID */}
+    <div className="mt-16 grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 sm:gap-6">
+      
+      {facultyMembers.map((item, i) => (
+        <div
+          key={i}
+          className="group transition-all duration-500 hover:-translate-y-2"
+        >
+          {/* CARD */}
+          <div className="rounded-[22px] border border-white/10 bg-white/[0.04] p-2 backdrop-blur-xl transition-all duration-500 hover:border-white/20 hover:bg-white/[0.08] hover:shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
+            
+            {/* IMAGE */}
+            <div className="relative overflow-hidden rounded-[18px]">
+              
+              <Image
+                src={item.image}
+                alt={item.name}
+                width={500}
+                height={600}
+                className="aspect-[0.9] w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+              />
+
+              {/* OVERLAY */}
+              <div className="absolute inset-0 bg-black/20 transition-all duration-500 group-hover:bg-black/0" />
+            </div>
+
+            {/* CONTENT */}
+            <div className="px-1 pb-2 pt-4">
+              
+              <h3 className="text-sm sm:text-base md:text-lg font-black uppercase leading-[1.15] tracking-[-0.03em] text-white">
+                {item.name}
+              </h3>
+
+              <p className="mt-2 text-[10px] sm:text-[11px] md:text-xs uppercase leading-[1.5] tracking-[0.18em] text-white/60 font-black">
+                {item.role}
+              </p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
       <Footer />
     </div>
