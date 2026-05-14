@@ -68,14 +68,18 @@ export default function ProgramsPage() {
       ease: "sine.inOut",
     });
 
-    const titles = document.querySelectorAll(".split-text");
+   const titles = document.querySelectorAll(".split-text");
 
-    titles.forEach((title) => {
-      const text = new SplitType(title as HTMLElement, {
-        types: "chars",
-      });
+titles.forEach((title) => {
+  if (!title) return;
 
-      gsap.from(text.chars, {
+  const text = new SplitType(title as HTMLElement, {
+    types: "chars",
+  });
+
+  if (!text.chars.length) return;
+
+  gsap.from(text.chars, {
         y: 120,
         opacity: 0,
         stagger: 0.03,
@@ -118,227 +122,112 @@ export default function ProgramsPage() {
       <Header />
 
       {/* HERO */}
-      <section className="relative overflow-hidden bg-[#fafafa] py-24 md:py-36">
-        {/* SOFT GRID */}
-        <div
-          className="absolute inset-0 opacity-[0.025]"
-          style={{
-            backgroundImage: `
+  <section className="relative overflow-hidden bg-[#fafafa] pt-28 sm:pt-36 md:pt-44 lg:pt-48 pb-20 sm:pb-24 md:pb-32">
+  {/* GRID */}
+  <div
+    className="absolute inset-0 opacity-[0.025]"
+    style={{
+      backgroundImage: `
         linear-gradient(to right, black 1px, transparent 1px),
         linear-gradient(to bottom, black 1px, transparent 1px)
       `,
-            backgroundSize: "90px 90px",
-          }}
-        />
+      backgroundSize: "90px 90px",
+    }}
+  />
 
-        {/* BACKGROUND TEXT */}
-        <div className="pointer-events-none absolute top-10 right-0 select-none text-[10vw] font-black uppercase leading-none tracking-[-0.08em] text-black/[0.02]">
-          NoMAD
+  {/* BACKGROUND TEXT */}
+  <div className="pointer-events-none absolute top-4 right-0 select-none whitespace-nowrap text-[28vw] sm:text-[18vw] md:text-[14vw] lg:text-[10vw] font-black uppercase leading-none tracking-[-0.08em] text-black/[0.02]">
+    NoMAD
+  </div>
+
+  <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    
+    {/* HERO */}
+    <div className="grid lg:grid-cols-[1fr_1fr] gap-14 lg:gap-20 items-start">
+      
+      {/* LEFT */}
+      <div className="relative z-10 w-full max-w-[680px]">
+        
+        {/* LABEL */}
+        <div className="hero-reveal inline-flex items-center rounded-full border border-black/10 bg-white/80 px-4 sm:px-5 py-3 backdrop-blur-xl shadow-sm">
+          <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.3em] text-black/70 whitespace-nowrap">
+            We Are NoMAD
+          </span>
         </div>
 
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {/* HERO SECTION */}
-          <div className="grid items-start gap-16 lg:grid-cols-2 lg:gap-24">
-            {/* LEFT */}
-            <div className="max-w-2xl">
-              <div className="inline-flex items-center rounded-full border border-black/10 bg-white/80 px-5 py-3 backdrop-blur-xl shadow-sm">
-                <span className="text-[11px] font-bold uppercase tracking-[0.3em] text-black/70">
-                  We Are NoMAD
-                </span>
-              </div>
+        {/* HEADING */}
+        <div className="mt-6 sm:mt-8 space-y-1">
+          
+          <h2 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
+            NoMAD
+          </h2>
 
-              <div className="mt-8 space-y-5">
-                <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5.2vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
-                  NoMAD
-                </h2>
+          <h2 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em] text-[#ec008c]">
+            Creative
+          </h2>
 
-                <h3 className="max-w-xl text-2xl font-semibold leading-tight text-black/80 md:text-4xl">
-                  College Of Creative Intelligence
-                </h3>
-              </div>
+          <h2 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
+            Intelligence
+          </h2>
+        </div>
 
-              <p className="mt-8 max-w-xl text-lg md:text-xl font-semibold tracking-[-0.02em] leading-relaxed text-[#ec008c] md:text-xl">
-                FOR THE CREATORS OF TOMORROW.
-              </p>
+        {/* DESCRIPTION */}
+        <div className="mt-6 sm:mt-8 space-y-5 sm:space-y-6">
+          
+          <p className="max-w-[620px] text-[15px] sm:text-lg md:text-xl leading-[1.9] text-black/65">
+            The world doesn’t just need more degrees. It needs creators who
+            can think, build, and earn.
+          </p>
 
-              <div className="mt-10 space-y-6">
-                <p className="text-base leading-[1.9] text-black/65 md:text-lg">
-                  The world doesn’t just need more degrees. It needs creators
-                  who can think, build, and earn. At NoMAD, we don’t prepare you
-                  for jobs, we prepare you to create them.
-                </p>
+          <p className="max-w-[620px] text-[15px] sm:text-lg md:text-xl leading-[1.9] text-black/65">
+            A Mumbai University–backed creative education journey built
+            around industry, portfolios, and real-world experience.
+          </p>
+        </div>
+      </div>
 
-                <p className="text-base leading-[1.9] text-black/65 md:text-lg">
-                  Where design meets technology and ideas become real-world
-                  impact. A Mumbai University–backed 4-year journey with global
-                  exposure in the final year.
-                </p>
+      {/* RIGHT IMAGE */}
+      <div className="relative flex justify-center lg:justify-end">
+        
+        <div className="hero-image relative overflow-hidden rounded-[32px] sm:rounded-[40px] lg:rounded-[50px] shadow-2xl w-full max-w-[680px]">
+          
+          <Image
+            src="/about-hero.jpg"
+            alt="Students brainstorming and creating designs"
+            width={900}
+            height={1100}
+            className="
+              w-full
+              h-[340px]
+              sm:h-[500px]
+              md:h-[620px]
+              lg:h-[720px]
+              object-cover
+              grayscale
+              transition-all
+              duration-700
+              hover:grayscale-0
+            "
+          />
 
-                <p className="text-base leading-[1.9] text-black/65 md:text-lg">
-                  If your child has imagination, this is where it becomes a
-                  career.
-                </p>
-              </div>
-            </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
-            {/* RIGHT IMAGE */}
-            <div className="relative lg:mt-16">
-              {/* GLOW */}
-              <div className="absolute -bottom-6 -left-6 h-full w-full rounded-[40px] bg-[#ec008c]" />
+          {/* FLOATING CARD */}
+          <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 max-w-[220px] sm:max-w-[280px] md:max-w-[300px] rounded-[24px] sm:rounded-[30px] border border-white/20 bg-white/80 p-4 sm:p-6 backdrop-blur-xl shadow-2xl">
+            
+            <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.25em] text-black/40">
+              Creative Future
+            </p>
 
-              {/* GLOW */}
-              <div className="hero-image absolute -bottom-10 -left-10 h-full w-full rounded-[40px] bg-[#ec008c]/20 blur-3xl" />
-
-              <div className="hero-image relative overflow-hidden rounded-[40px] shadow-[0_25px_80px_rgba(0,0,0,0.12)]">
-                <Image
-                  src="/about-hero.jpg"
-                  alt="Students brainstorming and creating designs"
-                  width={900}
-                  height={1100}
-                  className="h-[400px] w-full object-cover grayscale transition-all duration-700 hover:grayscale-0 md:h-[720px]"
-                />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-
-                {/* FLOATING CARD */}
-                <div className="absolute bottom-6 left-6 max-w-[320px] rounded-[28px] border border-white/20 bg-white/80 p-6 backdrop-blur-xl shadow-xl">
-                  <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-black/40">
-                    Creative Future
-                  </p>
-
-                  <h3 className="mt-3 text-2xl font-black leading-tight tracking-[-0.03em]">
-                    Ideas become real-world impact.
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* FEATURE SECTION */}
-          <div className="mt-32">
-            <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-              <div>
-                <p className="text-[11px] font-black uppercase tracking-[0.3em] text-[#ec008c]">
-                  Why NoMAD
-                </p>
-
-                <h3 className="mt-5 text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5.2vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
-                  Creative
-                  <span className="text-[#ec008c]"> Edge</span>
-                </h3>
-              </div>
-
-              <p className="max-w-xl text-base leading-[1.9] text-black/55 md:text-lg">
-                Designed for creators who want to build, innovate, and shape the
-                future through creativity, technology, and real-world
-                experience.
-              </p>
-            </div>
-
-            {/* FEATURE CARDS */}
-            <div className="mt-14 space-y-5">
-              {[
-                "Advertising, Design, and Strategic Thinking",
-                "Hands-on learning through live projects",
-                "Internships and real industry collaborations",
-                "Global awards and portfolio-driven education",
-                "Building a unique creative voice and brand identity",
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="group relative overflow-hidden rounded-[32px] border border-black/5 bg-white/80 px-6 py-7 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.05)] transition-all duration-700 hover:-translate-y-2 hover:bg-black"
-                >
-                  <div className="flex items-center justify-between gap-6">
-                    <div className="flex items-center gap-5">
-                      <span className="text-sm font-black text-[#ec008c] md:text-base">
-                        0{i + 1}
-                      </span>
-
-                      <p className="text-lg md:text-xl font-semibold tracking-[-0.02em] leading-relaxed text-black/75 transition-all duration-500 group-hover:text-white md:text-2xl">
-                        {item}
-                      </p>
-                    </div>
-
-                    <div className="h-3 w-3 rounded-full bg-[#ec008c] transition-all duration-500 group-hover:scale-150" />
-                  </div>
-
-                  <div className="absolute bottom-0 left-0 h-[3px] w-0 bg-[#ec008c] transition-all duration-700 group-hover:w-full" />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* SECOND SECTION */}
-          <div className="mt-36 grid items-center gap-16 lg:grid-cols-[0.95fr_1.05fr] lg:gap-24">
-            {/* IMAGE */}
-            <div className="relative order-2 lg:order-1">
-              <div className="absolute -top-8 -right-8 h-full w-full rounded-[40px] bg-black/10 blur-2xl" />
-
-              <div className="hero-image relative overflow-hidden rounded-[40px] shadow-[0_25px_80px_rgba(0,0,0,0.12)]">
-                <Image
-                  src="/creative-team.jpg"
-                  alt="Creative industry professionals working together"
-                  width={900}
-                  height={1100}
-                  className="h-[400px] w-full object-cover grayscale transition-all duration-700 md:h-[700px]"
-                />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-              </div>
-            </div>
-
-            {/* CONTENT */}
-            <div className="order-1 max-w-2xl lg:order-2 lg:ml-auto">
-              <div className="inline-flex items-center rounded-full border border-black/10 bg-white/80 px-5 py-3 backdrop-blur-xl shadow-sm">
-                <span className="text-[11px] font-bold uppercase tracking-[0.3em] text-black/70">
-                  Industry Driven
-                </span>
-              </div>
-
-              <div className="mt-8">
-                <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5.2vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
-                  Built By
-                </h2>
-
-                <h2 className="text-5xl font-black leading-[0.95] tracking-[-0.045em] text-[#ec008c] sm:text-6xl md:text-7xl">
-                  Creators
-                </h2>
-              </div>
-
-              <p className="mt-10 text-2xl font-bold leading-relaxed tracking-[-0.03em] md:text-3xl">
-                Built by people who’ve done the work
-              </p>
-
-              <div className="mt-10 space-y-6">
-                <p className="text-base leading-[1.9] text-black/65 md:text-lg">
-                  NoMAD wasn’t built in a classroom. It was built in agencies,
-                  studios, and real creative industries.
-                </p>
-
-                <p className="text-base leading-[1.9] text-black/65 md:text-lg">
-                  Because the gap was obvious — education wasn’t keeping up with
-                  creativity. So we built something that does.
-                </p>
-              </div>
-
-              {/* TAGS */}
-              <div className="mt-12 flex flex-wrap gap-4">
-                <div className="rounded-full bg-black px-6 py-4 text-sm font-bold uppercase tracking-[0.2em] text-white shadow-lg">
-                  Agencies
-                </div>
-
-                <div className="rounded-full bg-[#ec008c] px-6 py-4 text-sm font-bold uppercase tracking-[0.2em] text-white shadow-lg">
-                  Studios
-                </div>
-
-                <div className="rounded-full border border-black/10 bg-white/80 px-6 py-4 text-sm font-bold uppercase tracking-[0.2em] backdrop-blur-xl">
-                  Real Industries
-                </div>
-              </div>
-            </div>
+            <h3 className="mt-2 sm:mt-3 text-lg sm:text-xl md:text-2xl font-black leading-tight tracking-[-0.03em]">
+              Ideas become real-world impact.
+            </h3>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* DIRECTOR + DEAN + ADVISORY */}
       <section className="relative py-24 md:py-36 bg-black text-white overflow-hidden">

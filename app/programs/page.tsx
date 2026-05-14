@@ -244,130 +244,147 @@ export default function ProgramsPage() {
     <div ref={container} className="bg-[#efefef] text-black overflow-x-hidden">
       {/* HERO */}
       <Header />
-      <section className="relative min-h-screen overflow-hidden">
-        {/* GRID s*/}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: `
-              linear-gradient(to right, black 1px, transparent 1px),
-              linear-gradient(to bottom, black 1px, transparent 1px)
-            `,
-            backgroundSize: "70px 70px",
-          }}
-        />
+<section className="relative min-h-screen overflow-hidden">
+  {/* GRID */}
+  <div
+    className="absolute inset-0 opacity-[0.03]"
+    style={{
+      backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+      backgroundSize: "70px 70px",
+    }}
+  />
 
-        {/* GLOW */}
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-28 sm:pt-36 md:pt-44 lg:pt-48 relative z-10">
+    
+    <div className="grid lg:grid-cols-[1fr_1fr] gap-14 lg:gap-20 items-start">
+      
+      {/* LEFT */}
+      <div className="relative z-10 w-full max-w-[680px]">
+        
+        {/* LABEL */}
+        <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-4 py-2 rounded-full mb-6 sm:mb-8">
+          
+          <Sparkles
+            size={15}
+            className="text-[#ec008c] shrink-0"
+          />
 
-        <div className="max-w-7xl mx-auto px-6 pt-40 md:pt-48 relative z-10">
-          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-20 items-start">
-            {/* LEFT */}
-            {/* LEFT */}
-            {/* LEFT */}
-           <div className="relative z-10 w-full">
-              {/* LABEL */}
-              <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-4 py-2 rounded-full mb-8">
-                <Sparkles size={15} className="text-[#ec008c]" />
+          <span className="uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[9px] sm:text-[10px] font-black whitespace-nowrap">
+            Creative-First Learning
+          </span>
+        </div>
 
-                <span className="uppercase tracking-[0.3em] text-[10px] font-black whitespace-nowrap">
-                  Creative-First Learning
-                </span>
+        {/* HEADING */}
+        <div className="space-y-1">
+          
+          <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
+            We Make
+          </h1>
+
+          <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em] text-[#ec008c]">
+            Students
+          </h1>
+
+          <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
+            World Ready
+          </h1>
+        </div>
+
+        {/* DESCRIPTION */}
+        <p className="hero-reveal mt-6 sm:mt-8 text-[15px] sm:text-lg md:text-xl leading-[1.9] text-black/65 max-w-[560px]">
+          Hands-on creative education built around real client projects,
+          collaboration, mentorship, and industry experience.
+        </p>
+
+        {/* STEPS */}
+        <div className="hero-reveal mt-10 sm:mt-12 space-y-4 sm:space-y-5">
+          {[
+            "Work On Real Client Projects",
+            "Collaborate In Teams",
+            "Receive Mentorship From Industry Creatives",
+            "No Heavy Theory Or Outdated Syllabus",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="group flex items-start sm:items-center gap-4 sm:gap-5 rounded-[22px] sm:rounded-[24px] border border-black/10 bg-white px-4 sm:px-5 py-4 sm:py-5 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30"
+            >
+              
+              {/* NUMBER */}
+              <div className="flex h-10 w-10 sm:h-11 sm:w-11 min-w-[40px] sm:min-w-[44px] items-center justify-center rounded-full bg-[#ec008c] text-xs sm:text-sm font-black text-white">
+                0{i + 1}
               </div>
 
-              {/* HEADING */}
-              <div className="space-y-1">
-                <h1 className="hero-reveal split-text text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
-                  We Make
-                </h1>
-
-                <h1 className="hero-reveal split-text text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em] text-[#ec008c]">
-                  Students
-                </h1>
-
-                <h1 className="hero-reveal split-text text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
-                  World Ready
-                </h1>
-              </div>
-
-              {/* DESCRIPTION */}
-              <p className="hero-reveal mt-8 text-base sm:text-lg md:text-xl leading-[1.9] text-black/65 max-w-[560px]">
-                Hands-on creative education built around real client projects,
-                collaboration, mentorship, and industry experience.
+              {/* TEXT */}
+              <p className="text-sm sm:text-base md:text-lg font-black uppercase leading-[1.4] tracking-[-0.03em]">
+                {item}
               </p>
-
-              {/* STEPS */}
-              <div className="hero-reveal mt-12 space-y-5">
-                {[
-                  "Work On Real Client Projects",
-                  "Collaborate In Teams",
-                  "Receive Mentorship From Industry Creatives",
-                  "No Heavy Theory Or Outdated Syllabus",
-                ].map((item, i) => (
-                  <div
-                    key={i}
-                    className="group flex items-center gap-5 rounded-[24px] border border-black/10 bg-white px-5 py-5 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30"
-                  >
-                    {/* NUMBER */}
-                    <div className="flex h-11 w-11 min-w-[44px] items-center justify-center rounded-full bg-[#ec008c] text-sm font-black text-white">
-                      0{i + 1}
-                    </div>
-
-                    {/* TEXT */}
-                    <p className="text-sm sm:text-base md:text-lg font-black uppercase leading-[1.4] tracking-[-0.03em]">
-                      {item}
-                    </p>
-                  </div>
-                ))}
-              </div>
-
-              {/* LOCATIONS */}
-              <div className="hero-reveal mt-12 mb-20">
-                <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
-                  Locations
-                </p>
-
-                <div className="mt-4 flex flex-wrap items-center gap-3">
-                  <span className="rounded-full bg-black px-5 py-2 text-xs font-black uppercase tracking-[0.25em] text-white">
-                    Mumbai
-                  </span>
-
-                  <span className="rounded-full border border-black/10 bg-white px-5 py-2 text-xs font-black uppercase tracking-[0.25em] text-black">
-                    Bangalore
-                  </span>
-                </div>
-              </div>
             </div>
+          ))}
+        </div>
 
-            {/* RIGHT IMAGE */}
-            <div className="relative">
-              <div className="absolute top-0 -right-10 w-full h-full rounded-[50px] bg-[#ec008c]"></div>
+        {/* LOCATIONS */}
+        <div className="hero-reveal mt-10 sm:mt-12 mb-16 sm:mb-20">
+          
+          <p className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+            Locations
+          </p>
 
-              <div className="hero-image relative overflow-hidden rounded-[50px] shadow-2xl">
-                <Image
-                  src="/creative-team.jpg"
-                  alt="Creative Team"
-                  width={900}
-                  height={1200}
-                  priority
-                  className="w-full h-[650px] md:h-[780px] object-cover grayscale"
-                />
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            
+            <span className="rounded-full bg-black px-5 py-2 text-[10px] sm:text-xs font-black uppercase tracking-[0.25em] text-white">
+              Mumbai
+            </span>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-
-                <div className="absolute bottom-8 left-8 bg-[#f7f7f7]/80 backdrop-blur-xl/90 backdrop-blur-xl rounded-[30px] p-6 shadow-2xl max-w-[300px]">
-                  <p className="text-sm uppercase tracking-[3px] text-black/40 font-bold">
-                    Global Creative Network
-                  </p>
-
-                  <h3 className="mt-3 text-2xl font-black leading-tight">
-                    Learn from industry leaders worldwide.
-                  </h3>
-                </div>
-              </div>
-            </div>
+            <span className="rounded-full border border-black/10 bg-white px-5 py-2 text-[10px] sm:text-xs font-black uppercase tracking-[0.25em] text-black">
+              Bangalore
+            </span>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* RIGHT IMAGE */}
+      <div className="relative flex justify-center lg:justify-end">
+        
+        <div className="hero-image relative overflow-hidden rounded-[32px] sm:rounded-[40px] lg:rounded-[50px] shadow-2xl w-full max-w-[680px]">
+          
+          <Image
+            src="/creative-team.jpg"
+            alt="Creative Team"
+            width={900}
+            height={1200}
+            priority
+            className="
+              w-full
+              h-[340px]
+              sm:h-[500px]
+              md:h-[620px]
+              lg:h-[720px]
+              object-cover
+              grayscale
+            "
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+
+          {/* FLOATING CARD */}
+          <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 max-w-[220px] sm:max-w-[280px] md:max-w-[300px] rounded-[24px] sm:rounded-[30px] bg-[#f7f7f7]/80 p-4 sm:p-6 shadow-2xl backdrop-blur-xl">
+            
+            <p className="text-[10px] sm:text-sm uppercase tracking-[2px] sm:tracking-[3px] text-black/40 font-bold">
+              Global Creative Network
+            </p>
+
+            <h3 className="mt-2 sm:mt-3 text-lg sm:text-xl md:text-2xl font-black leading-tight">
+              Learn from industry leaders worldwide.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* UNDERGRADUATE PROGRAM SECTION */}
       <section className="relative overflow-hidden bg-[#f7f7f7] pt-10 md:pt-16 pb-24 md:pb-32 -mt-10">

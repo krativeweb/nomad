@@ -146,103 +146,122 @@ export default function FacultyPage() {
     <div className="bg-[#efefef] text-black overflow-x-hidden">
       <Header />
 
-      {/* HERO */}
-      <section className="relative min-h-screen overflow-hidden pb-24 md:pb-32">
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: `
-              linear-gradient(to right, black 1px, transparent 1px),
-              linear-gradient(to bottom, black 1px, transparent 1px)
-            `,
-            backgroundSize: "70px 70px",
-          }}
-        />
+<section className="relative min-h-screen overflow-hidden pt-28 sm:pt-36 md:pt-44 lg:pt-48 pb-20 sm:pb-24 md:pb-32">
+  {/* GRID */}
+  <div
+    className="absolute inset-0 opacity-[0.03]"
+    style={{
+      backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+      backgroundSize: "70px 70px",
+    }}
+  />
 
-        <div className="absolute top-[10%] left-[-5%] text-[24vw] md:text-[16vw] font-black uppercase text-black/[0.03] pointer-events-none select-none leading-none">
-          Faculty
+  {/* BG TEXT */}
+  <div className="pointer-events-none absolute top-[8%] left-[-5%] select-none whitespace-nowrap text-[28vw] sm:text-[18vw] md:text-[14vw] lg:text-[10vw] font-black uppercase leading-none tracking-[-0.08em] text-black/[0.03]">
+    Faculty
+  </div>
+
+  <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    
+    <div className="grid lg:grid-cols-[1fr_1fr] gap-14 lg:gap-20 items-start">
+      
+      {/* LEFT */}
+      <div className="relative z-10 w-full max-w-[680px]">
+        
+        {/* LABEL */}
+        <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-4 sm:px-5 py-3 rounded-full mb-6 sm:mb-8">
+          
+          <GraduationCap
+            size={16}
+            className="text-[#ec008c] shrink-0"
+          />
+
+          <span className="uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[9px] sm:text-[10px] font-black whitespace-nowrap">
+            Meet Our Faculty
+          </span>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 md:pt-48 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
-            {/* LEFT */}
-            <div>
-              <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-5 py-3 rounded-full mb-10">
-                <GraduationCap size={18} className="text-[#ec008c]" />
+        {/* HEADING */}
+        <div className="space-y-1">
+          
+          <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
+            Creative
+          </h1>
 
-                <span className="uppercase tracking-[4px] text-xs font-bold">
-                  Meet Our Faculty
-                </span>
-              </div>
+          <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase text-[#ec008c] leading-[0.84] tracking-[-0.055em]">
+            Industry
+          </h1>
 
-              <div>
-                <div className="overflow-hidden pb-4">
-                  <h1 className="split-text text-[18vw] sm:text-[14vw] md:text-[9vw] lg:text-[7vw] xl:text-[6vw] font-black uppercase leading-[0.9] tracking-[-0.05em]">
-                    Creative
-                  </h1>
-                </div>
+          <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
+            Leaders
+          </h1>
+        </div>
 
-                <div className="overflow-hidden pb-4">
-                  <h1 className="split-text text-[18vw] sm:text-[14vw] md:text-[9vw] lg:text-[7vw] xl:text-[6vw] font-black uppercase leading-[0.9] tracking-[-0.05em] text-[#ec008c]">
-                    Industry
-                  </h1>
-                </div>
+        {/* DESCRIPTION */}
+        <p className="hero-reveal mt-6 sm:mt-8 max-w-[620px] text-[15px] sm:text-lg md:text-xl leading-[1.9] text-black/70">
+          Learn from award-winning professionals, visionary creators, and
+          experienced strategists shaping the future of the creative
+          industry.
+        </p>
 
-                <div className="overflow-hidden pb-4">
-                  <h1 className="split-text text-[18vw] sm:text-[14vw] md:text-[9vw] lg:text-[7vw] xl:text-[6vw] font-black uppercase leading-[0.9] tracking-[-0.05em]">
-                    Leaders
-                  </h1>
-                </div>
-              </div>
+        {/* BUTTONS */}
+        <div className="hero-reveal mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4">
+          
+          <button className="group h-[56px] sm:h-[58px] px-6 sm:px-8 rounded-full bg-black text-white uppercase tracking-[0.22em] sm:tracking-[3px] text-[11px] sm:text-sm font-bold hover:bg-[#ec008c] transition-all duration-500 flex items-center justify-center gap-3">
+            Explore Faculty
 
-              <p className="hero-reveal mt-8 max-w-[650px] text-base sm:text-lg md:text-xl text-black/70 leading-relaxed md:leading-[1.8]">
-                Learn from award-winning professionals, visionary creators, and
-                experienced strategists shaping the future of the creative
-                industry.
-              </p>
+            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-all duration-300" />
+          </button>
 
-              <div className="hero-reveal relative z-20 mt-8 md:mt-12 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                <button className="group w-full sm:w-auto h-[56px] px-6 md:px-10 rounded-full bg-black text-white text-sm md:text-base font-bold uppercase tracking-[2px] flex items-center justify-center gap-3 hover:bg-[#ec008c] transition-all duration-500">
-                  Explore Faculty
-                  <ArrowRight className="group-hover:translate-x-1 transition-all duration-300" />
-                </button>
+          <button className="h-[56px] sm:h-[58px] px-6 sm:px-8 rounded-full border border-black/10 bg-[#f5f5f5] text-black uppercase tracking-[0.22em] sm:tracking-[3px] text-[11px] sm:text-sm font-bold hover:bg-black hover:text-white transition-all duration-500">
+            Download Brochure
+          </button>
+        </div>
+      </div>
 
-                <button className="w-full sm:w-auto h-[56px] px-6 md:px-10 rounded-full border border-black/10 bg-[#f5f5f5] text-black text-sm md:text-base font-semibold hover:bg-black hover:text-white transition-all duration-500">
-                  Download Brochure
-                </button>
-              </div>
-            </div>
+      {/* RIGHT IMAGE */}
+      <div className="relative flex justify-center lg:justify-end">
+        
+        <div className="hero-image relative overflow-hidden rounded-[32px] sm:rounded-[40px] lg:rounded-[50px] shadow-2xl w-full max-w-[680px]">
+          
+          <Image
+            src="/faculty-hero.jpg"
+            alt="Faculty"
+            width={900}
+            height={1200}
+            priority
+            className="
+              w-full
+              h-[340px]
+              sm:h-[500px]
+              md:h-[620px]
+              lg:h-[720px]
+              object-cover
+              grayscale
+            "
+          />
 
-            {/* RIGHT IMAGE */}
-            <div className="relative">
-              <div className="absolute -top-3 sm:-top-6 -right-3 sm:-right-6 w-full h-full rounded-[30px] sm:rounded-[50px] bg-[#ec008c]/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 
-              <div className="hero-image relative overflow-hidden rounded-[30px] sm:rounded-[50px]">
-                <Image
-                  src="/faculty-hero.jpg"
-                  alt="Faculty"
-                  width={900}
-                  height={1200}
-                  priority
-                  className="w-full h-[320px] sm:h-[520px] md:h-[680px] lg:h-[780px] object-cover grayscale"
-                />
+          {/* FLOATING CARD */}
+          <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 max-w-[220px] sm:max-w-[280px] md:max-w-[300px] rounded-[24px] sm:rounded-[30px] border border-black/5 bg-[#f5f5f5]/90 p-4 sm:p-6 backdrop-blur-xl">
+            
+            <p className="text-[10px] sm:text-xs uppercase tracking-[2px] sm:tracking-[3px] text-black/40 font-bold">
+              Global Faculty Network
+            </p>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-
-                <div className="absolute bottom-3 left-3 sm:bottom-8 sm:left-8 bg-[#f5f5f5] rounded-[24px] sm:rounded-[30px] p-4 sm:p-6 border border-black/5 max-w-[260px]">
-                  <p className="text-[10px] md:text-sm uppercase tracking-[3px] text-black/40 font-bold">
-                    Global Faculty Network
-                  </p>
-
-                  <h3 className="mt-3 text-xl md:text-2xl font-black leading-tight">
-                    Mentoring future innovators worldwide.
-                  </h3>
-                </div>
-              </div>
-            </div>
+            <h3 className="mt-2 sm:mt-3 text-lg sm:text-xl md:text-2xl font-black leading-tight">
+              Mentoring future innovators worldwide.
+            </h3>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* STATS */}
       <section className="py-20 md:py-24 bg-black text-white">
