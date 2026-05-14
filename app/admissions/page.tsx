@@ -177,7 +177,7 @@ export default function AdmissionsPage() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 md:pt-48 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
             {/* LEFT */}
             <div>
               <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-5 py-3 rounded-full mb-10">
@@ -226,7 +226,7 @@ export default function AdmissionsPage() {
             </div>
 
             {/* RIGHT */}
-            <div className="relative">
+            <div className="relative lg:mt-16">
               <div className="absolute -top-6 -right-6 w-full h-full rounded-[50px] bg-[#ec008c]/80"></div>
 
               <div className="hero-image relative overflow-hidden rounded-[50px]">
@@ -255,30 +255,390 @@ export default function AdmissionsPage() {
           </div>
         </div>
       </section>
+      {/* ADMISSION PROCESS */}
 
-      {/* STATS */}
-      <section className="py-20 md:py-24 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <section className="relative overflow-hidden bg-black py-12 sm:py-20 md:py-28 lg:py-36">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.05]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, white 1px, transparent 1px),
+        linear-gradient(to bottom, white 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
+
+        {/* BACKGROUND TEXT */}
+        <div className="pointer-events-none absolute right-[-5%] top-[8%] text-[20vw] font-black uppercase leading-none tracking-[-0.08em] text-white/[0.03]">
+          APPLY
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* TOP */}
+          <div className="max-w-5xl">
+            <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Admission Process
+            </p>
+
+            {/* HEADING */}
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-white">
+                Apply.
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-[#ec008c]">
+                Create.
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-white">
+                Begin.
+              </h2>
+            </div>
+
+            {/* DESCRIPTION */}
+            <div className="mt-10 max-w-4xl space-y-6">
+              <p className="text-lg sm:text-xl md:text-2xl font-semibold leading-[1.6] text-white">
+                Our application process is as imaginative as the career you
+                envision.
+              </p>
+
+              <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-white/70">
+                Designed to challenge your intellect, curiosity, and creative
+                intuition while encouraging you to push your own boundaries.
+              </p>
+            </div>
+          </div>
+
+          {/* PROCESS FLOW */}
+          <div className="mt-16 md:mt-24">
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {[
+                {
+                  no: "01",
+                  title: "Complete The Application Form",
+                },
+                {
+                  no: "02",
+                  title: "Receive Creative Exercises",
+                },
+                {
+                  no: "03",
+                  title: "Submit Your Responses",
+                },
+                {
+                  no: "04",
+                  title: "Attend The Interview",
+                },
+                {
+                  no: "05",
+                  title: "Receive Admission Letter",
+                },
+                {
+                  no: "06",
+                  title: "Confirm Admission By Paying Fees",
+                },
+              ].map((step, i) => (
+                <div
+                  key={i}
+                  className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 p-6 md:p-7 transition-all duration-500 hover:-translate-y-2 hover:border-[#ec008c]/30 hover:bg-white"
+                >
+                  {/* STEP NUMBER */}
+                  <div className="flex items-center justify-between">
+                    <span className="text-[15vw] sm:text-[9vw] md:text-[5vw] font-black leading-none tracking-[-0.07em] text-[#ec008c]">
+                      {step.no}
+                    </span>
+
+                    <div className="h-10 w-10 rounded-full border border-white/10 bg-white/5 flex items-center justify-center transition-all duration-500 group-hover:border-black/10 group-hover:bg-black">
+                      <span className="text-sm font-black text-white group-hover:text-white">
+                        →
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* TITLE */}
+                  <div className="mt-10">
+                    <h3 className="text-2xl md:text-3xl font-black uppercase leading-[1.1] tracking-[-0.04em] text-white transition-all duration-500 group-hover:text-black">
+                      {step.title}
+                    </h3>
+                  </div>
+
+                  {/* HOVER GLOW */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#ec008c]/0 via-[#ec008c]/0 to-[#ec008c]/10 opacity-0 transition-all duration-500 group-hover:opacity-100" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-16 md:mt-20 flex flex-col sm:flex-row items-start sm:items-center gap-5">
+            {/* BUTTON */}
+            <button className="group inline-flex items-center gap-4 rounded-full bg-[#ec008c] px-8 py-5 text-sm md:text-base font-black uppercase tracking-[0.25em] text-white transition-all duration-500 hover:bg-white hover:text-black">
+              Download Application Form
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-all duration-500 group-hover:bg-black">
+                ↓
+              </span>
+            </button>
+
+            {/* NOTE */}
+            <p className="text-sm md:text-base leading-relaxed text-white/50">
+              Admissions are limited and processed on a rolling basis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FEE STRUCTURE */}
+      {/* FEE STRUCTURE */}
+      <section className="relative overflow-hidden bg-white py-16 sm:py-20 md:py-18 lg:py-18">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* TOP */}
+          <div className="max-w-5xl">
+            <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Fee Structure
+            </p>
+
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em]">
+                Invest In
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-[#ec008c]">
+                Your
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em]">
+                Future.
+              </h2>
+            </div>
+
+            <p className="mt-10 text-lg sm:text-xl md:text-2xl font-semibold leading-[1.6] text-black max-w-4xl">
+              A creative education built for industry-ready thinkers,
+              strategists, designers, and future creative leaders.
+            </p>
+          </div>
+
+          {/* MAIN LAYOUT */}
+          <div className="mt-16 grid gap-8 xl:grid-cols-[0.85fr_1.15fr]">
+            {/* LEFT */}
+            <div className="rounded-[32px] border border-black/10 bg-black p-6 md:p-8 text-white">
+              <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                Program Details
+              </p>
+
+              <h3 className="mt-5 text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-[0.95] tracking-[-0.05em]">
+                Bachelor’s
+                <br />
+                Program
+              </h3>
+
+              <div className="mt-10 space-y-5">
+                {[
+                  ["Program", "Advertising & Communication Design"],
+                  ["Duration", "4 Years (Full Time)"],
+                  ["Affiliated To", "University of Mumbai"],
+                  ["Offered By", "NoMAD College of Creative Intelligence"],
+                ].map(([label, value], i) => (
+                  <div
+                    key={i}
+                    className="rounded-[22px] border border-white/10 bg-white/5 p-5"
+                  >
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/40">
+                      {label}
+                    </p>
+
+                    <p className="mt-3 text-base md:text-lg font-bold leading-[1.5]">
+                      {value}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* RIGHT */}
+            <div className="rounded-[32px] border border-black/10 bg-[#f6f2f4] overflow-hidden">
+              {/* HEADER */}
+              <div className="border-b border-black/10 px-6 py-6 md:px-8">
+                <div className="flex items-end justify-between gap-5">
+                  <div>
+                    <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                      Tuition Breakdown
+                    </p>
+
+                    <h3 className="mt-4 text-3xl md:text-5xl font-black uppercase leading-[0.95] tracking-[-0.05em]">
+                      Program Fees
+                    </h3>
+                  </div>
+
+                  <div className="hidden md:flex h-16 w-16 items-center justify-center rounded-full bg-[#ec008c] text-white text-xl font-black">
+                    ₹
+                  </div>
+                </div>
+              </div>
+
+              {/* FEES */}
+              <div className="divide-y divide-black/10">
+                {[
+                  ["Application Fees", "₹ 2,500"],
+                  ["Tuition Fee — Year 1", "₹ 4,00,000"],
+                  ["Tuition Fee — Year 2", "₹ 4,00,000"],
+                  ["Tuition Fee — Year 3", "₹ 4,00,000"],
+                  ["Tuition Fee — Year 4", "₹ 4,00,000"],
+                ].map(([title, price], i) => (
+                  <div
+                    key={i}
+                    className="group flex flex-col gap-5 px-6 py-6 transition-all duration-500 hover:bg-white sm:flex-row sm:items-center sm:justify-between md:px-8"
+                  >
+                    <h4 className="text-xl md:text-2xl font-black uppercase leading-[1.1] tracking-[-0.04em]">
+                      {title}
+                    </h4>
+
+                    <div className="rounded-full border border-black/10 bg-white px-6 py-3 group-hover:border-[#ec008c]/30">
+                      <p className="text-xl md:text-3xl font-black tracking-[-0.05em]">
+                        {price}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* TOTAL */}
+              <div className="bg-[#ec008c] px-6 py-8 md:px-8">
+                <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+                  <div>
+                    <p className="text-[11px] uppercase tracking-[0.35em] text-white/70 font-black">
+                      Total Program Fees
+                    </p>
+
+                    <h3 className="mt-4 text-4xl md:text-6xl font-black uppercase leading-none tracking-[-0.06em] text-white">
+                      ₹ 16,00,000
+                    </h3>
+                  </div>
+
+                  <p className="max-w-md text-sm sm:text-base leading-[1.7] text-white/80">
+                    Installment options and financial assistance available
+                    through partner banks & NBFCs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* FOOTNOTE */}
+          <div className="mt-10 rounded-[24px] border border-black/10 bg-[#fafafa] p-6 md:p-8">
+            <div className="grid gap-8 lg:grid-cols-2">
+              <div>
+                <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                  Installment Option
+                </p>
+
+                <div className="mt-5 space-y-4">
+                  {[
+                    "50% payable at the time of enrollment",
+                    "50% payable mid-semester as per notified dates",
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-4">
+                      <div className="mt-2 h-2.5 w-2.5 rounded-full bg-[#ec008c]" />
+
+                      <p className="text-base md:text-lg leading-[1.7] text-black/70">
+                        {item}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                  Financial Assistance
+                </p>
+
+                <p className="mt-5 text-base md:text-lg leading-[1.9] text-black/70">
+                  Financial assistance is available via banks and NBFCs for all
+                  programs. Students can explore flexible education loan options
+                  based on eligibility and approval criteria.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ELIGIBILITY CRITERIA */}
+      <section className="relative overflow-hidden bg-white py-14 sm:py-16 md:py-18 lg:py-18">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
+
+        {/* BG TEXT */}
+        <div className="pointer-events-none absolute left-[-4%] top-[8%] text-[20vw] font-black uppercase leading-none tracking-[-0.08em] text-black/[0.03]">
+          APPLY
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* TOP */}
+          <div className="max-w-5xl">
+            <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Admissions
+            </p>
+
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-black">
+                Eligibility
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-[#ec008c]">
+                Criteria.
+              </h2>
+            </div>
+
+            <p className="mt-10 max-w-4xl text-lg sm:text-xl md:text-2xl font-semibold leading-[1.6] text-black">
+              Built for students, creators, strategists, and curious minds ready
+              to shape the future of creativity.
+            </p>
+          </div>
+
+          {/* LIST */}
+          <div className="mt-16 grid gap-5 md:grid-cols-2">
             {[
-              ["2026", "Admissions Open"],
-              ["15000", "Students"],
-              ["45", "Countries"],
-              ["92", "Placement Rate"],
-            ].map((item, index) => (
+              "Students who have completed Grade 12 or higher",
+              "Individuals with a passion for design, technology, content, strategy, and creativity",
+              "Applicants who have finished an undergraduate degree in any field are also welcome",
+              "Transfer students from other design, creative, and communication programs may apply as well",
+            ].map((item, i) => (
               <div
-                key={index}
-                className="fade-card rounded-[40px] bg-white/5 border border-white/10 p-8 md:p-10"
+                key={i}
+                className="group flex items-start gap-6 rounded-[28px] border border-black/10 bg-[#fafafa] p-6 md:p-7 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30 hover:bg-white"
               >
-                <h3 className="text-5xl md:text-6xl font-black">
-                  <span className="counter" data-target={item[0]}>
-                    0
-                  </span>
-                  +
-                </h3>
+                {/* NUMBER */}
+                <div className="flex h-12 w-12 min-w-[48px] items-center justify-center rounded-full bg-[#ec008c] text-sm font-black text-white">
+                  0{i + 1}
+                </div>
 
-                <p className="mt-4 uppercase tracking-[3px] text-white/50 font-bold text-sm">
-                  {item[1]}
+                {/* TEXT */}
+                <p className="text-base sm:text-lg md:text-xl font-semibold leading-[1.8] text-black/75 transition-all duration-500 group-hover:text-black">
+                  {item}
                 </p>
               </div>
             ))}
@@ -286,230 +646,162 @@ export default function AdmissionsPage() {
         </div>
       </section>
 
-      {/* PROGRAMS */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Programs Offered
+      {/* CREATIVE TEST */}
+      <section className="relative overflow-hidden bg-[#f6f2f4] py-14 sm:py-16 md:py-20 lg:py-24">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
+
+        {/* BG TEXT */}
+        <div className="pointer-events-none absolute right-[-5%] top-[5%] text-[20vw] font-black uppercase leading-none tracking-[-0.08em] text-black/[0.03]">
+          CREATE
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* TOP */}
+          <div className="max-w-5xl">
+            <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Admissions Process
             </p>
 
-            <h2 className="split-text text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Creative Programs
-            </h2>
-          </div>
-
-          <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-8">
-            {programs.map((program, index) => (
-              <div
-                key={index}
-                className="fade-card group rounded-[40px] overflow-hidden bg-[#f5f5f5] border border-black/5 hover:-translate-y-2 transition-all duration-500"
-              >
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={program.image}
-                    alt={program.title}
-                    width={700}
-                    height={800}
-                    className="w-full h-[360px] object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                </div>
-
-                <div className="p-8">
-                  <h3 className="text-3xl font-black uppercase leading-tight">
-                    {program.title}
-                  </h3>
-
-                  <div className="mt-6 space-y-4 text-sm uppercase tracking-[2px] font-semibold">
-                    <div className="flex items-center gap-3">
-                      <Calendar size={16} />
-                      {program.duration}
-                    </div>
-
-                    <div className="flex items-center gap-3">
-                      <CheckCircle2 size={16} />
-                      Eligibility: {program.eligibility}
-                    </div>
-                  </div>
-
-                  <button className="mt-8 h-[52px] w-full rounded-full bg-black text-white uppercase tracking-[3px] text-sm font-bold hover:bg-[#ec008c] transition-all duration-500">
-                    Apply Program
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ADMISSION PROCESS */}
-      <section className="py-24 md:py-32 bg-black text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Admission Process
-            </p>
-
-            <h2 className="text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Simple Steps
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {process.map((step, index) => (
-              <div
-                key={index}
-                className="fade-card relative rounded-[40px] border border-white/10 bg-white/5 p-8 text-center"
-              >
-                <div className="w-20 h-20 mx-auto rounded-full bg-[#ec008c] flex items-center justify-center text-3xl font-black">
-                  {index + 1}
-                </div>
-
-                <h3 className="mt-8 text-2xl font-black uppercase leading-tight">
-                  {step}
-                </h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHY CHOOSE */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Why Choose Us
-            </p>
-
-            <h2 className="split-text text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Global Creative Institute
-            </h2>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              "Industry Mentors",
-              "Global Placements",
-              "Live Projects",
-              "International Exposure",
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="fade-card rounded-[35px] border border-black/10 bg-[#f5f5f5] p-10 hover:bg-black hover:text-white transition-all duration-500"
-              >
-                <Star className="text-[#ec008c]" size={42} />
-
-                <h3 className="mt-8 text-3xl font-black uppercase leading-tight">
-                  {item}
-                </h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* VIDEO TOUR */}
-      <section className="py-24 md:py-32 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Campus Experience
-            </p>
-
-            <h2 className="text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Video Tour
-            </h2>
-          </div>
-
-          <div className="relative overflow-hidden rounded-[50px]">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              poster="/campus-video-thumb.jpg"
-              className="w-full h-[320px] md:h-[700px] object-cover"
-            >
-              <source src="/videos/campus-tour.mp4" type="video/mp4" />
-            </video>
-
-            <div className="absolute inset-0 bg-black/40"></div>
-
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-24 h-24 rounded-full bg-[#ec008c] flex items-center justify-center">
-                <Play size={34} fill="white" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div className="fade-card rounded-[40px] bg-black text-white p-10 md:p-14">
-              <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-                Contact Admissions
-              </p>
-
-              <h2 className="text-5xl md:text-6xl font-black uppercase leading-[0.9]">
-                Get In Touch
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-black">
+                Creative
               </h2>
 
-              <div className="mt-12 space-y-8 text-lg">
-                <div className="flex items-center gap-4">
-                  <Phone className="text-[#ec008c]" />
-                  +91 9876543210
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-[#ec008c]">
+                Test.
+              </h2>
+            </div>
+
+            <p className="mt-10 max-w-4xl text-lg sm:text-xl md:text-2xl font-semibold leading-[1.6] text-black">
+              A process designed to challenge imagination, originality,
+              intuition, and creative thinking.
+            </p>
+          </div>
+
+          {/* MAIN GRID */}
+          <div className="mt-14 grid gap-8 xl:grid-cols-[1fr_0.85fr]">
+            {/* LEFT */}
+
+            <div className="overflow-hidden rounded-[32px] border border-black/10 bg-[#111111] text-white shadow-[0_20px_80px_rgba(0,0,0,0.35)]">
+              {/* TOP */}
+              <div className="border-b border-white/10 bg-gradient-to-br from-[#1a1a1a] to-black px-6 py-6 md:px-8">
+                <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                  Creative Exercises
+                </p>
+
+                <h3 className="mt-5 text-4xl md:text-6xl font-black uppercase leading-[0.9] tracking-[-0.06em] text-white">
+                  Think.
+                  <br />
+                  Create.
+                  <br />
+                  Express.
+                </h3>
+              </div>
+
+              {/* CONTENT */}
+              <div className="p-6 md:p-8">
+                <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-white/80">
+                  The most thrilling aspect of this process lies in the creative
+                  exercises.
+                </p>
+
+                {/* POINTS */}
+                <div className="mt-8 space-y-5">
+                  {[
+                    "They are engaging and clever.",
+                    "Thoughtfully curated for aspiring creatives.",
+                    "Students present ideas, originality, and insights.",
+                    "Some creative challenges have evolved into impactful campaigns.",
+                  ].map((item, i) => (
+                    <div
+                      key={i}
+                      className="group rounded-[22px] border border-white/10 bg-white/[0.04] p-5 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30 hover:bg-white/[0.07]"
+                    >
+                      <div className="flex items-start gap-5">
+                        {/* NUMBER */}
+                        <div className="flex h-10 w-10 min-w-[40px] items-center justify-center rounded-full bg-[#ec008c] text-xs font-black text-white">
+                          0{i + 1}
+                        </div>
+
+                        {/* TEXT */}
+                        <p className="text-base md:text-lg leading-[1.8] text-white/85">
+                          {item}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
 
-                <div className="flex items-center gap-4">
-                  <Mail className="text-[#ec008c]" />
-                  admissions@example.com
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <MapPin className="text-[#ec008c]" />
-                  Creative Campus, Global City
+                {/* EXTRA */}
+                <div className="mt-8 rounded-[24px] border border-white/10 bg-white/[0.04] p-6">
+                  <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-white/85">
+                    Students approach these tasks with their highest level of
+                    creativity, presenting ideas and insights to demonstrate
+                    their talent, thinking, and unique perspective.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="fade-card rounded-[40px] bg-[#f5f5f5] border border-black/10 p-10 md:p-14">
-              <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-                Quick Apply
-              </p>
+            {/* RIGHT */}
+            <div className="flex flex-col gap-8">
+              {/* PAYMENT */}
+              <div className="rounded-[32px] border border-black/10 bg-black p-6 md:p-8 text-white">
+                <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                  Mode Of Fee Payment
+                </p>
 
-              <div className="space-y-6">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  className="w-full h-[60px] rounded-full px-6 bg-white border border-black/10 outline-none"
-                />
+                <div className="mt-8 grid gap-4">
+                  {["Online", "Cheque", "Demand Draft"].map((item, i) => (
+                    <div
+                      key={i}
+                      className="group flex items-center justify-between rounded-[24px] border border-white/10 bg-white/5 px-6 py-6 transition-all duration-500 hover:border-[#ec008c]/30 hover:bg-[#ec008c]"
+                    >
+                      <h3 className="text-xl md:text-2xl font-black uppercase leading-[1.2] tracking-[-0.04em]">
+                        {item}
+                      </h3>
 
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="w-full h-[60px] rounded-full px-6 bg-white border border-black/10 outline-none"
-                />
+                      <span className="text-2xl font-black text-white/30">
+                        0{i + 1}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-                <input
-                  type="text"
-                  placeholder="Preferred Program"
-                  className="w-full h-[60px] rounded-full px-6 bg-white border border-black/10 outline-none"
-                />
+              {/* BROCHURE */}
+              <div className="flex-1 rounded-[32px] border border-black/10 bg-white p-6 md:p-8">
+                <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                  Download Brochure
+                </p>
 
-                <textarea
-                  placeholder="Message"
-                  className="w-full h-[180px] rounded-[30px] p-6 bg-white border border-black/10 outline-none resize-none"
-                />
+                <h3 className="mt-5 text-4xl md:text-5xl font-black uppercase leading-[0.95] tracking-[-0.05em] text-black">
+                  Explore
+                  <br />
+                  The Programs.
+                </h3>
 
-                <button className="h-[58px] px-10 rounded-full bg-black text-white uppercase tracking-[3px] text-sm font-bold hover:bg-[#ec008c] transition-all duration-500">
-                  Submit Application
+                <p className="mt-6 text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+                  Access complete program details, curriculum structure,
+                  admissions process, and fee information.
+                </p>
+
+                {/* BUTTON */}
+                <button className="group mt-10 inline-flex items-center gap-4 rounded-full bg-black px-8 py-5 text-sm md:text-base font-black uppercase tracking-[0.25em] text-white transition-all duration-500 hover:bg-[#ec008c]">
+                  Download
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-all duration-500">
+                    ↓
+                  </span>
                 </button>
               </div>
             </div>
@@ -517,24 +809,141 @@ export default function AdmissionsPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="relative py-24 md:py-32 overflow-hidden bg-[#ec008c] text-white text-center">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-[15vw] md:text-[6vw] font-black uppercase leading-[0.82] tracking-[-0.05em]">
-            Admissions Open
-          </h2>
+      {/* TERMS & CONDITIONS */}
+      <section className="relative overflow-hidden bg-white py-14 sm:py-16 md:py-20 lg:py-24">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
 
-          <p className="mt-8 text-lg md:text-2xl text-white/80 leading-relaxed max-w-3xl mx-auto">
-            Start your creative journey with globally recognized education,
-            mentorship, and career opportunities.
-          </p>
+        {/* BG TEXT */}
+        <div className="pointer-events-none absolute right-[-5%] top-[5%] text-[20vw] font-black uppercase leading-none tracking-[-0.08em] text-black/[0.03]">
+          TERMS
+        </div>
 
-          <button className="mt-12 h-[60px] px-10 rounded-full bg-black text-white uppercase tracking-[3px] font-bold hover:bg-white hover:text-black transition-all duration-500">
-            Apply Today
-          </button>
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* TOP */}
+          <div className="max-w-5xl">
+            <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Admissions Policy
+            </p>
+
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-black">
+                Terms &
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-[#ec008c]">
+                Conditions.
+              </h2>
+            </div>
+
+            <p className="mt-10 max-w-4xl text-lg sm:text-xl md:text-2xl font-semibold leading-[1.6] text-black">
+              Important information regarding admissions, payments,
+              installments, refunds, and academic policies.
+            </p>
+          </div>
+
+          {/* MAIN CARD */}
+          <div className="mt-14 overflow-hidden rounded-[32px] border border-black/10 bg-[#111111] text-white shadow-[0_20px_80px_rgba(0,0,0,0.25)]">
+            {/* TOP BAR */}
+            <div className="border-b border-white/10 bg-gradient-to-br from-[#1a1a1a] to-black px-6 py-6 md:px-8">
+              <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+                <div>
+                  <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                    Official Information
+                  </p>
+
+                  <div className="mt-5 flex flex-wrap items-end gap-x-4 gap-y-2">
+                    <h3 className="text-4xl md:text-6xl font-black uppercase leading-[0.9] tracking-[-0.06em] text-white">
+                      Admissions
+                    </h3>
+
+                    <h3 className="text-4xl md:text-6xl font-black uppercase leading-[0.9] tracking-[-0.06em] text-[#ec008c]">
+                      Terms.
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="rounded-full border border-white/10 bg-white/[0.04] px-5 py-3">
+                  <p className="text-sm uppercase tracking-[0.3em] text-white/50">
+                    Updated Guidelines
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* TERMS GRID */}
+            <div className="grid gap-5 p-6 md:p-8 lg:grid-cols-2">
+              {[
+                "Payment of all fees is completed through official online payment links or instructions mentioned in the offer letter.",
+                "The application fee of ₹2,500 is non-refundable under all circumstances.",
+                "Registration & Admission Fee is a one-time fee payable during enrollment.",
+                "Refunds of Registration & Admission Fees are governed by institutional refund policies.",
+                "Semester-wise or quarter-wise tuition fees must be paid as per notified dates.",
+                "The first installment of tuition fees must be paid according to the offer letter instructions.",
+                "Students using installment plans must pay 50% during enrollment and 50% mid-semester.",
+                "Late payments may result in suspension of access to academic resources.",
+                "Field trips, materials, and project-related expenses are not included in tuition fees.",
+                "GST and applicable government taxes apply as per prevailing norms.",
+                "Refund requests are processed according to UGC refund guidelines.",
+                "NoMAD College and Miami Ad School reserve the right to revise programs, fees, and policies.",
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="group rounded-[24px] border border-white/10 bg-white/[0.04] p-5 transition-all duration-500 hover:-translate-y-1 hover:border-[#ec008c]/30 hover:bg-white/[0.06]"
+                >
+                  <div className="flex items-start gap-5">
+                    {/* NUMBER */}
+                    <div className="flex h-10 w-10 min-w-[40px] items-center justify-center rounded-full bg-[#ec008c] text-xs font-black text-white">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+
+                    {/* TEXT */}
+                    <p className="text-sm sm:text-base md:text-lg leading-[1.8] text-white/80">
+                      {item}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* FOOTER */}
+            <div className="border-t border-white/10 bg-black px-6 py-6 md:px-8">
+              <div className="grid gap-6 lg:grid-cols-2">
+                {/* NOMAD */}
+                <div className="rounded-[22px] border border-white/10 bg-white/[0.04] p-5">
+                  <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                    NoMAD College
+                  </p>
+
+                  <p className="mt-4 text-base md:text-lg font-semibold text-white/90">
+                    www.nomadcollege.in
+                  </p>
+                </div>
+
+                {/* MIAMI */}
+                <div className="rounded-[22px] border border-white/10 bg-white/[0.04] p-5">
+                  <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                    Miami Ad School
+                  </p>
+
+                  <p className="mt-4 text-base md:text-lg font-semibold text-white/90">
+                    www.miamiadschool.in
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-
       <Footer />
     </div>
   );
