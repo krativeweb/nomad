@@ -260,11 +260,11 @@ export default function ProgramsPage() {
         {/* GLOW */}
 
         <div className="max-w-7xl mx-auto px-6 pt-40 md:pt-48 relative z-10">
-          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-20 items-center">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-20 items-start">
             {/* LEFT */}
             {/* LEFT */}
             {/* LEFT */}
-            <div className="relative z-10 max-w-[620px]">
+           <div className="relative z-10 w-full">
               {/* LABEL */}
               <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-4 py-2 rounded-full mb-8">
                 <Sparkles size={15} className="text-[#ec008c]" />
@@ -340,7 +340,7 @@ export default function ProgramsPage() {
 
             {/* RIGHT IMAGE */}
             <div className="relative">
-              <div className="absolute -top-10 -right-10 w-full h-full rounded-[50px] bg-[#ec008c]"></div>
+              <div className="absolute top-0 -right-10 w-full h-full rounded-[50px] bg-[#ec008c]"></div>
 
               <div className="hero-image relative overflow-hidden rounded-[50px] shadow-2xl">
                 <Image
