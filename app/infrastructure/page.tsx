@@ -415,12 +415,54 @@ export default function InfrastructurePage() {
                 image: "/video-shoot.jpg",
                 text: "Lights, camera, creativity. Explore content, analyze campaigns, and bring ideas to life through visuals, storytelling, and media.",
               },
-              {
-                title: "The Design Den.",
-                label: "Creative Studio",
-                image: "/creative-studio.jpg",
-                text: "A space built for creators. From sketches to screens, this is where raw ideas turn into powerful visuals and design comes to life.",
-              },
+             {
+  title: "The Design Den.",
+  label: "Creative Studio",
+  image: "/creative-studio.jpg",
+  text: "A space built for creators. From sketches to screens, this is where raw ideas turn into powerful visuals and design comes to life.",
+},
+
+{
+  title: "The Labs.",
+  label: "Innovation Labs",
+  image: "/labs.jpg",
+  text: "Hands-on technology and experimentation spaces designed for future-focused creative learning and innovation.",
+},
+
+{
+  title: "The Archive.",
+  label: "Library",
+  image: "/library-2.jpg",
+  text: "A modern learning library filled with design resources, books, magazines, and digital inspiration for curious minds.",
+},
+
+{
+  title: "The Media Room.",
+  label: "Media Room",
+  image: "/media-room.jpg",
+  text: "A collaborative media environment for screenings, editing, storytelling, presentations, and creative discussions.",
+},
+
+{
+  title: "The Hall.",
+  label: "Lecture Halls",
+  image: "/lecture-hall.jpg",
+  text: "Spacious and modern lecture halls designed for interactive sessions, workshops, guest talks, and industry learning.",
+},
+
+{
+  title: "The Arena.",
+  label: "Sports Facility",
+  image: "/sports.jpg",
+  text: "Fitness and recreational spaces that encourage teamwork, wellness, balance, and an active campus lifestyle.",
+},
+
+{
+  title: "The Café.",
+  label: "Cafeteria",
+  image: "/cafeteria.jpg",
+  text: "A vibrant social hub where students connect, collaborate, recharge, and share ideas beyond the classroom.",
+},
             ].map((item, i) => (
               <div
                 key={i}
