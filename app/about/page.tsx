@@ -138,7 +138,7 @@ export default function ProgramsPage() {
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* HERO SECTION */}
-          <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
+          <div className="grid items-start gap-16 lg:grid-cols-2 lg:gap-24">
             {/* LEFT */}
             <div className="max-w-2xl">
               <div className="inline-flex items-center rounded-full border border-black/10 bg-white/80 px-5 py-3 backdrop-blur-xl shadow-sm">
@@ -182,9 +182,12 @@ export default function ProgramsPage() {
             </div>
 
             {/* RIGHT IMAGE */}
-            <div className="relative">
+            <div className="relative lg:mt-16">
               {/* GLOW */}
-              <div className="absolute -bottom-8 -left-8 h-full w-full rounded-[40px] bg-[#ec008c]/15 blur-3xl" />
+              <div className="absolute -bottom-6 -left-6 h-full w-full rounded-[40px] bg-[#ec008c]" />
+
+              {/* GLOW */}
+              <div className="hero-image absolute -bottom-10 -left-10 h-full w-full rounded-[40px] bg-[#ec008c]/20 blur-3xl" />
 
               <div className="hero-image relative overflow-hidden rounded-[40px] shadow-[0_25px_80px_rgba(0,0,0,0.12)]">
                 <Image
@@ -1232,13 +1235,13 @@ font-black uppercase leading-[0.95] tracking-[-0.045em]"
               <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
                 Still Unsure?
               </p>
-<h2 className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2 text-[11vw] sm:text-[8vw] md:text-[5vw] lg:text-[4vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
-  <span>Creative Careers</span>
+              <h2 className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2 text-[11vw] sm:text-[8vw] md:text-[5vw] lg:text-[4vw] font-black uppercase leading-[0.9] tracking-[-0.045em]">
+                <span>Creative Careers</span>
 
-  <span className="text-[#ec008c]">Don’t Come With</span>
+                <span className="text-[#ec008c]">Don’t Come With</span>
 
-  <span>A Fixed Roadmap.</span>
-</h2>
+                <span>A Fixed Roadmap.</span>
+              </h2>
               <p className="mt-8 max-w-3xl text-base md:text-xl leading-[1.9] text-white/70">
                 But if you’re serious about building something of your own, this
                 is where you start.
