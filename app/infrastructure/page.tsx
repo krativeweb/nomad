@@ -154,7 +154,7 @@ export default function InfrastructurePage() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 md:pt-48 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
             {/* LEFT */}
             <div>
               <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-5 py-3 rounded-full mb-10">
@@ -204,7 +204,7 @@ export default function InfrastructurePage() {
             </div>
 
             {/* RIGHT */}
-            <div className="relative">
+            <div className="relative lg:mt-16">
               <div className="absolute -top-6 -right-6 w-full h-full rounded-[50px] bg-[#ec008c]/80"></div>
 
               <div className="hero-image relative overflow-hidden rounded-[50px]">
@@ -234,221 +234,248 @@ export default function InfrastructurePage() {
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="py-20 md:py-24 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              ["25+", "Creative Labs"],
-              ["12+", "Studios"],
-              ["45K+", "Campus Area"],
-              ["24/7", "Smart Access"],
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="fade-card rounded-[40px] bg-white/5 border border-white/10 p-8 md:p-10"
-              >
-                <h3 className="text-5xl md:text-6xl font-black">
-                  {item[0]}
-                </h3>
+      {/* CREATIVE ECOSYSTEM */}
+      {/* CREATIVE ECOSYSTEM */}
+      <section className="relative overflow-hidden bg-white py-14 sm:py-16 md:py-20 lg:py-24">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
 
-                <p className="mt-4 uppercase tracking-[3px] text-white/50 font-bold text-sm">
-                  {item[1]}
+        {/* BG TEXT */}
+        <div className="pointer-events-none absolute right-[-5%] top-[5%] text-[20vw] font-black uppercase tracking-[-0.08em] text-black/[0.03]">
+          CAMPUS
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+            {/* LEFT CONTENT */}
+            <div className="flex flex-col justify-center">
+              {/* LABEL */}
+              <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                Creative Ecosystem
+              </p>
+
+              {/* HEADING */}
+              <div className="mt-6">
+                <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+                  Not A Campus
+                </h2>
+
+                <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-[#ec008c]">
+                  But A Creative
+                </h2>
+
+                <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+                  Ecosystem.
+                </h2>
+              </div>
+
+              {/* DESCRIPTION */}
+              <div className="mt-10 max-w-2xl space-y-6">
+                <p className="text-lg sm:text-xl md:text-2xl font-semibold leading-[1.6] text-black">
+                  Forget boring classrooms and silent lectures.
+                </p>
+
+                <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+                  At NoMAD, we transform the campus into a vibrant creative
+                  ecosystem where innovation and collaboration thrive.
+                </p>
+
+                <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+                  Our environment encourages students, faculty, and industry
+                  experts to push boundaries and explore new ideas.
+                </p>
+
+                <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+                  Equipped with cutting-edge technology, interactive labs, and
+                  collaborative studios, students experience a culture of
+                  experimentation and discovery that reflects the evolving
+                  creative landscape.
                 </p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* FACILITIES */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Campus Facilities
-            </p>
+              {/* FOOTER */}
+              <div className="mt-10 flex items-center gap-5">
+                <div className="h-px w-20 bg-[#ec008c]" />
 
-            <h2 className="split-text text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Learning Environment
-            </h2>
-          </div>
+                <p className="text-[11px] font-black uppercase tracking-[0.35em] text-black/40">
+                  Visual Of Our Campus
+                </p>
+              </div>
+            </div>
 
-          <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-8">
-            {facilities.map((facility, index) => (
-              <div
-                key={index}
-                className="fade-card group rounded-[40px] overflow-hidden bg-[#f5f5f5] border border-black/5 hover:-translate-y-2 transition-all duration-500"
-              >
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={facility.image}
-                    alt={facility.title}
-                    width={700}
-                    height={800}
-                    className="w-full h-[360px] object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
-                  />
+            {/* RIGHT IMAGE */}
+            <div className="overflow-hidden rounded-[40px] border border-black/10 bg-black">
+              <div className="relative overflow-hidden">
+                <Image
+                  src="/campus.jpg"
+                  alt="NoMAD Campus"
+                  width={1200}
+                  height={1500}
+                  className="h-[720px] w-full object-cover grayscale transition-all duration-700 hover:scale-105 hover:grayscale-0"
+                />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                </div>
+                {/* OVERLAYS */}
+                <div className="absolute inset-0 bg-black/35" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
-                <div className="p-8">
-                  <facility.icon
-                    className="text-[#ec008c]"
-                    size={42}
-                  />
-
-                  <h3 className="mt-6 text-3xl font-black uppercase leading-tight">
-                    {facility.title}
-                  </h3>
-
-                  <p className="mt-5 text-black/60 leading-relaxed">
-                    {facility.description}
+                {/* LABEL */}
+                <div className="absolute left-6 top-6 rounded-full border border-white/10 bg-black/30 px-4 py-2 backdrop-blur-xl">
+                  <p className="text-[10px] font-black uppercase tracking-[0.3em] text-white">
+                    Lecture Room
                   </p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* WHY CAMPUS */}
-      <section className="py-24 md:py-32 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Why Our Campus
-            </p>
+                {/* BOTTOM CONTENT */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 md:p-10">
+                  <div className="rounded-[28px] border border-white/10 bg-black/20 p-6 backdrop-blur-xl">
+                    <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                      Creative Learning Space
+                    </p>
 
-            <h2 className="text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Premium Experience
-            </h2>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: GraduationCap,
-                title: "Industry Standard Labs",
-              },
-              {
-                icon: Globe2,
-                title: "Global Learning Environment",
-              },
-              {
-                icon: Star,
-                title: "Creative Ecosystem",
-              },
-              {
-                icon: CheckCircle2,
-                title: "Smart Campus Facilities",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="fade-card rounded-[35px] border border-white/10 bg-white/5 p-10 hover:bg-[#ec008c] transition-all duration-500"
-              >
-                <item.icon size={42} />
-
-                <h3 className="mt-8 text-3xl font-black uppercase leading-tight">
-                  {item.title}
-                </h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* VIDEO TOUR */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Campus Tour
-            </p>
-
-            <h2 className="split-text text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Explore Infrastructure
-            </h2>
-          </div>
-
-          <div className="relative overflow-hidden rounded-[50px]">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              poster="/infra-video-thumb.jpg"
-              className="w-full h-[320px] md:h-[700px] object-cover"
-            >
-              <source
-                src="/videos/infrastructure-tour.mp4"
-                type="video/mp4"
-              />
-            </video>
-
-            <div className="absolute inset-0 bg-black/40"></div>
-
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-24 h-24 rounded-full bg-[#ec008c] flex items-center justify-center">
-                <Play size={34} fill="white" />
+                    <h3 className="mt-4 text-4xl md:text-5xl font-black uppercase leading-[0.9] tracking-[-0.05em] text-white">
+                      Lecture Room.
+                    </h3>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* GALLERY */}
-      <section className="py-24 md:py-32 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Campus Gallery
+      {/* CREATIVE SPACES */}
+      <section className="relative overflow-hidden bg-[#f5f5f5] py-14 sm:py-16 md:py-20 lg:py-24">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
+
+        {/* BG TEXT */}
+        <div className="pointer-events-none absolute right-[-5%] top-[5%] text-[20vw] font-black uppercase tracking-[-0.08em] text-black/[0.03]">
+          SPACES
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* TOP */}
+          <div className="max-w-5xl">
+            <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Creative Spaces
             </p>
 
-            <h2 className="text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Creative Spaces
-            </h2>
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em]">
+                Built For
+              </h2>
+
+              <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-[#ec008c]">
+                Creators.
+              </h2>
+            </div>
+
+            <p className="mt-8 max-w-4xl text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+              Every environment at NoMAD is designed to encourage
+              experimentation, storytelling, collaboration, and innovation.
+            </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+          {/* GRID */}
+          <div className="mt-14 grid gap-8 lg:grid-cols-2">
+            {[
+              {
+                title: "The Thinktank.",
+                label: "Lecture Room",
+                image: "/brainstorming-session.jpg",
+                text: "Not your typical lecture space. This is where concepts are introduced, perspectives are challenged, and creative thinking takes its first step.",
+              },
+              {
+                title: "The Archive.",
+                label: "Library",
+                image: "/library.jpg",
+                text: "Packed with books, magazines, and inspiration from advertising, design, and storytelling — because sometimes the best ideas start with a single page.",
+              },
+              {
+                title: "The Grid.",
+                label: "Studio For Shoots",
+                image: "/video-shoot.jpg",
+                text: "Lights, camera, creativity. Explore content, analyze campaigns, and bring ideas to life through visuals, storytelling, and media.",
+              },
+              {
+                title: "The Design Den.",
+                label: "Creative Studio",
+                image: "/creative-studio.jpg",
+                text: "A space built for creators. From sketches to screens, this is where raw ideas turn into powerful visuals and design comes to life.",
+              },
+            ].map((item, i) => (
               <div
-                key={item}
-                className="fade-card group overflow-hidden rounded-[30px]"
+                key={i}
+                className="group overflow-hidden rounded-[36px] border border-black/10 bg-white transition-all duration-500 hover:-translate-y-2 hover:border-[#ec008c]/30 hover:shadow-[0_25px_80px_rgba(0,0,0,0.08)]"
               >
-                <Image
-                  src={`/gallery-${item}.jpg`}
-                  alt="Gallery"
-                  width={500}
-                  height={500}
-                  className="w-full h-[220px] md:h-[280px] object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
-                />
+                {/* IMAGE */}
+                <div className="relative overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={1000}
+                    height={700}
+                    className="h-[340px] w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                  />
+
+                  {/* OVERLAY */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+
+                  {/* LABEL */}
+                  <div className="absolute left-6 top-6 rounded-full border border-white/10 bg-black/30 px-4 py-2 backdrop-blur-xl">
+                    <p className="text-[10px] font-black uppercase tracking-[0.3em] text-white">
+                      {item.label}
+                    </p>
+                  </div>
+
+                  {/* TITLE */}
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <h3 className="text-4xl md:text-5xl font-black uppercase leading-[0.9] tracking-[-0.05em] text-white">
+                      {item.title}
+                    </h3>
+                  </div>
+                </div>
+
+                {/* CONTENT */}
+                <div className="p-6 sm:p-8">
+                  <p className="text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+                    {item.text}
+                  </p>
+
+                  {/* FOOTER */}
+                  <div className="mt-8 flex items-center justify-between border-t border-black/10 pt-6">
+                    <p className="text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                      Creative Environment
+                    </p>
+
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#ec008c] text-sm font-black text-white">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-
-      {/* CTA */}
-      <section className="relative py-24 md:py-32 overflow-hidden bg-[#ec008c] text-white text-center">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-[15vw] md:text-[6vw] font-black uppercase leading-[0.82] tracking-[-0.05em]">
-            Experience Innovation
-          </h2>
-
-          <p className="mt-8 text-lg md:text-2xl text-white/80 leading-relaxed max-w-3xl mx-auto">
-            Discover modern creative infrastructure designed to inspire
-            collaboration, experimentation, and global learning experiences.
-          </p>
-
-          <button className="mt-12 h-[60px] px-10 rounded-full bg-black text-white uppercase tracking-[3px] font-bold hover:bg-white hover:text-black transition-all duration-500">
-            Visit Campus
-          </button>
-        </div>
-      </section>
-
       <Footer />
     </div>
   );
