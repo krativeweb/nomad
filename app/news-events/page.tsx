@@ -254,7 +254,7 @@ export default function NewsEventsPage() {
             "
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+            
 
                 {/* FLOATING CARD */}
                 <div className="absolute top-4 right-4 sm:top-6 sm:right-6 rounded-[20px] sm:rounded-[25px] border border-black/5 bg-white/95 p-4 sm:p-5 backdrop-blur-xl">
