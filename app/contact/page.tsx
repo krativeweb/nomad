@@ -147,56 +147,13 @@ export default function ContactPage() {
                 partnerships? Our team is ready to help you.
               </p>
 
-              {/* CONTACT INFO */}
-              <div className="mt-10 md:mt-14 space-y-4 md:space-y-5">
-                {[
-                  {
-                    icon: Mail,
-                    title: "Email Address",
-                    value: "hello@creativeuniversity.com",
-                  },
-                  {
-                    icon: Phone,
-                    title: "Phone Number",
-                    value: "+91 9876543210",
-                  },
-                  {
-                    icon: MapPin,
-                    title: "Campus Address",
-                    value: "Kolkata, West Bengal, India",
-                  },
-                  {
-                    icon: Clock3,
-                    title: "Working Hours",
-                    value: "Mon - Sat : 9AM - 6PM",
-                  },
-                ].map((item, index) => (
-                  <div
-                    key={index}
-                    className="fade-section flex items-start gap-4 sm:gap-5 rounded-[24px] sm:rounded-[30px] bg-[#f5f5f5] border border-black/5 p-4 sm:p-5 md:p-6"
-                  >
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-black text-white flex items-center justify-center shrink-0">
-                      <item.icon size={20} />
-                    </div>
-
-                    <div>
-                      <p className="uppercase tracking-[3px] text-[10px] sm:text-xs font-bold text-[#ec008c]">
-                        {item.title}
-                      </p>
-
-                      <h3 className="mt-2 text-base sm:text-lg md:text-xl font-black leading-relaxed break-words">
-                        {item.value}
-                      </h3>
-                    </div>
-                  </div>
-                ))}
-              </div>
+        
             </div>
 
             {/* FORM */}
             <div className="fade-section relative opacity-100">
               {/* PINK SHADOW */}
-              <div className="absolute -top-3 sm:-top-6 -right-3 sm:-right-6 w-full h-full rounded-[30px] sm:rounded-[50px] bg-[#ec008c]/80"></div>
+             
 
               <div className="relative rounded-[30px] sm:rounded-[50px] bg-[#f5f5f5] border border-black/5 p-5 sm:p-8 md:p-10">
                 <div className="mb-8 md:mb-10">
@@ -252,6 +209,187 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* CONTACT INFO SECTION */}
+<section className="relative overflow-hidden bg-white py-20 sm:py-24 md:py-32">
+  
+  {/* GRID */}
+  <div
+    className="absolute inset-0 opacity-[0.03]"
+    style={{
+      backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+      backgroundSize: "70px 70px",
+    }}
+  />
+
+  {/* BG TEXT */}
+  <div className="pointer-events-none absolute right-[-5%] top-[10%] select-none text-[24vw] md:text-[14vw] font-black uppercase leading-none tracking-[-0.08em] text-black/[0.03]">
+    Connect
+  </div>
+
+  <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    
+    {/* TOP */}
+    <div className="max-w-5xl">
+      
+      <p className="text-[10px] sm:text-xs font-black uppercase tracking-[0.35em] text-[#ec008c]">
+        Contact Information
+      </p>
+
+      <div className="mt-5 flex flex-wrap items-end gap-x-5 gap-y-2">
+        
+        <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+          Reach
+        </h2>
+
+        <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-[#ec008c]">
+          Out
+        </h2>
+
+        <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+          Anytime.
+        </h2>
+      </div>
+
+      <p className="mt-8 max-w-4xl text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+        Whether you're exploring admissions, partnerships,
+        programs, or campus life — our team is here to help.
+      </p>
+    </div>
+
+    {/* CONTACT GRID */}
+    <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      
+      {[
+        {
+          icon: MapPin,
+          title: "Campus Address",
+          value:
+            "Kohinoor City, Kirol Road, Off LBS Marg, Upper BKC, Mumbai – 400070, Maharashtra",
+          dark: false,
+        },
+
+        {
+          icon: MapPin,
+          title: "Admissions Office",
+          value:
+            "Rose Cottage Complex, Dr SS Rao Marg, Next to Amit Industrial Estate, Parel East, Mumbai – 400012, Maharashtra",
+          dark: true,
+        },
+
+        {
+          icon: Phone,
+          title: "Mumbai Contact",
+          value: "9819543130 / 9819543376",
+          dark: false,
+        },
+
+        {
+          icon: Phone,
+          title: "Bangalore Contact",
+          value: "9819543375 / 9833621147",
+          dark: false,
+        },
+
+        {
+          icon: Mail,
+          title: "Email Address",
+          value: "info@nomadcollege.in",
+          dark: false,
+          full: true,
+        },
+      ].map((item, index) => (
+        
+        <div
+          key={index}
+          className={`
+            fade-section
+            group
+            relative
+            overflow-hidden
+            rounded-[28px]
+            border
+            p-5
+            sm:p-6
+            md:p-7
+            transition-all
+            duration-500
+            hover:-translate-y-2
+            ${
+              item.dark
+                ? "border-white/10 bg-black text-white"
+                : "border-black/10 bg-[#f5f5f5] text-black"
+            }
+            ${item.full ? "md:col-span-2 xl:col-span-1" : ""}
+          `}
+        >
+          {/* GLOW */}
+          <div className="absolute right-[-60px] top-[-60px] h-[140px] w-[140px] rounded-full bg-[#ec008c]/10 blur-[60px]" />
+
+          {/* ICON */}
+          <div
+            className={`
+              relative z-10
+              flex
+              h-14
+              w-14
+              items-center
+              justify-center
+              rounded-full
+              transition-all
+              duration-500
+              ${
+                item.dark
+                  ? "bg-white text-black"
+                  : "bg-black text-white group-hover:bg-[#ec008c]"
+              }
+            `}
+          >
+            <item.icon size={22} />
+          </div>
+
+          {/* CONTENT */}
+          <div className="relative z-10 mt-8">
+            
+            <p className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              {item.title}
+            </p>
+
+            <div
+              className={`
+                mt-4 h-px w-16
+                ${item.dark ? "bg-white/10" : "bg-black/10"}
+              `}
+            />
+
+            <h3
+              className={`
+                mt-5
+                text-lg
+                sm:text-xl
+                md:text-2xl
+                font-black
+                leading-[1.6]
+                tracking-[-0.03em]
+                break-words
+                ${
+                  item.dark
+                    ? "text-white"
+                    : "text-black"
+                }
+              `}
+            >
+              {item.value}
+            </h3>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* MAP */}
       <section className="py-20 md:py-32 bg-black overflow-hidden">
