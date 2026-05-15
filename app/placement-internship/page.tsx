@@ -144,94 +144,82 @@ export default function PlacementInternshipPage() {
       <Header />
 
       {/* HERO */}
-     <section className="relative min-h-screen overflow-hidden pt-28 sm:pt-36 md:pt-44 lg:pt-48 pb-20 sm:pb-24 md:pb-32">
-  {/* GRID */}
-  <div
-    className="absolute inset-0 opacity-[0.03]"
-    style={{
-      backgroundImage: `
+      <section className="relative min-h-screen overflow-hidden pt-28 sm:pt-36 md:pt-44 lg:pt-48 pb-20 sm:pb-24 md:pb-32">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
         linear-gradient(to right, black 1px, transparent 1px),
         linear-gradient(to bottom, black 1px, transparent 1px)
       `,
-      backgroundSize: "70px 70px",
-    }}
-  />
+            backgroundSize: "70px 70px",
+          }}
+        />
 
-  {/* BG TEXT */}
-  <div className="pointer-events-none absolute top-[8%] left-[-5%] select-none whitespace-nowrap text-[28vw] sm:text-[18vw] md:text-[14vw] lg:text-[10vw] font-black uppercase leading-none tracking-[-0.08em] text-black/[0.03]">
-    Placements
-  </div>
-
-  <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    
-    <div className="grid lg:grid-cols-[1fr_1fr] gap-14 lg:gap-20 items-start">
-      
-      {/* LEFT */}
-      <div className="relative z-10 w-full max-w-[680px]">
-        
-        {/* LABEL */}
-        <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-4 sm:px-5 py-3 rounded-full mb-6 sm:mb-8">
-          
-          <Briefcase
-            size={16}
-            className="text-[#ec008c] shrink-0"
-          />
-
-          <span className="uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[9px] sm:text-[10px] font-black whitespace-nowrap">
-            Placement & Internship
-          </span>
+        {/* BG TEXT */}
+        <div className="pointer-events-none absolute top-[8%] left-[-5%] select-none whitespace-nowrap text-[28vw] sm:text-[18vw] md:text-[14vw] lg:text-[10vw] font-black uppercase leading-none tracking-[-0.08em] text-black/[0.03]">
+          Placements
         </div>
 
-        {/* HEADING */}
-        <div className="space-y-1">
-          
-          <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
-            Career
-          </h1>
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-[1fr_1fr] gap-14 lg:gap-20 items-start">
+            {/* LEFT */}
+            <div className="relative z-10 w-full max-w-[680px]">
+              {/* LABEL */}
+              <div className="hero-reveal inline-flex items-center gap-3 border border-black/10 bg-[#f5f5f5] px-4 sm:px-5 py-3 rounded-full mb-6 sm:mb-8">
+                <Briefcase size={16} className="text-[#ec008c] shrink-0" />
 
-          <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase text-[#ec008c] leading-[0.84] tracking-[-0.055em]">
-            Success
-          </h1>
+                <span className="uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[9px] sm:text-[10px] font-black whitespace-nowrap">
+                  Placement & Internship
+                </span>
+              </div>
 
-          <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
-            Starts Here
-          </h1>
-        </div>
+              {/* HEADING */}
+              <div className="space-y-1">
+                <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
+                  Our Best
+                </h1>
 
-        {/* DESCRIPTION */}
-        <p className="hero-reveal mt-6 sm:mt-8 max-w-[620px] text-[15px] sm:text-lg md:text-xl leading-[1.9] text-black/70">
-          Unlock global career opportunities with top recruiters,
-          internships, industry projects, and placement programs designed
-          for future innovators.
-        </p>
+                <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase text-[#ec008c] leading-[0.84] tracking-[-0.055em]">
+                  Are Working
+                </h1>
 
-        {/* BUTTONS */}
-        <div className="hero-reveal mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4">
-          
-          <button className="group h-[56px] sm:h-[58px] px-6 sm:px-8 rounded-full bg-black text-white uppercase tracking-[0.22em] sm:tracking-[3px] text-[11px] sm:text-sm font-bold hover:bg-[#ec008c] transition-all duration-500 flex items-center justify-center gap-3">
-            Explore Careers
+                <h1 className="hero-reveal split-text text-[16vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.8vw] font-black uppercase leading-[0.84] tracking-[-0.055em]">
+                  With The Best
+                </h1>
+              </div>
 
-            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-all duration-300" />
-          </button>
+              {/* DESCRIPTION */}
+              <p className="hero-reveal mt-6 sm:mt-8 max-w-[620px] text-[15px] sm:text-lg md:text-xl leading-[1.9] text-black/70">
+                Unlock global career opportunities with top recruiters,
+                internships, industry projects, and placement programs designed
+                for future innovators.
+              </p>
 
-          <button className="h-[56px] sm:h-[58px] px-6 sm:px-8 rounded-full border border-black/10 bg-[#f5f5f5] text-black uppercase tracking-[0.22em] sm:tracking-[3px] text-[11px] sm:text-sm font-bold hover:bg-black hover:text-white transition-all duration-500">
-            Placement Report
-          </button>
-        </div>
-      </div>
+              {/* BUTTONS */}
+              <div className="hero-reveal mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4">
+                <button className="group h-[56px] sm:h-[58px] px-6 sm:px-8 rounded-full bg-black text-white uppercase tracking-[0.22em] sm:tracking-[3px] text-[11px] sm:text-sm font-bold hover:bg-[#ec008c] transition-all duration-500 flex items-center justify-center gap-3">
+                  Explore Careers
+                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-all duration-300" />
+                </button>
 
-      {/* RIGHT IMAGE */}
-      <div className="relative flex justify-center lg:justify-end">
-        
-        <div className="hero-image relative overflow-hidden rounded-[32px] sm:rounded-[40px] lg:rounded-[50px] shadow-2xl w-full max-w-[680px]">
-          
-          <Image
-            src="/placement-hero.jpg"
-            alt="Placement"
-            width={900}
-            height={1200}
-            priority
-            className="
+                <button className="h-[56px] sm:h-[58px] px-6 sm:px-8 rounded-full border border-black/10 bg-[#f5f5f5] text-black uppercase tracking-[0.22em] sm:tracking-[3px] text-[11px] sm:text-sm font-bold hover:bg-black hover:text-white transition-all duration-500">
+                  Placement Report
+                </button>
+              </div>
+            </div>
+
+            {/* RIGHT IMAGE */}
+            <div className="relative flex justify-center lg:justify-end">
+              <div className="hero-image relative overflow-hidden rounded-[32px] sm:rounded-[40px] lg:rounded-[50px] shadow-2xl w-full max-w-[680px]">
+                <Image
+                  src="/placement-hero.jpg"
+                  alt="Placement"
+                  width={900}
+                  height={1200}
+                  priority
+                  className="
               w-full
               h-[340px]
               sm:h-[500px]
@@ -240,300 +228,595 @@ export default function PlacementInternshipPage() {
               object-cover
               grayscale
             "
-          />
+                />
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 
-          {/* FLOATING CARD */}
-          <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 max-w-[220px] sm:max-w-[280px] md:max-w-[300px] rounded-[24px] sm:rounded-[30px] border border-black/5 bg-[#f5f5f5]/90 p-4 sm:p-6 backdrop-blur-xl">
-            
-            <p className="text-[10px] sm:text-xs uppercase tracking-[2px] sm:tracking-[3px] text-black/40 font-bold">
-              Global Recruiters
-            </p>
+                {/* FLOATING CARD */}
+                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 max-w-[220px] sm:max-w-[280px] md:max-w-[300px] rounded-[24px] sm:rounded-[30px] border border-black/5 bg-[#f5f5f5]/90 p-4 sm:p-6 backdrop-blur-xl">
+                  <p className="text-[10px] sm:text-xs uppercase tracking-[2px] sm:tracking-[3px] text-black/40 font-bold">
+                    Global Recruiters
+                  </p>
 
-            <h3 className="mt-2 sm:mt-3 text-lg sm:text-xl md:text-2xl font-black leading-tight">
-              Connecting students with world-class companies.
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-      {/* STATS */}
-      <section className="py-20 md:py-24 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              ["92%", "Placement Rate"],
-              ["500+", "Hiring Companies"],
-              ["1200+", "Internships"],
-              ["45+", "Countries"],
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="fade-card rounded-[40px] bg-white/5 border border-white/10 p-8 md:p-10"
-              >
-                <h3 className="text-5xl md:text-6xl font-black">
-                  {item[0]}
-                </h3>
-
-                <p className="mt-4 uppercase tracking-[3px] text-white/50 font-bold text-sm">
-                  {item[1]}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* RECRUITERS */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Top Recruiters
-            </p>
-
-            <h2 className="split-text text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Hiring Partners
-            </h2>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {recruiters.map((company, index) => (
-              <div
-                key={index}
-                className="fade-card rounded-[35px] border border-black/10 bg-[#f5f5f5] p-10 text-center hover:bg-black hover:text-white transition-all duration-500"
-              >
-                <Building2 size={42} className="mx-auto mb-6" />
-
-                <h3 className="text-3xl font-black uppercase">{company}</h3>
-
-                <p className="mt-4 uppercase tracking-[2px] text-sm font-bold opacity-60">
-                  Global Hiring Partner
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* INTERNSHIPS */}
-      <section className="py-24 md:py-32 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Internship Programs
-            </p>
-
-            <h2 className="text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Industry Experience
-            </h2>
-          </div>
-
-          <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-8">
-            {internships.map((internship, index) => (
-              <div
-                key={index}
-                className="fade-card group rounded-[40px] overflow-hidden bg-white/5 border border-white/10 hover:-translate-y-2 transition-all duration-500"
-              >
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={internship.image}
-                    alt={internship.title}
-                    width={700}
-                    height={800}
-                    className="w-full h-[360px] object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                </div>
-
-                <div className="p-8">
-                  <h3 className="text-2xl font-black uppercase leading-tight">
-                    {internship.title}
+                  <h3 className="mt-2 sm:mt-3 text-lg sm:text-xl md:text-2xl font-black leading-tight">
+                    Connecting students with world-class companies.
                   </h3>
-
-                  <div className="mt-6 space-y-4 text-sm uppercase tracking-[2px] font-semibold">
-                    <div className="flex items-center gap-3">
-                      <Building2 size={16} />
-                      {internship.company}
-                    </div>
-
-                    <div className="flex items-center gap-3">
-                      <CheckCircle2 size={16} />
-                      {internship.duration}
-                    </div>
-                  </div>
-
-                  <button className="mt-8 h-[52px] w-full rounded-full bg-[#ec008c] text-white uppercase tracking-[3px] text-sm font-bold hover:bg-white hover:text-black transition-all duration-500">
-                    Apply Internship
-                  </button>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHY CHOOSE */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Career Benefits
-            </p>
-
-            <h2 className="split-text text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Why Students Succeed
-            </h2>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: TrendingUp,
-                title: "High Placement Rate",
-              },
-              {
-                icon: Users,
-                title: "Industry Mentorship",
-              },
-              {
-                icon: Globe2,
-                title: "Global Opportunities",
-              },
-              {
-                icon: Award,
-                title: "Career Excellence",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="fade-card rounded-[35px] border border-black/10 bg-[#f5f5f5] p-10 hover:bg-black hover:text-white transition-all duration-500"
-              >
-                <item.icon className="text-[#ec008c]" size={42} />
-
-                <h3 className="mt-8 text-3xl font-black uppercase leading-tight">
-                  {item.title}
-                </h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* VIDEO SECTION */}
-      <section className="py-24 md:py-32 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Career Journey
-            </p>
-
-            <h2 className="text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Placement Stories
-            </h2>
-          </div>
-
-          <div className="relative overflow-hidden rounded-[50px]">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              poster="/placement-video-thumb.jpg"
-              className="w-full h-[320px] md:h-[700px] object-cover"
-            >
-              <source
-                src="/videos/placement-story.mp4"
-                type="video/mp4"
-              />
-            </video>
-
-            <div className="absolute inset-0 bg-black/40"></div>
-
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-24 h-24 rounded-full bg-[#ec008c] flex items-center justify-center">
-                <Play size={34} fill="white" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SUCCESS STORIES */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[4px] text-[#ec008c] font-bold mb-5 text-sm">
-              Student Achievements
+      {/* GLOBAL INTERNSHIPS & PLACEMENTS */}
+      <section className="relative overflow-hidden bg-[#f8f5f2] py-24 sm:py-28 md:py-36 lg:py-44">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
+
+        {/* BG TEXT */}
+        <div className="pointer-events-none absolute top-[8%] left-[-5%] select-none whitespace-nowrap text-[24vw] sm:text-[18vw] md:text-[14vw] lg:text-[10vw] font-black uppercase tracking-[-0.08em] text-black/[0.03]">
+          Global
+        </div>
+
+        {/* GLOW */}
+        <div className="absolute right-[-120px] top-[12%] h-[320px] w-[320px] rounded-full bg-[#ec008c]/10 blur-[120px]" />
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* HERO */}
+          <div className="max-w-6xl">
+            <p className="text-[10px] sm:text-xs font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              International & Domestic Placements
             </p>
 
-            <h2 className="split-text text-[14vw] md:text-[6vw] font-black uppercase tracking-[-0.05em] leading-[0.85]">
-              Success Stories
-            </h2>
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h1 className="text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+                From India
+              </h1>
+
+              <h1 className="text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-[#ec008c]">
+                To The
+              </h1>
+
+              <h1 className="text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+                World.
+              </h1>
+            </div>
+
+            <p className="mt-8 max-w-5xl text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+              NoMAD talent is fully equipped with the essential skills needed to
+              thrive in the workplace. We take pride in our 100% global and
+              national internship program, placing students in some of the most
+              prestigious domestic and international companies.
+            </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
-              <div
-                key={item}
-                className="fade-card rounded-[40px] bg-[#f5f5f5] border border-black/10 p-10"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="w-20 h-20 rounded-full overflow-hidden">
+          {/* COMPANY LOGOS */}
+          <div className="mt-20">
+            <div className="flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[13vw] sm:text-[9vw] md:text-[6vw] lg:text-[4.5vw] font-black uppercase leading-[0.9] tracking-[-0.06em] text-black">
+                Companies
+              </h2>
+
+              <h2 className="text-[13vw] sm:text-[9vw] md:text-[6vw] lg:text-[4.5vw] font-black uppercase leading-[0.9] tracking-[-0.06em] text-[#ec008c]">
+                Our Students
+              </h2>
+
+              <h2 className="text-[13vw] sm:text-[9vw] md:text-[6vw] lg:text-[4.5vw] font-black uppercase leading-[0.9] tracking-[-0.06em] text-black">
+                Work With.
+              </h2>
+            </div>
+
+            {/* LOGO GRID */}
+            <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+              {[
+                {
+                  name: "Google",
+                  logo: "/logos/google.svg",
+                },
+
+                {
+                  name: "Spotify",
+                  logo: "/logos/spotify.svg",
+                },
+
+                {
+                  name: "Disney",
+                  logo: "/logos/disney.svg",
+                },
+
+                {
+                  name: "Netflix",
+                  logo: "/logos/netflix.svg",
+                },
+
+                {
+                  name: "Amazon",
+                  logo: "/logos/amazon.svg",
+                },
+
+                {
+                  name: "Pepsi",
+                  logo: "/logos/pepsi.svg",
+                },
+
+                {
+                  name: "Meta",
+                  logo: "/logos/meta.svg",
+                },
+
+                {
+                  name: "Apple",
+                  logo: "/logos/apple.svg",
+                },
+
+                {
+                  name: "TikTok",
+                  logo: "/logos/tiktok.svg",
+                },
+
+                {
+                  name: "Ogilvy",
+                  logo: "/logos/ogilvy.svg",
+                },
+
+                {
+                  name: "BBDO",
+                  logo: "/logos/bbdo.svg",
+                },
+
+                {
+                  name: "McCann",
+                  logo: "/logos/mccann.svg",
+                },
+
+                {
+                  name: "Dentsu",
+                  logo: "/logos/dentsu.svg",
+                },
+
+                {
+                  name: "WPP",
+                  logo: "/logos/wpp.svg",
+                },
+
+                {
+                  name: "Wieden+Kennedy",
+                  logo: "/logos/wk.svg",
+                },
+
+                {
+                  name: "Accenture",
+                  logo: "/logos/accenture.svg",
+                },
+
+                {
+                  name: "WhatsApp",
+                  logo: "/logos/whatsapp.svg",
+                },
+
+                {
+                  name: "Leo Burnett",
+                  logo: "/logos/leo-burnett.svg",
+                },
+
+                {
+                  name: "Mother",
+                  logo: "/logos/mother.svg",
+                },
+
+                {
+                  name: "Coca Cola",
+                  logo: "/logos/cocacola.svg",
+                },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="group relative overflow-hidden rounded-[24px] border border-black/10 bg-white p-5 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-[#ec008c]/20 hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
+                >
+                  {/* GLOW */}
+                  <div className="absolute right-[-30px] top-[-30px] h-[90px] w-[90px] rounded-full bg-[#ec008c]/5 blur-[40px]" />
+
+                  {/* LOGO */}
+                  <div className="flex h-[70px] items-center justify-center">
                     <Image
-                      src={`/student-${item}.jpg`}
-                      alt="Student"
-                      width={200}
-                      height={200}
-                      className="w-full h-full object-cover"
+                      src={item.logo}
+                      alt={item.name}
+                      width={140}
+                      height={60}
+                      className="h-auto w-[110px] object-contain grayscale transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0"
                     />
                   </div>
 
-                  <div>
-                    <h3 className="text-2xl font-black uppercase">
-                      Student Name
-                    </h3>
+                  {/* NAME */}
+                  <div className="mt-4 border-t border-black/5 pt-4 text-center">
+                    <h4 className="text-sm sm:text-base font-black uppercase tracking-[-0.03em] text-black transition-all duration-300 group-hover:text-[#ec008c]">
+                      {item.name}
+                    </h4>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <p className="uppercase tracking-[2px] text-sm text-[#ec008c] font-bold">
-                      Placed at Google
-                    </p>
+      {/* WE DON'T PLACE WE LAUNCH */}
+      <section className="relative overflow-hidden bg-black py-24 sm:py-28 md:py-36 lg:py-44">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.06]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, white 1px, transparent 1px),
+        linear-gradient(to bottom, white 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
+
+        {/* BG TEXT */}
+        <div className="pointer-events-none absolute top-[5%] left-[-5%] select-none whitespace-nowrap text-[24vw] sm:text-[18vw] md:text-[14vw] lg:text-[10vw] font-black uppercase tracking-[-0.08em] text-white/[0.03]">
+          Launch
+        </div>
+
+        {/* GLOW */}
+        <div className="absolute right-[-120px] top-[18%] h-[320px] w-[320px] rounded-full bg-[#ec008c]/20 blur-[120px]" />
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-14 lg:grid-cols-[1fr_0.9fr] lg:gap-20 items-start">
+            {/* LEFT */}
+            <div>
+              <p className="text-[10px] sm:text-xs font-black uppercase tracking-[0.35em] text-[#ec008c]">
+                Career Launchpad
+              </p>
+
+              <div className="mt-6 space-y-1">
+                <h2 className="text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.4vw] font-black uppercase leading-[0.84] tracking-[-0.06em] text-white">
+                  We Don’t
+                </h2>
+
+                <h2 className="text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.4vw] font-black uppercase leading-[0.84] tracking-[-0.06em] text-[#ec008c]">
+                  Place.
+                </h2>
+
+                <h2 className="text-[15vw] sm:text-[11vw] md:text-[7vw] lg:text-[5.4vw] font-black uppercase leading-[0.84] tracking-[-0.06em] text-white">
+                  We Launch.
+                </h2>
+              </div>
+
+              {/* SMALL TEXT */}
+              <p className="mt-8 max-w-xl text-base sm:text-lg md:text-xl leading-[1.9] text-white/70">
+                Real briefs. Real expectations. Real industry exposure. That’s
+                how creative careers begin at NoMAD.
+              </p>
+            </div>
+
+            {/* RIGHT CONTENT CARD */}
+            <div className="relative overflow-hidden rounded-[32px] sm:rounded-[40px] border border-white/10 bg-white/5 p-6 sm:p-8 md:p-10 backdrop-blur-xl">
+              {/* GLOW */}
+              <div className="absolute right-[-40px] top-[-40px] h-[140px] w-[140px] rounded-full bg-[#ec008c]/10 blur-[80px]" />
+
+              {/* CONTENT */}
+              <div className="relative z-10 space-y-6 text-base sm:text-lg md:text-xl leading-[1.9] text-white/75">
+                <p>
+                  At NoMAD, placement isn’t the goal. It’s what happens when the
+                  work is good. From day one, students work on real briefs, with
+                  real expectations, shaped by how the industry actually works.
+                </p>
+
+                <p>
+                  Not simulations. Not practice. The real thing. Because in this
+                  business, portfolios speak louder than degrees ever will.
+                </p>
+
+                <p>
+                  By the time they graduate, our students don’t just look ready
+                  on paper. They’re already contributing, already thinking,
+                  already making work that holds up.
+                </p>
+
+                <p>
+                  With access to leading global and Indian agencies including
+                  Ogilvy, Leo Burnett, DDB and more, opportunities open up. But
+                  what truly gets you in is the work you’ve built.
+                </p>
+              </div>
+
+              {/* BOTTOM TAG */}
+              <div className="relative z-10 mt-10 border-t border-white/10 pt-6">
+                <p className="text-[10px] sm:text-xs font-black uppercase tracking-[0.3em] text-[#ec008c]">
+                  Industry Ready Since Day One
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* THE NOMAD EXPERIENCE */}
+      <section className="relative overflow-hidden bg-[#f8f5f2] pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-12 sm:pb-14 md:pb-16 lg:pb-20">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
+
+        {/* BG TEXT */}
+        <div className="pointer-events-none absolute top-[8%] right-[-5%] select-none whitespace-nowrap text-[24vw] sm:text-[18vw] md:text-[14vw] lg:text-[10vw] font-black uppercase tracking-[-0.08em] text-black/[0.03]">
+          Experience
+        </div>
+
+        {/* PINK GLOW */}
+        <div className="absolute left-[-120px] top-[20%] h-[320px] w-[320px] rounded-full bg-[#ec008c]/10 blur-[120px]" />
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* TOP */}
+          <div className="max-w-5xl">
+            <p className="text-[10px] sm:text-xs font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              The NoMAD Experience
+            </p>
+
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+                Creativity
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-[#ec008c]">
+                Beyond
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+                Classrooms.
+              </h2>
+            </div>
+
+            <p className="mt-8 max-w-4xl text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+              NoMAD blends global exposure, real-world industry learning, and
+              mentorship into an experience designed to shape future creative
+              leaders.
+            </p>
+          </div>
+
+          {/* EXPERIENCE GRID */}
+          <div className="mt-16 grid gap-6 md:grid-cols-2">
+            {[
+              {
+                number: "01",
+                title: "International Network",
+                description:
+                  "Access Miami Ad School's global community spanning 15+ cities, opening doors to international opportunities and collaborations.",
+              },
+
+              {
+                number: "02",
+                title: "Real-World Projects",
+                description:
+                  "Work on live client briefs from day one. Build a portfolio that reflects actual industry experience, not just classroom exercises.",
+              },
+
+              {
+                number: "03",
+                title: "Portfolio-Based Hiring",
+                description:
+                  "Graduate with a powerful body of work that speaks for itself — the currency that matters most in creative industries.",
+              },
+
+              {
+                number: "04",
+                title: "Industry Mentorship",
+                description:
+                  "Learn directly from top creative professionals across India's most respected agencies, studios, and brands.",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="group relative overflow-hidden rounded-[30px] border border-black/10 bg-white p-6 sm:p-8 md:p-10 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-[#ec008c]/20 hover:shadow-[0_30px_80px_rgba(0,0,0,0.08)]"
+              >
+                {/* GLOW */}
+                <div className="absolute right-[-40px] top-[-40px] h-[140px] w-[140px] rounded-full bg-[#ec008c]/5 blur-[80px]" />
+
+                {/* NUMBER */}
+                <div className="relative z-10 flex items-center justify-between">
+                  <span className="text-5xl sm:text-6xl md:text-7xl font-black leading-none tracking-[-0.08em] text-black/10">
+                    {item.number}
+                  </span>
+
+                  <div className="h-12 w-12 rounded-full bg-[#ec008c] flex items-center justify-center text-white text-sm font-black">
+                    +
                   </div>
                 </div>
 
-                <p className="mt-8 text-black/60 leading-relaxed">
-                  The institute provided industry exposure, mentorship,
-                  internships, and placement support that transformed my career.
-                </p>
+                {/* CONTENT */}
+                <div className="relative z-10 mt-10">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase leading-[1] tracking-[-0.05em] text-black">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-6 text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+                    {item.description}
+                  </p>
+                </div>
+
+                {/* BOTTOM LINE */}
+                <div className="relative z-10 mt-10 h-[2px] w-16 bg-[#ec008c]" />
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="relative py-24 md:py-32 overflow-hidden bg-[#ec008c] text-white text-center">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-[15vw] md:text-[6vw] font-black uppercase leading-[0.82] tracking-[-0.05em]">
-            Build Your Career
-          </h2>
+      {/* TRAIL BLAZING ALUMS */}
+      <section className="relative overflow-hidden bg-[#f8f5f2] pt-10 sm:pt-12 md:pt-16 lg:pt-20 pb-16 sm:pb-20 md:pb-24 lg:pb-28">
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `
+        linear-gradient(to right, black 1px, transparent 1px),
+        linear-gradient(to bottom, black 1px, transparent 1px)
+      `,
+            backgroundSize: "70px 70px",
+          }}
+        />
 
-          <p className="mt-8 text-lg md:text-2xl text-white/80 leading-relaxed max-w-3xl mx-auto">
-            Explore global placements, internships, mentorship, and career
-            opportunities with industry-leading companies.
-          </p>
+        {/* BG TEXT */}
+        <div className="pointer-events-none absolute top-[5%] left-[-5%] select-none whitespace-nowrap text-[24vw] sm:text-[18vw] md:text-[14vw] lg:text-[10vw] font-black uppercase tracking-[-0.08em] text-black/[0.03]">
+          Alumni
+        </div>
 
-          <button className="mt-12 h-[60px] px-10 rounded-full bg-black text-white uppercase tracking-[3px] font-bold hover:bg-white hover:text-black transition-all duration-500">
-            Apply Today
-          </button>
+        {/* PINK GLOW */}
+        <div className="absolute right-[-120px] top-[15%] h-[320px] w-[320px] rounded-full bg-[#ec008c]/10 blur-[120px]" />
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* TOP */}
+          <div className="max-w-5xl">
+            <p className="text-[10px] sm:text-xs font-black uppercase tracking-[0.35em] text-[#ec008c]">
+              Alumni Network
+            </p>
+
+            <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-[#ec008c]">
+                Trail
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+                Blazing
+              </h2>
+
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.06em] text-black">
+                Alums
+              </h2>
+            </div>
+
+            <p className="mt-8 max-w-4xl text-base sm:text-lg md:text-xl leading-[1.9] text-black/70">
+              Meet the NoMAD alumni building impactful careers across global
+              agencies, creative studios, streaming platforms, technology
+              companies, and brands worldwide.
+            </p>
+          </div>
+
+          {/* ALUMNI GRID */}
+          <div className="mt-16 grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+            {[
+              {
+                name: "Deep Chhabria",
+                company: "Netflix",
+                image: "/alums/deep.jpg",
+              },
+
+              {
+                name: "Khushali Bhansali",
+                company: "Ogilvy",
+                image: "/alums/khushali.jpg",
+              },
+
+              {
+                name: "Nishita Charat",
+                company: "Punt Creative",
+                image: "/alums/nishita.jpg",
+              },
+
+              {
+                name: "Sudipta Karmarkar",
+                company: "Miami Adschool",
+                image: "/alums/sudipta.jpg",
+              },
+
+              {
+                name: "Arvindh Lochan",
+                company: "Indy Lassi Creative",
+                image: "/alums/arvindh.jpg",
+              },
+
+              {
+                name: "Rohan Mishra",
+                company: "FCB Kinnect",
+                image: "/alums/rohan.jpg",
+              },
+
+              {
+                name: "Hrudika Gariba",
+                company: "Netflix",
+                image: "/alums/hrudika.jpg",
+              },
+
+              {
+                name: "Vaishali Gandhi",
+                company: "International Expressive Art Facilitator",
+                image: "/alums/vaishali.jpg",
+              },
+
+              {
+                name: "Sonica Baptist",
+                company: "Salesforce",
+                image: "/alums/sonica.jpg",
+              },
+
+              {
+                name: "Payal Khandelwal",
+                company: "Pixel Whirl",
+                image: "/alums/payal.jpg",
+              },
+
+              {
+                name: "Shagun Chopra",
+                company: "Leo Burnett India",
+                image: "/alums/shagun.jpg",
+              },
+
+              {
+                name: "Kanchan Bhat",
+                company: "Rain Creative",
+                image: "/alums/kanchan.jpg",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="group text-center transition-all duration-500 hover:-translate-y-2"
+              >
+                {/* IMAGE */}
+                <div className="relative mx-auto h-[150px] w-[150px] sm:h-[180px] sm:w-[180px] overflow-hidden rounded-full bg-[#ec008c] p-[5px] shadow-[0_20px_60px_rgba(236,0,140,0.15)]">
+                  <div className="h-full w-full overflow-hidden rounded-full bg-black">
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      width={400}
+                      height={400}
+                      className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                    />
+                  </div>
+                </div>
+
+                {/* CONTENT */}
+                <div className="mt-5 px-2">
+                  <h3 className="text-sm sm:text-base md:text-lg font-black uppercase leading-[1.2] tracking-[-0.03em] text-black">
+                    {item.name}
+                  </h3>
+
+                  <p className="mt-2 text-[10px] sm:text-xs font-black uppercase tracking-[0.22em] text-[#ec008c] leading-[1.5]">
+                    {item.company}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
-
       <Footer />
     </div>
   );
