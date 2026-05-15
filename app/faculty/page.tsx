@@ -191,7 +191,7 @@ export default function FacultyPage() {
   {
     name: "Aparsh Sinha",
     role: "Managing Partner & Strategy Lead",
-    image: "/faculty/f10.jpg",
+    image: "/faculty/f10.png",
   },
   {
     name: "Sachin Puri",
