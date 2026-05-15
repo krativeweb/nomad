@@ -297,7 +297,11 @@ export default function NewsEventsPage() {
               <div className="overflow-hidden rounded-[28px] sm:rounded-[36px] md:rounded-[40px] border border-white/10 bg-black shadow-[0_20px_80px_rgba(0,0,0,0.2)]">
                 <div className="relative overflow-hidden">
                   <Image
+<<<<<<< HEAD
                     src="/think_out_loard.png"
+=======
+                    src="/podcast-main.jpg"
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                     alt="NoMAD Podcast"
                     width={1200}
                     height={1500}
@@ -424,7 +428,11 @@ export default function NewsEventsPage() {
               <div className="overflow-hidden rounded-[28px] sm:rounded-[36px] md:rounded-[40px] border border-white/10 bg-black shadow-[0_20px_80px_rgba(0,0,0,0.2)]">
                 <div className="relative overflow-hidden">
                   <Image
+<<<<<<< HEAD
                     src="/idea_worth.png"
+=======
+                    src="/blog-main.jpg"
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                     alt="The NoMAD Edit"
                     width={1200}
                     height={1500}
@@ -465,7 +473,11 @@ export default function NewsEventsPage() {
               <div className="overflow-hidden rounded-[28px] sm:rounded-[36px] md:rounded-[40px] border border-white/10 bg-black shadow-[0_20px_80px_rgba(0,0,0,0.2)]">
                 <div className="relative overflow-hidden">
                   <Image
+<<<<<<< HEAD
                     src="/in_the_world.png"
+=======
+                    src="/media-centre.jpg"
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                     alt="Media Centre"
                     width={1200}
                     height={1500}
@@ -599,7 +611,11 @@ export default function NewsEventsPage() {
               {/* IMAGE */}
               <div className="relative overflow-hidden">
                 <Image
+<<<<<<< HEAD
                   src="/official_announcement.png"
+=======
+                  src="/press-release.jpg"
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                   alt="Press Releases"
                   width={900}
                   height={700}
@@ -656,7 +672,11 @@ export default function NewsEventsPage() {
               {/* IMAGE */}
               <div className="relative overflow-hidden">
                 <Image
+<<<<<<< HEAD
                   src="/made_in_india.png"
+=======
+                  src="/national-events.jpg"
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                   alt="National Events"
                   width={900}
                   height={700}
@@ -715,7 +735,11 @@ export default function NewsEventsPage() {
               {/* IMAGE */}
               <div className="relative overflow-hidden">
                 <Image
+<<<<<<< HEAD
                   src="/international-events.png"
+=======
+                  src="/international-events.jpg"
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                   alt="International Events"
                   width={900}
                   height={700}

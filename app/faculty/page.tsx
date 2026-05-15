@@ -191,7 +191,7 @@ export default function FacultyPage() {
   {
     name: "Aparsh Sinha",
     role: "Managing Partner & Strategy Lead",
-    image: "/faculty/f10.png",
+    image: "/faculty/f10.jpg",
   },
   {
     name: "Sachin Puri",
@@ -547,7 +547,7 @@ export default function FacultyPage() {
           
           <div className="relative overflow-hidden">
             <Image
-              src="/faculty_grid.png"
+              src="/faculty-team.jpg"
               alt="NoMAD Faculty"
               width={1200}
               height={1500}
@@ -655,7 +655,7 @@ export default function FacultyPage() {
         <div className="relative overflow-hidden">
           
           <Image
-            src="/faculty-profile.png"
+            src="/faculty-profile.jpg"
             alt="Faculty Profiles"
             width={1200}
             height={900}
@@ -726,7 +726,7 @@ export default function FacultyPage() {
         <div className="relative overflow-hidden">
           
           <Image
-            src="/creative-team.jpg"
+            src="/admin-team.jpg"
             alt="Admin Team"
             width={1200}
             height={900}

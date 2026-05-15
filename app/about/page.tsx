@@ -274,7 +274,11 @@ titles.forEach((title) => {
 
               <div className="relative overflow-hidden rounded-[40px]">
                 <Image
+<<<<<<< HEAD
                   src="/admistrative_leaders/director.png"
+=======
+                  src="/director.jpg"
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                   alt="Director"
                   width={900}
                   height={1100}
@@ -384,7 +388,11 @@ font-black uppercase leading-[0.95] tracking-[-0.045em]"
 
               <div className="relative overflow-hidden rounded-[40px]">
                 <Image
+<<<<<<< HEAD
                   src="/admistrative_leaders/dean.png"
+=======
+                  src="/dean.jpg"
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                   alt="Dean"
                   width={900}
                   height={1100}
@@ -426,14 +434,22 @@ font-black uppercase leading-[0.95] tracking-[-0.045em]"
 
             {/* BOARD MEMBERS */}
             <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<<<<<<< HEAD
               {['member1', 'member2', 'member3', 'member4'].map((item) => (
+=======
+              {[1, 2, 3, 4].map((item) => (
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                 <div
                   key={item}
                   className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-sm"
                 >
                   <div className="overflow-hidden">
                     <Image
+<<<<<<< HEAD
                       src={`/advisory_board/board_${item}.png`}
+=======
+                      src={`/board-${item}.jpg`}
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                       alt="Board Member"
                       width={600}
                       height={700}
@@ -828,7 +844,11 @@ font-black uppercase leading-[0.95] tracking-[-0.045em]"
                 <div className="mt-10 flex flex-wrap items-center gap-8">
                   <div className="rounded-[22px] border border-white/10 bg-black/40 px-8 py-6">
                     <Image
+<<<<<<< HEAD
                       src="/logos/mumbai-university-logo.jpg"
+=======
+                      src="/mumbai-university-logo.png"
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                       alt="Mumbai University"
                       width={180}
                       height={80}
@@ -838,7 +858,11 @@ font-black uppercase leading-[0.95] tracking-[-0.045em]"
 
                   <div className="rounded-[22px] border border-white/10 bg-black/40 px-8 py-6">
                     <Image
+<<<<<<< HEAD
                       src="/logos/miami_ad_school_logo.jpg"
+=======
+                      src="/miami-ad-school-logo.png"
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                       alt="Miami Ad School"
                       width={180}
                       height={80}
@@ -908,6 +932,7 @@ font-black uppercase leading-[0.95] tracking-[-0.045em]"
               {[
                 {
                   title: "Cannes Lions",
+<<<<<<< HEAD
                   image: "/award/award-1.png",
                 },
                 {
@@ -921,6 +946,21 @@ font-black uppercase leading-[0.95] tracking-[-0.045em]"
                 {
                   title: "Global Recognition",
                   image: "/award/award-4.png",
+=======
+                  image: "/award-1.jpg",
+                },
+                {
+                  title: "D&AD",
+                  image: "/award-2.jpg",
+                },
+                {
+                  title: "One Show",
+                  image: "/award-3.jpg",
+                },
+                {
+                  title: "Global Recognition",
+                  image: "/award-4.jpg",
+>>>>>>> a3c7c74946e28bad72e59232d3c436f358dfe4b8
                 },
               ].map((item, i) => (
                 <div
