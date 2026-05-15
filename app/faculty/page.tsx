@@ -655,7 +655,7 @@ export default function FacultyPage() {
         <div className="relative overflow-hidden">
           
           <Image
-            src="/faculty-profile.jpg"
+            src="/creative-team.jpg"
             alt="Faculty Profiles"
             width={1200}
             height={900}

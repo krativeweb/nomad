@@ -297,7 +297,7 @@ export default function NewsEventsPage() {
               <div className="overflow-hidden rounded-[28px] sm:rounded-[36px] md:rounded-[40px] border border-white/10 bg-black shadow-[0_20px_80px_rgba(0,0,0,0.2)]">
                 <div className="relative overflow-hidden">
                   <Image
-                    src="/podcast-main.jpg"
+                    src="/think_out_loard.png"
                     alt="NoMAD Podcast"
                     width={1200}
                     height={1500}
@@ -424,7 +424,7 @@ export default function NewsEventsPage() {
               <div className="overflow-hidden rounded-[28px] sm:rounded-[36px] md:rounded-[40px] border border-white/10 bg-black shadow-[0_20px_80px_rgba(0,0,0,0.2)]">
                 <div className="relative overflow-hidden">
                   <Image
-                    src="/blog-main.jpg"
+                    src="/idea_worth.png"
                     alt="The NoMAD Edit"
                     width={1200}
                     height={1500}
@@ -465,7 +465,7 @@ export default function NewsEventsPage() {
               <div className="overflow-hidden rounded-[28px] sm:rounded-[36px] md:rounded-[40px] border border-white/10 bg-black shadow-[0_20px_80px_rgba(0,0,0,0.2)]">
                 <div className="relative overflow-hidden">
                   <Image
-                    src="/media-centre.jpg"
+                    src="/in_the_world.png"
                     alt="Media Centre"
                     width={1200}
                     height={1500}
@@ -599,7 +599,7 @@ export default function NewsEventsPage() {
               {/* IMAGE */}
               <div className="relative overflow-hidden">
                 <Image
-                  src="/press-release.jpg"
+                  src="/official_announcement.png"
                   alt="Press Releases"
                   width={900}
                   height={700}
@@ -656,7 +656,7 @@ export default function NewsEventsPage() {
               {/* IMAGE */}
               <div className="relative overflow-hidden">
                 <Image
-                  src="/national-events.jpg"
+                  src="/made_in_india.png"
                   alt="National Events"
                   width={900}
                   height={700}
@@ -715,7 +715,7 @@ export default function NewsEventsPage() {
               {/* IMAGE */}
               <div className="relative overflow-hidden">
                 <Image
-                  src="/international-events.jpg"
+                  src="/international-events.png"
                   alt="International Events"
                   width={900}
                   height={700}
