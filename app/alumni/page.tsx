@@ -195,212 +195,212 @@ export default function AlumniPage() {
     {
       name: "Darren D'Costa",
       company: "VMLY&R",
-      image: "/success/darren.jpg",
+      image: "/success/darren.png",
     },
     {
       name: "Vanshika Lakhani",
       company: "BBDO Hong Kong",
-      image: "/success/vanshika.jpg",
+      image: "/success/vanshika.png",
     },
     {
       name: "Dhanashree Vichare",
       company: "Leo Burnett Orchard",
-      image: "/success/dhanashree.jpg",
+      image: "/success/dhanashree.png",
     },
     {
       name: "Shreya Nair",
       company: "ViralFission",
-      image: "/success/shreya.jpg",
+      image: "/success/shreya_new.png",
     },
     {
       name: "Ria Bangard",
       company: "Moj",
-      image: "/success/ria.jpg",
+      image: "/success/riya.png",
     },
     {
       name: "Shagun Chopra",
       company: "Leo Burnett India",
-      image: "/success/shagun.jpg",
+      image: "/success/shagun.png",
     },
     {
       name: "Abhishek Basane",
       company: "Wunderman Thompson",
-      image: "/success/abhishek.jpg",
+      image: "/success/abhishek.png",
     },
     {
       name: "Revati Menon",
       company: "Ogilvy",
-      image: "/success/revati.jpg",
+      image: "/success/revati.png",
     },
     {
       name: "Siddhant Pawar",
       company: "The Glitch",
-      image: "/success/siddhant.jpg",
+      image: "/success/siddhant.png",
     },
     {
       name: "Shruti Bhosale",
       company: "McCann",
-      image: "/success/shruti.jpg",
+      image: "/success/shruti.png",
     },
     {
       name: "Hrishikesh Pnwar",
       company: "DDB Mudra Group",
-      image: "/success/hrishikesh.jpg",
+      image: "/success/hrishikesh.png",
     },
     {
       name: "Anisha Chauhan",
       company: "Dharmaja",
-      image: "/success/anisha.jpg",
+      image: "/success/anisha.png",
     },
     {
       name: "Masumi Shah",
       company: "360i",
-      image: "/success/masumi.jpg",
+      image: "/success/masumi.png",
     },
     {
       name: "Sahil Kumar",
       company: "SocialVocal",
-      image: "/success/sahil.jpg",
+      image: "/success/sahil.png",
     },
     {
       name: "Mamta Velle",
       company: "École Intuit Lab",
-      image: "/success/mamta.jpg",
+      image: "/success/mamta.png",
     },
     {
       name: "Hriduka Gariba",
       company: "Netflix",
-      image: "/success/hriduka.jpg",
+      image: "/success/hriduka.png",
     },
     {
       name: "Rahi Kulkarni",
       company: "HyphenBrands",
-      image: "/success/rahi.jpg",
+      image: "/success/rahi.png",
     },
     {
       name: "Alivia Biswas",
       company: "Indian Institute of Management",
-      image: "/success/alivia.jpg",
+      image: "/success/alivia.png",
     },
     {
       name: "Kabir Refrn",
       company: "Alt X",
-      image: "/success/kabir.jpg",
+      image: "/success/kabir.png",
     },
     {
       name: "Yash Kulshresth",
       company: "Atom Network",
-      image: "/success/yash.jpg",
+      image: "/success/yash.png",
     },
     {
       name: "Yashika Punjabee",
       company: "No Nasties",
-      image: "/success/yashika.jpg",
+      image: "/success/yashika.png",
     },
     {
       name: "Manishaa Kamble",
       company: "Raffles Design",
-      image: "/success/manishaa.jpg",
+      image: "/success/manishaa.png",
     },
     {
       name: "Nisha Solkar",
       company: "Miami Adschool",
-      image: "/success/nisha.jpg",
+      image: "/success/nisha.png",
     },
     {
       name: "Nikhil Choudhary",
       company: "Blank The Agency",
-      image: "/success/nikhil.jpg",
+      image: "/success/nikhil.png",
     },
     {
-      name: "Uiren Thakur",
+      name: "JUiren Thakur",
       company: "Gresham Global",
-      image: "/success/uiren.jpg",
+      image: "/success/juiren.png",
     },
     {
       name: "Khushali Bransali",
       company: "Ogilvy",
-      image: "/success/khushali.jpg",
+      image: "/success/khushali.png",
     },
     {
       name: "Nishita Charat",
       company: "Punt Creative",
-      image: "/success/nishita.jpg",
+      image: "/success/nishita.png",
     },
     {
       name: "Aman Ali Malik",
       company: "Atom Network",
-      image: "/success/aman.jpg",
+      image: "/success/aman.png",
     },
     {
       name: "Abhishek Misra",
       company: "Country Head",
-      image: "/success/misra.jpg",
+      image: "/success/misra.png",
     },
     {
       name: "Dhviti Patel",
       company: "NABA",
-      image: "/success/dhviti.jpg",
+      image: "/success/dhviti.png",
     },
     {
       name: "Sudipta Karmakar",
       company: "Miami Adschool",
-      image: "/success/sudipta.jpg",
+      image: "/success/sudipta.png",
     },
     {
       name: "Arvindh Lochan",
       company: "IndyLassi Creative",
-      image: "/success/arvindh.jpg",
+      image: "/success/arvindh.png",
     },
     {
       name: "Rohan Mishra",
       company: "FCB Kinnect",
-      image: "/success/rohan.jpg",
+      image: "/success/rohan.png",
     },
     {
       name: "Poorva Sawant",
       company: "VML",
-      image: "/success/poorva.jpg",
+      image: "/success/poorva.png",
     },
     {
       name: "Imtiyaz Shaikh",
       company: "Miami Adschool",
-      image: "/success/imtiyaz.jpg",
+      image: "/success/imtiyaz.png",
     },
     {
       name: "Shreya Shinde",
       company: "DDB Mudra Group",
-      image: "/success/shreya2.jpg",
+      image: "/success/shreya2.png",
     },
     {
       name: "Meena Arora",
       company: "Miami Adschool",
-      image: "/success/meena.jpg",
+      image: "/success/meena.png",
     },
     {
       name: "Vaishali Gandhi",
       company: "International Expressive Art Facilitator",
-      image: "/success/vaishali.jpg",
+      image: "/success/vaishali_original.png",
     },
     {
       name: "Sonca Baptist",
       company: "Salesforce",
-      image: "/success/sonca.jpg",
+      image: "/success/sonca.png",
     },
     {
       name: "Payal Khandelwal",
       company: "Pixel Whirl",
-      image: "/success/payal.jpg",
+      image: "/success/payal.png",
     },
     {
       name: "Rishikaa Nair",
       company: "BBDO Hong Kong",
-      image: "/success/rishikaa.jpg",
+      image: "/success/rishikaa.png",
     },
     {
       name: "Kanchi Bhat",
       company: "Rain Creative",
-      image: "/success/kanchi.jpg",
+      image: "/success/kanchi.png",
     },
   ];
 
@@ -773,7 +773,7 @@ export default function AlumniPage() {
                 {/* MAIN IMAGE */}
                 <div className="relative overflow-hidden rounded-[35px] sm:rounded-[45px] lg:rounded-[55px] border border-black/10 shadow-[0_30px_100px_rgba(0,0,0,0.15)]">
                   <Image
-                    src="/alumni-laurels.jpg"
+                    src="/fe5e7070-ea2a-46bb-a590-9e3968e6fbe8.png"
                     alt="Alumni Laurels"
                     width={1200}
                     height={1600}
@@ -919,7 +919,7 @@ export default function AlumniPage() {
             <div className="relative flex justify-center lg:justify-end">
               <div className="relative w-full max-w-[720px] overflow-hidden rounded-[35px] sm:rounded-[45px] lg:rounded-[55px] border border-black/10 shadow-[0_30px_100px_rgba(0,0,0,0.12)]">
                 <Image
-                  src="/alumni-success.jpg"
+                  src="/99976fce-cf41-40e3-9c60-5924174a3be9.png"
                   alt="Voices of Success"
                   width={1200}
                   height={1600}
@@ -1103,7 +1103,7 @@ export default function AlumniPage() {
           <div className="mt-16 grid gap-6 lg:grid-cols-2">
             {[
               {
-                image: "/success/khushali.jpg",
+                image: "/success/khushali.png",
                 quote:
                   "NoMAD didn't just teach me how to make ads. It taught me how to think. That's the skill that has stayed with me through every job, every brief, every challenge.",
                 name: "Khushali Bhansali",
@@ -1111,7 +1111,7 @@ export default function AlumniPage() {
               },
 
               {
-                image: "/success/rishikaa.jpg",
+                image: "/success/rishikaa.png",
                 quote:
                   "The internship I got through NoMAD opened every door that followed. I walked into that agency with a portfolio that held up — and that confidence came from the work I did here.",
                 name: "Rishikaa Nair",
@@ -1119,7 +1119,7 @@ export default function AlumniPage() {
               },
 
               {
-                image: "/success/uiren.jpg",
+                image: "/success/juiren.png",
                 quote:
                   "I came in not knowing if I was creative enough. I left knowing I had a voice. NoMAD finds what's unique about the way you think and builds on it.",
                 name: "Juben Thakur",
@@ -1127,7 +1127,7 @@ export default function AlumniPage() {
               },
 
               {
-                image: "/success/aman.jpg",
+                image: "/success/aman.png",
                 quote:
                   "The global internship changed my life. I worked at an agency in a city I'd never been to, on briefs I never imagined I'd get.",
                 name: "Aman Anil Malik",
@@ -1207,7 +1207,7 @@ export default function AlumniPage() {
             <div className="mt-16 grid gap-6 md:grid-cols-2">
               {[
                 {
-                  image: "/industry/suramanveshwar.jpg",
+                  image: "/industry/suramanveshwar.png",
                   quote:
                     "When a NoMAD student walks in for an internship, you can tell immediately. There's a confidence in their work and a clarity in how they present it.",
                   name: "S. Suramanveshwar",
@@ -1215,7 +1215,7 @@ export default function AlumniPage() {
                 },
 
                 {
-                  image: "/industry/suraja-kishore.jpg",
+                  image: "/industry/kishore_new.png",
                   quote:
                     "We've hired multiple NoMAD graduates over the years and the consistency in quality is remarkable. They've been trained to think creatively under pressure.",
                   name: "Suraja Kishore",
@@ -1223,7 +1223,7 @@ export default function AlumniPage() {
                 },
 
                 {
-                  image: "/industry/sakshi.jpg",
+                  image: "/industry/pngtree-user-vector-avatar-png-image_1541962.jpg",
                   quote:
                     "The portfolios coming out of NoMAD are genuinely competitive at an international level. These students aren't just India-ready — they're world-ready.",
                   name: "Sakshi Choudhary",
@@ -1231,7 +1231,7 @@ export default function AlumniPage() {
                 },
 
                 {
-                  image: "/industry/ishan.jpg",
+                  image: "/industry/pngtree-user-vector-avatar-png-image_1541962.jpg",
                   quote:
                     "What sets NoMAD students apart is that they've already worked on real briefs. They're not learning on your time — they're contributing from the start.",
                   name: "Ishan Mehta",
