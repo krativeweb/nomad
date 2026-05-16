@@ -355,67 +355,67 @@ export default function PlacementInternshipPage() {
 
                 {
                   name: "Apple",
-                  logo: "/logos/apple.svg",
+                  logo: "/logos/apple.png",
                 },
 
                 {
                   name: "TikTok",
-                  logo: "/logos/tiktok.svg",
+                  logo: "/logos/tiktok_new.png",
                 },
 
                 {
                   name: "Ogilvy",
-                  logo: "/logos/ogilvy.svg",
+                  logo: "/logos/ogilvy_new.png",
                 },
 
                 {
                   name: "BBDO",
-                  logo: "/logos/bbdo.svg",
+                  logo: "/logos/bbdo_new.png",
                 },
 
                 {
                   name: "McCann",
-                  logo: "/logos/mccann.svg",
+                  logo: "/logos/mccann_new.png",
                 },
 
                 {
                   name: "Dentsu",
-                  logo: "/logos/dentsu.svg",
+                  logo: "/logos/logo-8.png",
                 },
 
                 {
                   name: "WPP",
-                  logo: "/logos/wpp.svg",
+                  logo: "/logos/logo-9.png",
                 },
 
                 {
                   name: "Wieden+Kennedy",
-                  logo: "/logos/wk.svg",
+                  logo: "/logos/logo-13.png",
                 },
 
                 {
                   name: "Accenture",
-                  logo: "/logos/accenture.svg",
+                  logo: "/logos/accenture_new.png",
                 },
 
                 {
                   name: "WhatsApp",
-                  logo: "/logos/whatsapp.svg",
+                  logo: "/logos/whatsapp_new.png",
                 },
 
                 {
                   name: "Leo Burnett",
-                  logo: "/logos/leo-burnett.svg",
+                  logo: "/logos/leo-burnett_new.png",
                 },
 
                 {
                   name: "Mother",
-                  logo: "/logos/mother.svg",
+                  logo: "/logos/logo-15.png",
                 },
 
                 {
                   name: "Coca Cola",
-                  logo: "/logos/cocacola.svg",
+                  logo: "/logos/logo-16.png",
                 },
               ].map((item, i) => (
                 <div
@@ -716,73 +716,73 @@ export default function PlacementInternshipPage() {
               {
                 name: "Deep Chhabria",
                 company: "Netflix",
-                image: "/alums/deep.jpg",
+                image: "/alums/deep.png",
               },
 
               {
                 name: "Khushali Bhansali",
                 company: "Ogilvy",
-                image: "/alums/khushali.jpg",
+                image: "/alums/khushali.png",
               },
 
               {
                 name: "Nishita Charat",
                 company: "Punt Creative",
-                image: "/alums/nishita.jpg",
+                image: "/alums/nishita.png",
               },
 
               {
                 name: "Sudipta Karmarkar",
                 company: "Miami Adschool",
-                image: "/alums/sudipta.jpg",
+                image: "/alums/sudipta.png",
               },
 
               {
                 name: "Arvindh Lochan",
                 company: "Indy Lassi Creative",
-                image: "/alums/arvindh.jpg",
+                image: "/alums/arvindh.png",
               },
 
               {
                 name: "Rohan Mishra",
                 company: "FCB Kinnect",
-                image: "/alums/rohan.jpg",
+                image: "/alums/rohan.png",
               },
 
               {
                 name: "Hrudika Gariba",
                 company: "Netflix",
-                image: "/alums/hrudika.jpg",
+                image: "/alums/hrudika.png",
               },
 
               {
                 name: "Vaishali Gandhi",
                 company: "International Expressive Art Facilitator",
-                image: "/alums/vaishali.jpg",
+                image: "/alums/vaishali.png",
               },
 
               {
                 name: "Sonica Baptist",
                 company: "Salesforce",
-                image: "/alums/sonica.jpg",
+                image: "/alums/sonica.png",
               },
 
               {
                 name: "Payal Khandelwal",
                 company: "Pixel Whirl",
-                image: "/alums/payal.jpg",
+                image: "/alums/payal.png",
               },
 
               {
                 name: "Shagun Chopra",
                 company: "Leo Burnett India",
-                image: "/alums/shagun.jpg",
+                image: "/alums/shagun.png",
               },
 
               {
                 name: "Kanchan Bhat",
                 company: "Rain Creative",
-                image: "/alums/kanchan.jpg",
+                image: "/alums/kanchan.png",
               },
             ].map((item, i) => (
               <div

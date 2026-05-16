@@ -146,162 +146,162 @@ export default function FacultyPage() {
   {
     name: "Partha Sinha",
     role: "Former President, The Times of India Group",
-    image: "/faculty/f1.jpg",
+    image: "/faculty/magnific__enhance__83935-Photoroom.png",
   },
   {
     name: "S Somanaswar",
     role: "Chief Strategy Officer, Space Mule & More Group",
-    image: "/faculty/f2.jpg",
+    image: "/faculty/image-Photoroom.png",
   },
   {
     name: "Suraja Kishore",
     role: "Former CEO, BBDO India",
-    image: "/faculty/f3.jpg",
+    image: "/faculty/81527815-30a3-46ab-bc19-db4c86beab84-Photoroom.png",
   },
   {
     name: "Venkatagiri Rao",
     role: "CEO, Salt Brand Solutions",
-    image: "/faculty/f4.jpg",
+    image: "/faculty/383754ef-d382-451d-86f3-7e55ba0eb71a-Photoroom.png",
   },
   {
     name: "Vikram Gaikwad",
     role: "Co-Founder & CEO, Hatched",
-    image: "/faculty/f5.jpg",
+    image: "/faculty/71600560-be07-4ac8-8b13-37afb361c409-Photoroom.png",
   },
   {
     name: "Harshad Rajadhyaksha",
     role: "COO, Ogilvy India",
-    image: "/faculty/f6.jpg",
+    image: "/faculty/d34ed8d1-5fc6-4ee9-9587-8d6a9de27d53-Photoroom.png",
   },
   {
     name: "Kainaz Karmakar",
     role: "CCO, Ogilvy India",
-    image: "/faculty/f7.jpg",
+    image: "/faculty/36491651-cea3-41f5-87fb-0cb876c52023-Photoroom.png",
   },
   {
     name: "Burzin Mehta",
     role: "MD, Indigo Consulting",
-    image: "/faculty/f8.jpg",
+    image: "/faculty/board_member1.png",
   },
   {
     name: "Sakshi Choudhary",
     role: "Creative Director, Ogilvy Chicago",
-    image: "/faculty/f9.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Aparsh Sinha",
     role: "Managing Partner & Strategy Lead",
-    image: "/faculty/f10.png",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Sachin Puri",
     role: "Founder, That’s Pet Ltd",
-    image: "/faculty/f11.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Saurabh Karandikar",
     role: "UX Analyst & Designer",
-    image: "/faculty/f12.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Ishan Mehta",
     role: "Senior Creative Director, L&K Saatchi & Saatchi",
-    image: "/faculty/f13.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Neville Shah",
     role: "Executive Creative Director, Ogilvy Mumbai",
-    image: "/faculty/f14.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Deep Chabria",
     role: "Creative Lead, NOTTI",
-    image: "/faculty/f15.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Navdeep Scott",
     role: "Former Group Creative Director, Famous Innovations",
-    image: "/faculty/f16.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Sarang Kulkarni",
     role: "Type Designer & Co-Founder, Ek Type",
-    image: "/faculty/f17.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Jimeet Panaskar",
     role: "Owner, Jimeet Panaskar Photography",
-    image: "/faculty/f18.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Keiki Tewary",
     role: "Creative Consultant, Voice Director",
-    image: "/faculty/f19.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Bhumika Shah",
     role: "Unit Creative Director, MullenLowe Lintas Group",
-    image: "/faculty/f20.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Goral Ajmera",
     role: "Founder & Creative Director, Brave",
-    image: "/faculty/f21.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Rajdeep Das",
     role: "CCO & CEO, Leo Burnett India",
-    image: "/faculty/f22.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Rebecca Daniel",
     role: "Dancer & Decorator",
-    image: "/faculty/f23.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Rohan Mathew",
     role: "Creative Partner, BBDO India",
-    image: "/faculty/f24.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Roy Menezes",
     role: "Partner & CCO, Centrick",
-    image: "/faculty/f25.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Ryan Mendonca",
     role: "Creative Consultant, MTV",
-    image: "/faculty/f26.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Vikram Pandey",
     role: "VCD, Leo Burnett",
-    image: "/faculty/f27.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Neil Chitnis",
     role: "Copywriter/Supervising Producer, MTV",
-    image: "/faculty/f28.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Anvi Mody",
     role: "Global Asst. Brand Manager, AOL",
-    image: "/faculty/f29.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Chirag Gander",
     role: "Co-Founder, The Minimalist",
-    image: "/faculty/f30.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Sameera Khan",
     role: "Co-Founder, 3point5",
-    image: "/faculty/f31.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
   {
     name: "Avni Chinoy",
     role: "CCO, Managing Partner, Gravity Integrated",
-    image: "/faculty/f32.jpg",
+    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
   },
 ];
 
@@ -547,7 +547,7 @@ export default function FacultyPage() {
           
           <div className="relative overflow-hidden">
             <Image
-              src="/faculty-team.jpg"
+              src="/team.png"
               alt="NoMAD Faculty"
               width={1200}
               height={1500}
@@ -726,7 +726,7 @@ export default function FacultyPage() {
         <div className="relative overflow-hidden">
           
           <Image
-            src="/admin-team.jpg"
+            src="/faculty_grid.png"
             alt="Admin Team"
             width={1200}
             height={900}

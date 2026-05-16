@@ -744,7 +744,7 @@ export default function ProgramsPage() {
                 {/* IMAGE */}
                 <div className="group relative overflow-hidden">
                   <Image
-                    src="/pg-classroom.jpg"
+                    src="/creative-side.jpg"
                     alt="2 Year PG"
                     width={1200}
                     height={700}
@@ -869,7 +869,7 @@ export default function ProgramsPage() {
                 {/* IMAGE */}
                 <div className="group relative mt-10 md:mt-14 overflow-hidden rounded-[24px] md:rounded-[30px]">
                   <Image
-                    src="/pg-students.jpg"
+                    src="/d2aefb49-7eb7-4b93-ae14-10d144d3b843.png"
                     alt="Students"
                     width={900}
                     height={500}
