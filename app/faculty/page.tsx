@@ -582,13 +582,13 @@ export default function FacultyPage() {
         {/* FLOATING IMAGE */}
         <div className="absolute -bottom-6 -left-3 hidden lg:block overflow-hidden rounded-[24px] border border-white/10 bg-black shadow-2xl">
           
-          <Image
-            src="/faculty-workshop.jpg"
+          {/*<Image
+            src="/team.png"
             alt="Faculty Workshop"
             width={320}
-            height={220}
+            height={200}
             className="h-[220px] w-[300px] object-cover grayscale transition-all duration-700 hover:grayscale-0"
-          />
+          />*/}
         </div>
       </div>
     </div>
