@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
- 
+  
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
  
