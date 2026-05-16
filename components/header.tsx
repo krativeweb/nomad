@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
   
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  
+   
   const navItems = [
     { name: "About Us", href: "/about" },
     { name: "Programs", href: "/programs" },
