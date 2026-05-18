@@ -45,3 +45,9 @@ body {
 .split-text {
   padding-bottom: 0.1em;
 }
+
+@media (min-width: 48rem) {
+  .md\:h-\[90vh\] {
+      height: 85vh !important;
+  }
+}

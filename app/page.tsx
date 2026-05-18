@@ -546,7 +546,7 @@ export default function Home() {
         </section>
 
         {/* Footer Circles */}
-        <section className="footer-circles-section py-12 md:py-20 w-full flex justify-center overflow-hidden">
+        <section className="footer-circles-section pb-10 md:pb-14 w-full flex justify-center overflow-hidden">
           <div className="flex flex-wrap justify-center items-center gap-4 md:gap-12 relative w-full max-w-[1600px] mx-auto px-4 lg:px-8">
             {/* Left Circle */}
             <div className="footer-circle w-full max-w-[260px] md:max-w-[400px] aspect-square rounded-full bg-[#ec008c] flex flex-col items-center justify-center text-center text-white p-6 md:p-10 hover:scale-105 transition-transform duration-500 cursor-pointer z-10">

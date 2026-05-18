@@ -187,44 +187,107 @@ titles.forEach((title) => {
       </div>
 
       {/* RIGHT IMAGE */}
-      <div className="relative flex justify-center lg:justify-end">
-        
-        <div className="hero-image relative overflow-hidden rounded-[32px] sm:rounded-[40px] lg:rounded-[50px] shadow-2xl w-full max-w-[680px]">
-          
-          <Image
-            src="/about-hero.jpg"
-            alt="Students brainstorming and creating designs"
-            width={900}
-            height={1100}
-            className="
-              w-full
-              h-[340px]
-              sm:h-[500px]
-              md:h-[620px]
-              lg:h-[720px]
-              object-cover
-              grayscale
-              transition-all
-              duration-700
-              hover:grayscale-0
-            "
-          />
+      <div className="relative flex justify-center lg:justify-end pb-28">
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+{/* Main Wrapper */}
+<div
+  className="
+    relative
+    w-full
+    max-w-[340px]
+    sm:max-w-[500px]
+    md:max-w-[620px]
+    lg:max-w-[720px]
+    aspect-square
+  "
+>
 
-          {/* FLOATING CARD */}
-          <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 max-w-[220px] sm:max-w-[280px] md:max-w-[300px] rounded-[24px] sm:rounded-[30px] border border-white/20 bg-white/80 p-4 sm:p-6 backdrop-blur-xl shadow-2xl">
-            
-            <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.25em] text-black/40">
-              Creative Future
-            </p>
+  {/* Circle Image */}
+  <div
+    className="
+      w-full
+      h-full
+      rounded-full
+      overflow-hidden
+      shadow-[0_25px_80px_rgba(0,0,0,0.18)]
+    "
+  >
 
-            <h3 className="mt-2 sm:mt-3 text-lg sm:text-xl md:text-2xl font-black leading-tight tracking-[-0.03em]">
-              Ideas become real-world impact.
-            </h3>
-          </div>
-        </div>
-      </div>
+    <Image
+      src="/about-hero.jpg"
+      alt="Students brainstorming and creating designs"
+      width={1200}
+      height={1200}
+      className="
+        w-full
+        h-full
+        object-cover
+        grayscale
+        rounded-full
+        scale-105
+        transition-all
+        duration-700
+        hover:scale-110
+        hover:grayscale-0
+      "
+    />
+
+    {/* Overlay */}
+    <div className="absolute inset-0  from-black/30 via-transparent to-transparent" />
+
+  </div>
+
+  {/* Floating Card */}
+  <div
+    className="
+      absolute
+      bottom-[-30px]
+      left-1/2
+      -translate-x-1/2
+      w-[82%]
+      bg-white
+      rounded-[38px]
+      px-6
+      py-4
+      sm:px-8
+      sm:py-5
+      shadow-[0_15px_40px_rgba(0,0,0,0.18)]
+      z-30
+    "
+  >
+
+    <p
+      className="
+        text-[8px]
+        sm:text-[10px]
+        uppercase
+        tracking-[0.35em]
+        text-gray-400
+        font-bold
+      "
+    >
+      Creative Future
+    </p>
+
+    <h3
+      className="
+        mt-2
+        text-[18px]
+        sm:text-[24px]
+        md:text-[30px]
+        font-black
+        leading-[1]
+        tracking-[-0.05em]
+        text-black
+      "
+    >
+      Ideas become real-world impact.
+    </h3>
+
+  </div>
+
+</div>
+</div>
     </div>
   </div>
 </section>
@@ -269,31 +332,85 @@ titles.forEach((title) => {
           {/* DIRECTOR */}
           <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-14 lg:gap-24 items-center mb-32">
             {/* IMAGE */}
-            <div className="relative">
-              <div className="absolute -bottom-6 -right-6 w-full h-full rounded-[40px] bg-[#ec008c]" />
+            <div className="relative flex justify-center">
 
-              <div className="relative overflow-hidden rounded-[40px]">
-                <Image
-                  src="/admistrative_leaders/director.png"
-                  alt="Director"
-                  width={900}
-                  height={1100}
-                  className="w-full h-[420px] sm:h-[560px] md:h-[720px] object-cover grayscale"
-                />
+{/* Full Circle */}
+<div
+  className="
+    relative
+    w-[320px]
+    sm:w-[420px]
+    md:w-[520px]
+    lg:w-[620px]
+    aspect-square
+    rounded-full
+    overflow-hidden
+  "
+>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+<Image
+  src="/admistrative_leaders/director.png"
+  alt="Director"
+  width={1200}
+  height={1200}
+  className="
+    w-full
+    h-full
+    object-cover
+    object-[center_top]
+    grayscale
+    scale-[0.88]
+  "
+/>
 
-                <div className="absolute bottom-6 left-6">
-                  <p className="text-xs uppercase tracking-[4px] text-white/60 font-bold">
-                    Director
-                  </p>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 
-                  <h3 className="mt-2 text-3xl md:text-4xl font-black uppercase">
-                    Leadership
-                  </h3>
-                </div>
-              </div>
-            </div>
+  {/* Text */}
+  <div
+    className="
+      absolute
+      bottom-12
+      left-1/2
+      -translate-x-1/2
+      text-center
+      w-full
+      px-6
+    "
+  >
+
+    <p
+      className="
+        text-[10px]
+        uppercase
+        tracking-[0.35em]
+        text-white/60
+        font-semibold
+      "
+    >
+      Director
+    </p>
+
+    <h3
+      className="
+        mt-2
+        text-[34px]
+        sm:text-[46px]
+        md:text-[58px]
+        font-black
+        uppercase
+        leading-[0.9]
+        tracking-[-0.05em]
+        text-white
+      "
+    >
+      Leadership
+    </h3>
+
+  </div>
+
+</div>
+</div>
 
             {/* CONTENT */}
             <div>
@@ -379,31 +496,88 @@ font-black uppercase leading-[0.95] tracking-[-0.045em]"
             </div>
 
             {/* IMAGE */}
-            <div className="relative order-1 lg:order-2">
-              <div className="absolute -top-6 -left-6 w-full h-full rounded-[40px] bg-white" />
+            <div className="relative order-1 lg:order-2 flex justify-center">
 
-              <div className="relative overflow-hidden rounded-[40px]">
-                <Image
-                  src="/admistrative_leaders/dean.png"
-                  alt="Dean"
-                  width={900}
-                  height={1100}
-                  className="w-full h-[420px] sm:h-[560px] md:h-[720px] object-cover grayscale"
-                />
+{/* Perfect Circle */}
+<div
+  className="
+    relative
+    w-[320px]
+    sm:w-[420px]
+    md:w-[520px]
+    lg:w-[620px]
+    aspect-square
+    rounded-full
+    overflow-hidden
+    bg-black
+  "
+>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+  {/* Image */}
+  <Image
+    src="/admistrative_leaders/dean.png"
+    alt="Dean"
+    width={1200}
+    height={1200}
+    className="
+      w-full
+      h-full
+      object-cover
+      object-top
+      grayscale
+    "
+  />
 
-                <div className="absolute bottom-6 left-6">
-                  <p className="text-xs uppercase tracking-[4px] text-white/60 font-bold">
-                    Dean
-                  </p>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent z-10" />
 
-                  <h3 className="mt-2 text-3xl md:text-4xl font-black uppercase">
-                    Creative Leadership
-                  </h3>
-                </div>
-              </div>
-            </div>
+  {/* Text Content */}
+{/* Text Content */}
+<div
+  className="
+    absolute
+    bottom-14
+    left-1/2
+    -translate-x-1/2
+    z-20
+    text-center
+    w-[80%]
+  "
+>
+
+  <p
+    className="
+      text-[8px]
+      sm:text-[9px]
+      uppercase
+      tracking-[0.4em]
+      text-white/60
+      font-semibold
+    "
+  >
+    Dean
+  </p>
+
+  <h3
+    className="
+      mt-2
+      text-[18px]
+      sm:text-[26px]
+      md:text-[34px]
+      font-black
+      uppercase
+      leading-[1]
+      tracking-[-0.03em]
+      text-white
+    "
+  >
+    Creative Leadership
+  </h3>
+
+</div>
+
+</div>
+</div>
           </div>
 
           {/* ADVISORY BOARD */}
@@ -425,39 +599,98 @@ font-black uppercase leading-[0.95] tracking-[-0.045em]"
             </div>
 
             {/* BOARD MEMBERS */}
-            <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[1, 2, 3, 4].map((item) => (
-                <div
-                  key={item}
-                  className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-sm"
-                >
-                  <div className="overflow-hidden">
-                    <Image
-                      src={`/advisory_board/board_member${item}.png`}
-                      alt="Board Member"
-                      width={600}
-                      height={700}
-                      className="w-full h-[320px] md:h-[380px] object-cover grayscale transition-all duration-700 group-hover:scale-105"
-                    />
-                  </div>
+<div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                  <div className="p-6">
-                    <p className="text-xs uppercase tracking-[3px] text-[#ec008c] font-bold">
-                      Advisory Board
-                    </p>
+  {[1, 2, 3, 4].map((item) => (
+    <div
+      key={item}
+      className="
+        group
+        relative
+        overflow-hidden
+        rounded-[24px]
+        border
+        border-white/10
+        bg-[#111]
+        transition-all
+        duration-500
+        hover:-translate-y-1
+      "
+    >
 
-                    <h3 className="mt-3 text-2xl font-black uppercase">
-                      Industry Leader
-                    </h3>
+      {/* Image Section */}
+      <div className="relative overflow-hidden">
 
-                    <p className="mt-3 text-sm text-white/60 leading-relaxed">
-                      Creative strategist, founder, and global industry mentor
-                      shaping future creative education.
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+        <Image
+          src={`/advisory_board/board_member${item}.png`}
+          alt="Board Member"
+          width={600}
+          height={700}
+          className="
+            w-full
+            h-[260px]
+            md:h-[300px]
+            object-cover
+            object-top
+            grayscale
+            transition-all
+            duration-700
+            group-hover:scale-105
+          "
+        />
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+
+      </div>
+
+      {/* Content */}
+      <div className="p-5">
+
+        <p
+          className="
+            text-[9px]
+            uppercase
+            tracking-[0.3em]
+            text-[#ec008c]
+            font-bold
+          "
+        >
+          Advisory Board
+        </p>
+
+        <h3
+          className="
+            mt-3
+            text-[22px]
+            md:text-[26px]
+            font-black
+            uppercase
+            leading-[1]
+            tracking-[-0.03em]
+            text-white
+          "
+        >
+          Industry Leader
+        </h3>
+
+        <p
+          className="
+            mt-3
+            text-[13px]
+            leading-[1.7]
+            text-white/55
+          "
+        >
+          Creative strategist, founder, and global industry mentor shaping future creative education.
+        </p>
+
+      </div>
+
+    </div>
+  ))}
+
+</div>
           </div>
         </div>
       </section>
@@ -477,9 +710,9 @@ font-black uppercase leading-[0.95] tracking-[-0.045em]"
         />
 
         {/* BG TEXT */}
-        <div className="absolute top-[5%] right-[-5%] text-[20vw] font-black uppercase text-black/[0.03] leading-none pointer-events-none">
+        {/*<div className="absolute top-[5%] right-[-5%] text-[20vw] font-black uppercase text-black/[0.03] leading-none pointer-events-none">
           Vision
-        </div>
+        </div>*/}
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* TOP HEADING */}
@@ -650,39 +883,102 @@ font-black uppercase leading-[0.95] tracking-[-0.045em]"
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* HEADING */}
           <div className="max-w-full">
-            <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5.5vw] font-black uppercase leading-[0.95] tracking-[-0.045em] text-[#ec008c]">
-              Need one good reason to
-            </h2>
 
-            <div className="flex flex-wrap items-end gap-4">
-              <h2 className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5.5vw] font-black uppercase leading-[0.95] tracking-[-0.045em] text-[#ec008c]">
-                choose
-              </h2>
+{/* First Line */}
+<h2
+  className="
+    text-[13vw]
+    sm:text-[10vw]
+    md:text-[7vw]
+    lg:text-[5.5vw]
+    font-black
+    uppercase
+    leading-[0.9]
+    tracking-[-0.05em]
+    text-[#ec008c]
+  "
+>
+  Need one good reason to
+</h2>
 
-              <div className="flex items-center gap-3 mb-3">
-                <h2 className="text-[11vw] sm:text-[8vw] md:text-[6vw] lg:text-[4.5vw] font-black uppercase leading-none tracking-[-0.045em] text-black">
-                  NoMAD
-                </h2>
+{/* Second Line */}
+<div className="flex flex-wrap items-center gap-3 sm:gap-4">
 
-                <div className="hidden sm:flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#ec008c] text-white text-[10px] md:text-xs font-black uppercase leading-tight text-center p-2">
-                  College of
-                  <br />
-                  Creative
-                  <br />
-                  Intelligence
-                </div>
-              </div>
+  {/* Choose */}
+  <h2
+    className="
+      text-[13vw]
+      sm:text-[10vw]
+      md:text-[7vw]
+      lg:text-[5.5vw]
+      font-black
+      uppercase
+      leading-none
+      tracking-[-0.05em]
+      text-[#ec008c]
+    "
+  >
+    choose
+  </h2>
 
-              <span className="text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5.5vw] font-black leading-none text-[#ec008c]">
-                ?
-              </span>
-            </div>
+  {/* Logo */}
+  <Image
+    src="/nomad-logo.png"
+    width={220}
+    height={70}
+    alt="NoMAD Logo"
+    priority
+    className="
+    h-10
+    sm:h-12
+    md:h-14
+    lg:h-16
+    w-auto
+    object-contain
+    mt-4
+    sm:mt-5
+    md:mt-6
+  "
+  />
 
-            <h2 className="mt-3 text-[13vw] sm:text-[10vw] md:text-[7vw] lg:text-[5.5vw] font-black uppercase leading-[0.95] tracking-[-0.045em] text-[#ec008c]">
-              Here are 8.
-            </h2>
-          </div>
+  {/* Question Mark */}
+  <span
+    className="
+      text-[13vw]
+      sm:text-[10vw]
+      md:text-[7vw]
+      lg:text-[5.5vw]
+      font-black
+      leading-none
+      tracking-[-0.05em]
+      text-[#ec008c]
+    "
+  >
+    ?
+  </span>
 
+</div>
+
+{/* Third Line */}
+<h2
+  className="
+    mt-2
+    sm:mt-3
+    text-[13vw]
+    sm:text-[10vw]
+    md:text-[7vw]
+    lg:text-[5.5vw]
+    font-black
+    uppercase
+    leading-[0.9]
+    tracking-[-0.05em]
+    text-[#ec008c]
+  "
+>
+  Here are 8.
+</h2>
+
+</div>
           {/* FEATURES */}
           <div className="mt-20 grid md:grid-cols-2 gap-x-16 gap-y-12">
             {[

@@ -346,42 +346,109 @@ export default function ProgramsPage() {
       </div>
 
       {/* RIGHT IMAGE */}
-      <div className="relative flex justify-center lg:justify-end">
-        
-        <div className="hero-image relative overflow-hidden rounded-[32px] sm:rounded-[40px] lg:rounded-[50px] shadow-2xl w-full max-w-[680px]">
-          
-          <Image
-            src="/creative-team.jpg"
-            alt="Creative Team"
-            width={900}
-            height={1200}
-            priority
-            className="
-              w-full
-              h-[340px]
-              sm:h-[500px]
-              md:h-[620px]
-              lg:h-[720px]
-              object-cover
-              grayscale
-            "
-          />
+      <div className="relative flex justify-center lg:justify-end pb-28">
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+{/* Main Wrapper */}
+<div
+  className="
+    relative
+    w-full
+    max-w-[340px]
+    sm:max-w-[500px]
+    md:max-w-[620px]
+    lg:max-w-[720px]
+    aspect-square
+  "
+>
 
-          {/* FLOATING CARD */}
-          <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 max-w-[220px] sm:max-w-[280px] md:max-w-[300px] rounded-[24px] sm:rounded-[30px] bg-[#f7f7f7]/80 p-4 sm:p-6 shadow-2xl backdrop-blur-xl">
-            
-            <p className="text-[10px] sm:text-sm uppercase tracking-[2px] sm:tracking-[3px] text-black/40 font-bold">
-              Global Creative Network
-            </p>
+  {/* Circle Image */}
+  <div
+    className="
+      w-full
+      h-full
+      rounded-full
+      overflow-hidden
+      shadow-[0_25px_80px_rgba(0,0,0,0.18)]
+    "
+  >
 
-            <h3 className="mt-2 sm:mt-3 text-lg sm:text-xl md:text-2xl font-black leading-tight">
-              Learn from industry leaders worldwide.
-            </h3>
-          </div>
-        </div>
-      </div>
+    <Image
+      src="/creative-team.jpg"
+      alt="Creative Team"
+      width={1200}
+      height={1200}
+      priority
+      className="
+        w-full
+        h-full
+        object-cover
+        object-center
+        grayscale
+        rounded-full
+        scale-105
+        transition-all
+        duration-700
+        hover:scale-110
+        hover:grayscale-0
+      "
+    />
+
+    {/* Overlay */}
+    <div className="absolute inset-0  from-black/30 via-transparent to-transparent" />
+
+  </div>
+
+  {/* Floating Card */}
+  <div
+    className="
+      absolute
+      bottom-[-30px]
+      left-1/2
+      -translate-x-1/2
+      w-[82%]
+      bg-white
+      rounded-[38px]
+      px-6
+      py-4
+      sm:px-8
+      sm:py-5
+      shadow-[0_15px_40px_rgba(0,0,0,0.18)]
+      z-30
+    "
+  >
+
+    <p
+      className="
+        text-[8px]
+        sm:text-[10px]
+        uppercase
+        tracking-[0.35em]
+        text-gray-400
+        font-bold
+      "
+    >
+      Global Creative Network
+    </p>
+
+    <h3
+      className="
+        mt-2
+        text-[18px]
+        sm:text-[24px]
+        md:text-[30px]
+        font-black
+        leading-[1]
+        tracking-[-0.05em]
+        text-black
+      "
+    >
+      Learn from industry leaders worldwide.
+    </h3>
+
+  </div>
+
+</div>
+</div>
     </div>
   </div>
 </section>
@@ -704,7 +771,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* POSTGRADUATE PROGRAM SECTION */}
-      <section className="relative overflow-hidden bg-[#f3f3f3] py-16 sm:py-20 md:py-28 lg:py-36">
+      <section className="relative overflow-hidden bg-[#f3f3f3] py-5 sm:py-5 md:py-5 lg:py-5">
         {/* GRID */}
         <div
           className="absolute inset-0 opacity-[0.03]"
@@ -726,11 +793,11 @@ export default function ProgramsPage() {
 
             {/* HEADING */}
             <div className="mt-6 flex flex-wrap items-end gap-x-5 gap-y-2">
-              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em]">
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.02em]">
                 Your Portfolio
               </h2>
 
-              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.05em] text-[#ec008c]">
+              <h2 className="text-[14vw] sm:text-[10vw] md:text-[7vw] lg:text-[5vw] font-black uppercase leading-[0.88] tracking-[-0.02em] text-[#ec008c]">
                 Is Your Degree
               </h2>
             </div>
@@ -756,7 +823,7 @@ export default function ProgramsPage() {
 
                   {/* TITLE */}
                   <div className="absolute inset-0 flex items-start p-4 sm:p-6 md:p-10">
-                    <h2 className="text-[20vw] sm:text-[12vw] md:text-[8vw] lg:text-[6vw] font-black uppercase leading-[0.8] tracking-[-0.07em] text-white">
+                    <h2 className="text-[20vw] sm:text-[12vw] md:text-[8vw] lg:text-[6vw] font-black uppercase leading-[0.8] tracking-[-0.02em] text-white">
                       2 Year PG
                     </h2>
                   </div>
@@ -820,7 +887,7 @@ export default function ProgramsPage() {
                     Learning Curriculum
                   </p>
 
-                  <h3 className="mt-5 text-[13vw] sm:text-[8vw] md:text-[5vw] lg:text-[3.5vw] font-black uppercase leading-[0.9] tracking-[-0.05em] text-[#ec008c]">
+                  <h3 className="mt-5 text-[13vw] sm:text-[8vw] md:text-[5vw] lg:text-[3.5vw] font-black uppercase leading-[0.9] tracking-[-0.02em] text-[#ec008c]">
                     Quarter 01 -
                     <br />
                     Quarter 04
@@ -884,11 +951,11 @@ export default function ProgramsPage() {
 
                 {/* BOTTOM STRIP */}
                 <div className="mt-8 md:mt-10 rounded-[22px] md:rounded-[24px] bg-[#ec008c] px-5 sm:px-6 md:px-8 py-6 md:py-7 text-white">
-                  <p className="text-[11px] font-black uppercase tracking-[0.35em] text-white/70">
+                  <p className="text-[11px] font-black uppercase tracking-[0.02em] text-white/70">
                     Quarter 05 - Quarter 08
                   </p>
 
-                  <h3 className="mt-3 text-xl sm:text-2xl md:text-4xl font-black uppercase leading-[1.15] tracking-[-0.04em]">
+                  <h3 className="mt-3 text-xl sm:text-2xl md:text-4xl font-black uppercase leading-[1.15] tracking-[-0.02em]">
                     Global Exchange &
                     <br />
                     International Internships
@@ -900,7 +967,7 @@ export default function ProgramsPage() {
         </div>
       </section>
       {/* POST GRADUATE PROGRAM */}
-      <section className="relative overflow-hidden bg-[#f3f3f3] py-16 sm:py-20 md:py-28 lg:py-36">
+      <section className="relative overflow-hidden bg-[#f3f3f3] py-5 sm:py-5 md:py-5 lg:py-5">
         {/* GRID */}
         <div
           className="absolute inset-0 opacity-[0.03]"
