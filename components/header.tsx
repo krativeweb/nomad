@@ -30,7 +30,7 @@ export default function Header() {
           className="flex items-center cursor-pointer relative z-[10001]"
         >
           <Image
-            src="/nomad_logo_new.png.png"
+            src="/nomad_logo_new.png"
             width={200}
             height={60}
             alt="NoMAD Logo"
