@@ -201,7 +201,7 @@ export default function FacultyPage() {
   {
     name: "Saurabh Karandikar",
     role: "UX Analyst & Designer",
-    image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
+    image: "/faculty/Saurabh_Karandikar.jpeg",
   },
   {
     name: "Ishan Mehta",
@@ -302,6 +302,36 @@ export default function FacultyPage() {
     name: "Avni Chinoy",
     role: "CCO, Managing Partner, Gravity Integrated",
     image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
+  },
+  {
+    name: "Shyam Mohan",
+    role: "Social Media Manager at Ather Energy",
+    image: "/faculty/Shyam_Mohan.jpeg",
+  },
+  {
+    name: "Sreesh G Balsa",
+    role: "Freelance Photographer",
+    image: "/faculty/Sreesh_G_Balsa.jpeg",
+  },
+  {
+    name: "Neha Biluve",
+    role: "Art Director at Target",
+    image: "/faculty/Neha_Biluve.JPEG",
+  },
+  {
+    name: "Jpax Sarvasiddi",
+    role: "Independent Design Director | Branding, Creative Strategy, Graphic Design",
+    image: "/faculty/Jpax_Sarvasiddi.jpeg",
+  },
+  {
+    name: "Devargh Mukherjee",
+    role: "Senior Creative Manager at Zepto",
+    image: "/faculty/Devargh_Mukherjee.jpeg",
+  },
+  {
+    name: "Chandan Jha",
+    role: "Managing Partner, Simple Tribe",
+    image: "/faculty/Chandan_Jha.jpeg",
   },
 ];
 
