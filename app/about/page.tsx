@@ -192,6 +192,7 @@ titles.forEach((title) => {
 {/* Main Wrapper */}
 <div
   className="
+  hero-image
     relative
     w-full
     max-w-[340px]

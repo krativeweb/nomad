@@ -351,6 +351,7 @@ export default function ProgramsPage() {
 {/* Main Wrapper */}
 <div
   className="
+  hero-image
     relative
     w-full
     max-w-[340px]
@@ -809,25 +810,39 @@ export default function ProgramsPage() {
               {/* LEFT SIDE */}
               <div className="min-w-0 border-b border-black/10 lg:border-b-0 lg:border-r">
                 {/* IMAGE */}
-                <div className="group relative overflow-hidden">
-                  <Image
-                    src="/creative-side.jpg"
-                    alt="2 Year PG"
-                    width={1200}
-                    height={700}
-                    className="h-[220px] sm:h-[260px] md:h-[320px] lg:h-[360px] w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
-                  />
+                <div className="group relative overflow-hidden rounded-[24px]">
+  <Image
+    src="/creative-side.jpg"
+    alt="2 Year PG"
+    width={1200}
+    height={700}
+    className="
+      h-[220px] sm:h-[260px] md:h-[320px] lg:h-[360px]
+      w-full object-cover
+      grayscale
+      transition-all duration-700
+      group-hover:scale-105
+    "
+  />
 
-                  {/* OVERLAY */}
-                  <div className="absolute inset-0 bg-[#ec008c]/55 mix-blend-multiply" />
+  {/* PINK HOVER OVERLAY */}
+  <div
+    className="
+      absolute inset-0
+      bg-[#ec008c]/15
+      transition-all duration-700
+      group-hover:bg-[#ec008c]/55
+      mix-blend-multiply
+    "
+  />
 
-                  {/* TITLE */}
-                  <div className="absolute inset-0 flex items-start p-4 sm:p-6 md:p-10">
-                    <h2 className="text-[20vw] sm:text-[12vw] md:text-[8vw] lg:text-[6vw] font-black uppercase leading-[0.8] tracking-[-0.02em] text-white">
-                      2 Year PG
-                    </h2>
-                  </div>
-                </div>
+  {/* TITLE AT BOTTOM */}
+  <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 md:p-8">
+    <h2 className="text-[14vw] sm:text-[9vw] md:text-[6vw] lg:text-[4vw] font-black uppercase leading-[0.85] tracking-[-0.03em] text-white">
+      2 Year PG
+    </h2>
+  </div>
+</div>
 
                 {/* CONTENT */}
                 <div className="p-5 sm:p-7 md:p-10">
@@ -934,20 +949,33 @@ export default function ProgramsPage() {
                 </div>
 
                 {/* IMAGE */}
-                <div className="group relative mt-10 md:mt-14 overflow-hidden rounded-[24px] md:rounded-[30px]">
-                  <Image
-                    src="/d2aefb49-7eb7-4b93-ae14-10d144d3b843.png"
-                    alt="Students"
-                    width={900}
-                    height={500}
-                    className="h-[180px] sm:h-[220px] md:h-[240px] w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
-                  />
+{/* IMAGE */}
+<div className="group relative mt-10 md:mt-14 overflow-hidden rounded-[24px] md:rounded-[30px]">
+  <Image
+    src="/d2aefb49-7eb7-4b93-ae14-10d144d3b843.png"
+    alt="Students"
+    width={900}
+    height={500}
+    className="
+      h-[180px] sm:h-[220px] md:h-[240px]
+      w-full object-cover
+      grayscale
+      transition-all duration-700
+      group-hover:scale-105
+    "
+  />
 
-                  <div className="absolute inset-0 bg-[#ec008c]/20 mix-blend-multiply" />
-
-                  {/* DECORATION */}
-                  <div className="absolute -left-4 bottom-4 h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-full border-[8px] md:border-[10px] border-dotted border-[#ec008c]" />
-                </div>
+  {/* Pink Hover Overlay */}
+  <div
+    className="
+      absolute inset-0
+      bg-[#ec008c]/0
+      transition-all duration-700
+      group-hover:bg-[#ec008c]/45
+      mix-blend-multiply
+    "
+  />
+</div>
 
                 {/* BOTTOM STRIP */}
                 <div className="mt-8 md:mt-10 rounded-[22px] md:rounded-[24px] bg-[#ec008c] px-5 sm:px-6 md:px-8 py-6 md:py-7 text-white">
