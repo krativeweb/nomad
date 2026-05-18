@@ -183,7 +183,7 @@ export default function FacultyPage() {
     role: "MD, Indigo Consulting",
     image: "/faculty/board_member1.png",
   },
-  {
+  /*{
     name: "Sakshi Choudhary",
     role: "Creative Director, Ogilvy Chicago",
     image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
@@ -197,13 +197,13 @@ export default function FacultyPage() {
     name: "Sachin Puri",
     role: "Founder, That’s Pet Ltd",
     image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
-  },
+  },*/
   {
     name: "Saurabh Karandikar",
     role: "UX Analyst & Designer",
     image: "/faculty/Saurabh_Karandikar.jpeg",
   },
-  {
+  /*{
     name: "Ishan Mehta",
     role: "Senior Creative Director, L&K Saatchi & Saatchi",
     image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
@@ -302,7 +302,7 @@ export default function FacultyPage() {
     name: "Avni Chinoy",
     role: "CCO, Managing Partner, Gravity Integrated",
     image: "/faculty/pngtree-user-vector-avatar-png-image_1541962.jpg",
-  },
+  },*/
   {
     name: "Shyam Mohan",
     role: "Social Media Manager at Ather Energy",
