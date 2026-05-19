@@ -35,6 +35,32 @@ export default function RootLayout({
       lang="en"
       className={` ${obviously.variable} ${obviouslyNarrowMedium.variable} ${myriad.variable} h-full antialiased`}
     >
+           <head>
+        {/* Google Site Verification */}
+        <meta
+          name="google-site-verification"
+          content="dpuZWhsGBSiZgn0DGibmvvUPtWOgdGo3ud_GhwejX6c"
+        />
+
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-NXMWWYCBBR"
+        ></script>
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-NXMWWYCBBR');
+            `,
+          }}
+        />
+      </head>
+
       <body className="min-h-full flex flex-col font-[family-name:var(--font-obviously)]">{children}</body>
     </html>
   );
