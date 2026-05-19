@@ -36,11 +36,14 @@ export default function RootLayout({
       className={` ${obviously.variable} ${obviouslyNarrowMedium.variable} ${myriad.variable} h-full antialiased`}
     >
            <head>
+             {/* Robots Meta */}
+           <meta name="robots" content="noindex" />
         {/* Google Site Verification */}
         <meta
           name="google-site-verification"
           content="dpuZWhsGBSiZgn0DGibmvvUPtWOgdGo3ud_GhwejX6c"
         />
+        
 
         {/* Google Analytics */}
         <script
