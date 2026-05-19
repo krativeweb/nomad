@@ -2,11 +2,27 @@
  
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
       
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 40) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
    
   const navItems = [
     { name: "About Us", href: "/about" },
@@ -23,7 +39,22 @@ export default function Header() {
   return (
     <>
       {/* HEADER */}
-      <header className="main-header absolute top-0 left-0 w-full flex items-center justify-between px-6 md:px-20 py-4 md:py-8 z-[9999] transition-all duration-300">
+      <header
+  className={`
+    main-header
+    fixed top-0 left-0 w-full
+    flex items-center justify-between
+    px-6 md:px-20
+    z-[9999]
+    transition-all duration-300
+
+    ${
+      isScrolled
+        ? "py-4 bg-white/90 backdrop-blur-xl shadow-lg"
+        : "py-4 md:py-8 bg-transparent"
+    }
+  `}
+>
         {/* LOGO */}
         <Link
           href="/"

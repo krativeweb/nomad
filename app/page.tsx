@@ -565,7 +565,7 @@ export default function Home() {
             {/* Middle Circle */}
             <div className="footer-circle w-full max-w-[260px] md:max-w-[400px] aspect-square rounded-full overflow-hidden relative z-20">
               <Image
-                src="/mumbai.png"
+                src="/mumbai_new.jpg"
                 width={450}
                 height={450}
                 alt="Mumbai City View"
