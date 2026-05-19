@@ -9,7 +9,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const [isScrolled, setIsScrolled] = useState(false);
-
+ 
 useEffect(() => {
   const handleScroll = () => {
     if (window.scrollY > 40) {
